@@ -3,9 +3,8 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #b5b5b5;
   background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAZeyIL_bFAdZaOArvImco-hT_MplFhTxYwkklzzxN&s");
-  
+  background-color: rgb(255, 255, 255, 0);
 }
 header {
   background-color: #333;
