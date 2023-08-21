@@ -20,7 +20,7 @@ body {
     text-align: center;
     position: relative;
     overflow: hidden; /* Hide overflow for glow effect */
-    animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 3s ease-in-out infinite alternate;
     z-index: 0; /* Place behind content */
     pointer-events: none; /* Allow clicking through the glow */
     box-shadow: 0px 0px 20px rgba(138, 43, 226, 0.8); /* Purple glow */
@@ -79,6 +79,6 @@ body {
         box-shadow: 0px 0px 20px rgba(138, 43, 226, 0.8);
     }
     to {
-        box-shadow: 0px 0px 30px rgba(255, 77, 166, 1), 0px 0px 40px rgba(255, 77, 166, 1), 0px 0px 50px rgba(255, 77, 166, 1);
+        box-shadow: 0px 0px 30px rgba(138, 43, 226, 0.8), 0px 0px 40px rgba(138, 43, 226, 0.8), 0px 0px 50px rgba(138, 43, 226, 0.8);
     }
 }
