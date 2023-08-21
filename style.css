@@ -2,21 +2,22 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #000;
+    color: #fff;
 }
 
 .login-container {
     width: 300px;
     margin: 150px auto;
-    background-color: #fff;
-    border-radius: 8px;
+    background-color: #444;
+    border-radius: 10px;
     padding: 20px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 20px rgba(138, 43, 226, 0.8); /* Purple glow */
+    text-align: center;
 }
 
 .login-container h1 {
-    text-align: center;
-    color: #333;
+    color: #fff;
 }
 
 .input-container {
@@ -26,15 +27,17 @@ body {
 .input-container label {
     display: block;
     margin-bottom: 5px;
-    color: #555;
+    color: #fff;
 }
 
 .input-container input[type="text"],
 .input-container input[type="password"] {
     width: 100%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #555;
+    color: #fff;
 }
 
 .button-container {
@@ -43,14 +46,14 @@ body {
 
 .button-container button {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #9400d3;
     color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 .button-container button:hover {
-    background-color: #0056b3;
+    background-color: #6a0080;
 }
