@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const pdfContainer = document.querySelector(".pdf-container");
+    const pdfContainer = document.querySelector(".pdf-iframe-container");
     const loadPdf1Button = document.getElementById("loadPdf1");
     const loadPdf2Button = document.getElementById("loadPdf2");
 
