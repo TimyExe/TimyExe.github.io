@@ -19,8 +19,11 @@ body {
     padding: 20px;
     text-align: center;
     position: relative;
-    box-shadow: 0px 0px 20px rgba(138, 43, 226, 0.8); /* Purple glow */
     overflow: hidden; /* Hide overflow for glow effect */
+    animation: glow 1s ease-in-out infinite alternate;
+    z-index: 0; /* Place behind content */
+    pointer-events: none; /* Allow clicking through the glow */
+    box-shadow: 0px 0px 20px rgba(138, 43, 226, 0.8); /* Purple glow */
 }
 
 .login-container h1 {
@@ -71,25 +74,11 @@ body {
 }
 
 /* Animated glow effect */
-.login-container::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    background: radial-gradient(circle, rgba(138, 43, 226, 0.6) 20%, transparent 70%);
-    animation: glow 2s ease-in-out infinite;
-    z-index: -1; /* Behind the content */
-    pointer-events: none; /* Allow clicking through the glow */
-}
-
 @keyframes glow {
-    0%, 100% {
-        transform: scale(1);
-        opacity: 0.8;
+    from {
+        box-shadow: 0px 0px 20px rgba(138, 43, 226, 0.8);
     }
-    50% {
-        transform: scale(1.05);
-        opacity: 0.6;
+    to {
+        box-shadow: 0px 0px 30px rgba(255, 77, 166, 1), 0px 0px 40px rgba(255, 77, 166, 1), 0px 0px 50px rgba(255, 77, 166, 1);
     }
 }
