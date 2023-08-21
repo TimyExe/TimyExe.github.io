@@ -1,26 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login Page</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Login Page</title>
 </head>
 <body>
-   <div class="login-container">
-    <div class="login-card">
-      <h2>Login</h2>
-      <form action="process_login.php" method="post"> <!-- This line has been added -->
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        
+    <h1>Login Page</h1>
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
-        
+        <br>
         <button type="submit">Login</button>
-      </form> <!-- This line has been added -->
-      <p>Don't have an account? <a href="#">Sign up</a></p>
-    </div>
-  </div>
+    </form>
+
+    <script src="login.js"></script>
 </body>
 </html>
