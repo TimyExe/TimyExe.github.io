@@ -127,6 +127,25 @@ body {
 .sidebar:hover {
     width: 180px;
 }
+.sidebar-content .pdf-button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.sidebar-content .pdf-button img {
+    width: 24px; /* Adjust image size as needed */
+    height: 24px; /* Adjust image size as needed */
+    margin-right: 10px;
+}
+
+.sidebar-content .pdf-button:hover {
+    transform: scale(1.1);
+    filter: brightness(1.5);
+}
 
 .sidebar-inner {
     width: 100%;
