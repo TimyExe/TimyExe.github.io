@@ -4,18 +4,14 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
 
-    // Replace 'passwords.txt' with the path to your password file
-    fetch('passwords.txt')
-        .then(response => response.text())
-        .then(passwords => {
-            const passwordList = passwords.split('\n');
-            for (let i = 0; i < passwordList.length; i++) {
-                const [storedUsername, storedPassword] = passwordList[i].split(':');
-                if (username === storedUsername && password === storedPassword) {
-                    window.location.href = 'success.html'; // Redirect to success page
-                    return;
-                }
-            }
-            alert('Invalid username or password');
-        });
+    // Simulated authentication (replace this with actual authentication logic)
+    if (username === 'yourUsername' && password === 'yourPassword') {
+        // Set a session token cookie
+        document.cookie = 'sessionToken=yourSessionToken; path=/;';
+
+        // Redirect to the success page
+        window.location.href = 'success.html';
+    } else {
+        alert('Invalid username or password');
+    }
 });
