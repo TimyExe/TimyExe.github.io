@@ -1,6 +1,11 @@
 // Check if the user is logged in (simulated using a cookie)
 const isLoggedIn = document.cookie.includes('sessionToken');
 
+// Redirect to login page if not logged in
+if (!isLoggedIn) {
+    window.location.href = 'index.html'; // Redirect to the login page
+}
+
 // Get references to elements
 const overlay = document.getElementById('overlay');
 const logoutButton = document.getElementById('logoutButton');
