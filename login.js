@@ -5,19 +5,19 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
     const password = document.getElementById('password').value;
 
     // Simulated authentication (replace this with actual authentication logic)
-    if (username === 'user1' && password === 'password1') {
+    if (username === 'tim' && password === 'password1') {
         // Set a session token cookie
         document.cookie = 'sessionToken=user1Token; path=/;';
 
         // Redirect to the success page
         window.location.href = 'success.html';
-    } else if (username === 'user2' && password === 'password2') {
+    } else if (username === 'akki' && password === 'ilovemonkeys') {
         // Set a session token cookie
         document.cookie = 'sessionToken=user2Token; path=/;';
 
         // Redirect to the success page
         window.location.href = 'success.html';
-    } else if (username === 'user3' && password === 'password3') {
+    } else if (username === 'other' && password === 'password3') {
         // Set a session token cookie
         document.cookie = 'sessionToken=user3Token; path=/;';
 
