@@ -23,6 +23,7 @@ body {
 
 .login-container h1 {
     color: #fff;
+    margin-top: 0; /* Reset default margin */
 }
 
 .input-container {
@@ -72,6 +73,7 @@ body {
     border-radius: 10px;
     background: radial-gradient(circle, rgba(138, 43, 226, 0.6) 20%, transparent 70%);
     animation: glow 2s ease-in-out infinite;
+    z-index: -1; /* Behind the content */
 }
 
 @keyframes glow {
