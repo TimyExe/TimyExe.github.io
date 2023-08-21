@@ -137,8 +137,8 @@ body {
 }
 
 .sidebar-content .pdf-button img {
-    width: 24px; /* Adjust image size as needed */
-    height: 24px; /* Adjust image size as needed */
+    width: 100px; /* Adjust image size as needed */
+    height: 140px; /* Adjust image size as needed */
     margin-right: 10px;
 }
 
