@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const loadPdf2Button = document.getElementById("loadPdf2");
 
     loadPdf1Button.addEventListener("click", function() {
-        pdfContainer.innerHTML = `<iframe 9473128851463894736473964732985736437571246713941237539846374983126478129.pdf" class="pdf-iframe" frameborder="0"></iframe>`;
+        pdfContainer.innerHTML = `<iframe src="9473128851463894736473964732985736437571246713941237539846374983126478129.pdf" class="pdf-iframe" frameborder="0"></iframe>`;
     });
 
     loadPdf2Button.addEventListener("click", function() {
-        pdfContainer.innerHTML = `<iframe 8321658250125357385934724301243817438567105836409371847317563.pdf" class="pdf-iframe" frameborder="0"></iframe>`;
+        pdfContainer.innerHTML = `<iframe src="8321658250125357385934724301243817438567105836409371847317563.pdf" class="pdf-iframe" frameborder="0"></iframe>`;
     });
 });
