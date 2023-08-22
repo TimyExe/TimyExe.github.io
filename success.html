@@ -3,29 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">        
+    <link rel="stylesheet" href="styles.css">
+    <title>Success Page</title>
 </head>
 <body>
     <div class="pdf-container">
-        <div class="sidebar">
-            <div class="sidebar-inner">
-                <div class="sidebar-content">
-                    <h2>Stuff</h2>
-                    <button id="loadPdf1" class="pdf-button">
-                        <img src="icon1.jpg" alt="MAT">
-                    </button>
-                    <button id="loadPdf2" class="pdf-button">
-                        <img src="icon2.jpg" alt="FRANSK">
-                    </button>
-                </div>
+        <div class="top-bar">
+            <h1>Welcome to the Success Page!</h1>
+            <div class="back-button" id="backButton">&larr; Back</div>
+        </div>
+        <div class="cards-container">
+            <div class="card" id="card1">
+                <img src="image1.jpg" alt="Image 1">
+            </div>
+            <div class="card" id="card2">
+                <img src="image2.jpg" alt="Image 2">
             </div>
         </div>
-        <div class="content-container">
-            <div class="overlay">
-            </div>
-            <div class="pdf-iframe-container">
-                <!-- PDF iframe will be loaded here dynamically -->
-            </div>
+        <div class="pdf-iframe-container" id="pdfIframeContainer">
+            <!-- PDF iframe will be loaded here dynamically -->
         </div>
     </div>
     <script src="script.js"></script>
