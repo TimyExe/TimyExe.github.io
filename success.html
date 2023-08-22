@@ -4,32 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="success.css">
-    <title>Success Page</title>
+    <title>PDF Card Viewer</title>
 </head>
 <body>
-    <div class="pdf-container">
-        <div class="top-bar">
-            <h1>Welcome to the Success Page!</h1>
-            <div class="back-button" id="backButton">&larr; Back</div>
-        </div>
-        <div class="cards-container">
-            <div class="card" id="card1">
-                <img src="icon1.jpg" alt="Image 1">
-                <p>Card 1</p>
-            </div>
-            <div class="card" id="card2">
-                <img src="icon2.jpg" alt="Image 2">
-                <p>Card 2</p>
-            </div>
-            <div class="card" id="card3">
-                <img src="icon3.jpg" alt="Image 3">
-                <p>Card 3</p>
-            </div>
-        </div>
-        <div class="pdf-iframe-container" id="pdfIframeContainer">
-            <iframe id="pdfIframe" frameborder="0"></iframe>
-        </div>
+    <div class="top-bar">
+        <h1>Welcome to PDF Card Viewer</h1>
     </div>
-    <script src="script.js"></script>
+    <div class="cards-container">
+        <!-- Cards will be dynamically generated using JavaScript -->
+    </div>
+    <div class="pdf-container">
+        <iframe id="pdfIframe" frameborder="0"></iframe>
+        <div class="back-button" id="backButton">&larr; Back</div>
+    </div>
+    <script src="success.js"></script>
 </body>
 </html>
