@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const backButton = document.getElementById("backButton");
 
     const pdfPaths = [
-        "8321658250125357385934724301243817438567105836409371847317563.pdf",
         "9473128851463894736473964732985736437571246713941237539846374983126478129.pdf",
+        "8321658250125357385934724301243817438567105836409371847317563.pdf",
         "path/to/pdf3.pdf"
         // Add more PDF paths as needed
     ];
