@@ -107,6 +107,8 @@ body {
     z-index: 1;
 }
 
+/* ... existing styles ... */
+
 .sidebar {
     position: absolute;
     top: 0;
@@ -119,10 +121,27 @@ body {
     transition: width 0.3s;
     overflow: hidden;
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Set to column layout */
+    align-items: center; /* Center horizontally */
     cursor: pointer;
     z-index: 2;
 }
+
+/* Adjust button style to fit the image size */
+.sidebar-content button {
+    width: 100px; /* Set button width */
+    height: 140px; /* Set button height */
+    margin-bottom: 10px;
+    background-color: #fff;
+    color: #9400d3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* ... rest of the styles ... */
+
 
 .sidebar:hover {
     width: 180px;
@@ -170,17 +189,6 @@ body {
 .sidebar-content h2 {
     color: #fff;
     margin-bottom: 10px;
-}
-
-.sidebar-content button {
-    margin-bottom: 10px;
-    padding: 5px 10px;
-    background-color: #fff;
-    color: #9400d3;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
 }
 
 .sidebar-content button:hover {
