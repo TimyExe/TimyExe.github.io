@@ -31,23 +31,41 @@ body {
     cursor: pointer;
 }
 
+/* ... rest of the styles ... */
+
 .cards-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: calc(100% - 50px); /* Adjust for top bar height */
 }
 
 .card {
-    margin: 10px;
+    width: 100px;
+    height: 140px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     transition: transform 0.3s;
 }
 
 .card img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    margin-bottom: 10px;
 }
+
+.card p {
+    margin: 0;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}
+
+/* ... rest of the styles ... */
+
 
 .pdf-iframe-container {
     width: 100%;
