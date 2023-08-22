@@ -43,8 +43,8 @@ body {
 }
 
 .card {
-    width: 100px;
-    height: 140px;
+    width: 200px;
+    height: 280px;
     display: flex;
     flex-direction: column;
     justify-content: center;
