@@ -10,7 +10,8 @@ body {
     background-color: #9400d3;
     padding: 10px;
     text-align: center;
-    border-radius: 30%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
     box-shadow: 0px 0px 10px rgba(148, 0, 211, 0.5);
 }
 
