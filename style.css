@@ -8,6 +8,7 @@ body {
     background-size: cover; /* Make the background image cover the entire screen */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
     background-position: center; /* Center the background image */
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
 }
 .login-container {
