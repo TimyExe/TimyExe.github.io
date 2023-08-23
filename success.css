@@ -22,7 +22,7 @@ body {
     display: flex;
     justify-content: center; /* Center align cards horizontally */
     flex-wrap: wrap; /* Allow cards to wrap to the next line */
-    gap: 45px;
+    gap: 150px;
     padding: 20px;
 }
 
