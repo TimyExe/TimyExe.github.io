@@ -52,7 +52,9 @@ body {
 .button-container {
     text-align: center;
     margin-top: 15px; /* Add spacing below input boxes */
+    margin-bottom: 15px; /* Add spacing below the button */
 }
+
 /* ... existing styles ... */
 
 .button-container button {
