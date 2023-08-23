@@ -7,7 +7,6 @@ body {
     background-size: cover; /* Make the background image cover the entire screen */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
     background-position: center; /* Center the background image */
-    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
 }
 .login-container {
@@ -27,8 +26,9 @@ body {
 }
 
 .login-container h1 {
-    color: #fff;
+    color: rgba(138, 43, 226,);
     margin-top: 0; /* Reset default margin */
+    box-shadow: 0px 0px 20px rgba(138, 43, 226, 0.8); /* Purple glow */
 }
 
 .input-container {
