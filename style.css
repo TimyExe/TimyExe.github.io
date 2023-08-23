@@ -7,8 +7,6 @@ body {
     background-size: cover; /* Make the background image cover the entire screen */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
     background-position: center; /* Center the background image */
-    transform: rotate(-90deg); /* Rotate the background image 90 degrees to the left */
-    transform-origin: center center; /*
     color: #fff;
 }
 .login-container {
