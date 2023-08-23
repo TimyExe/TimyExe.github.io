@@ -53,20 +53,26 @@ body {
     text-align: center;
     margin-top: 15px; /* Add spacing below input boxes */
 }
+/* ... existing styles ... */
 
 .button-container button {
     padding: 10px 20px;
     background-color: #9400d3;
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px; /* Increase border-radius for rounded corners */
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s; /* Added transform transition */
 }
 
 .button-container button:hover {
     background-color: #6a0080;
+    transform: scale(1.05); /* Add a slight scale effect on hover */
+    box-shadow: 0px 0px 10px rgba(148, 0, 211, 0.5); /* Add a subtle shadow on hover */
 }
+
+/* ... existing styles ... */
+
 
 /* Animated glow effect */
 .login-container::before {
@@ -231,22 +237,3 @@ body {
 
 
 
-/* ... existing styles ... */
-
-.button-container button {
-    padding: 10px 20px;
-    background-color: #9400d3;
-    color: #fff;
-    border: none;
-    border-radius: 25px; /* Increase border-radius for rounded corners */
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.2s; /* Added transform transition */
-}
-
-.button-container button:hover {
-    background-color: #6a0080;
-    transform: scale(1.05); /* Add a slight scale effect on hover */
-    box-shadow: 0px 0px 10px rgba(148, 0, 211, 0.5); /* Add a subtle shadow on hover */
-}
-
-/* ... existing styles ... */
