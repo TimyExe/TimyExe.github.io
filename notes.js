@@ -1,5 +1,5 @@
 const textList = [
-    'text1.txt',
+    '\txts\cancer.txt',
     'text2.txt',
     'text3.txt'
 ];
