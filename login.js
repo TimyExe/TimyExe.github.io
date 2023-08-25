@@ -17,7 +17,7 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
 
         // Redirect to the success page
         window.location.href = 'success.html';
-    } else if (username === 'other' && password === 'password3') {
+    } else if (username === 'other' && password === 'iliketohavesexwithmonkeys') {
         // Set a session token cookie
         document.cookie = 'sessionToken=user3Token; path=/;';
 
