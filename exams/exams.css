@@ -9,7 +9,9 @@ body {
 .top-bar {
     background-color: #9400d3;
     padding: 10px;
-    text-align: center;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Push the back button to the left and the title to the right */
+    align-items: center; /* Center the title vertically */
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     box-shadow: 0px 0px 20px rgb(255, 255, 255);
