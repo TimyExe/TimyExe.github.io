@@ -20,6 +20,12 @@ body {
 
 #back-button {
     text-align: left;
+    align-items: left;
+}
+
+#bar-title {
+    text-align: center;
+    align-items: center;
 }
 
 .button-container {
