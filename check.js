@@ -5,3 +5,4 @@ document.addEventListener("DOMContentLoaded", function() {
     if (!isLoggedIn) {
         window.location.href = "index.html"; // Redirect to the login page
     }
+});
