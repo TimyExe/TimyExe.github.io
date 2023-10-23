@@ -22,7 +22,7 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
         document.cookie = 'sessionToken=user3Token; path=/;';
 
         // Redirect to the success page
-        window.location.href = 'success.html';
+        window.location.href = '/main/main.html';
     } else {
         alert('Invalid username or password');
     }
