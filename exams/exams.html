@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF List</title>
+    <link rel="stylesheet" href="exams.css"> <!-- Link to your "exams.css" file -->
+</head>
+<body>
+    <div class="top-bar">
+        <h1>PDF List</h1>
+    </div>
+    <div class="pdf-list">
+        <h2 id="text">PDF Files</h2>
+        <input type="text" id="search" placeholder="Search PDFs">
+        <ul id="pdf-files">
+            <!-- PDF file names will be dynamically generated using JavaScript -->
+        </ul>
+    </div>
+    <script>
+        // JavaScript to fetch a list of PDF files and create links
+        document.addEventListener("DOMContentLoaded", function() {
+            const pdfList = document.getElementById("pdf-files");
+            const searchInput = document.getElementById("search");
+
+            // List of local PDF file names
+            const pdfFileNames = [
+                "1.pdf",
+                "2.pdf",
+                "file3.pdf",
+                // Add more PDF file names as needed
+            ];
+
+            pdfFileNames.forEach(pdfFileName => {
+                const listItem = document.createElement("li");
+                const pdfLink = document.createElement("a");
+                pdfLink.href = pdfFileName; // Link directly to the local PDF file
+                pdfLink.textContent = pdfFileName;
+                listItem.appendChild(pdfLink);
+                pdfList.appendChild(listItem);
+            });
+
+            // Add event listener to the search input for filtering PDFs
+            searchInput.addEventListener("input", function() {
+                const searchQuery = searchInput.value.toLowerCase();
+                pdfFileNames.forEach((pdfFileName, index) => {
+                    const listItem = pdfList.children[index];
+                    if (pdfFileName.toLowerCase().includes(searchQuery)) {
+                        listItem.style.display = "block";
+                    } else {
+                        listItem.style.display = "none";
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
