@@ -377,7 +377,20 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
             <h1 class="page-title" id="finished-title" style="font-size: 149.606px; margin-bottom: 74.803px; line-height: 112.204px;">3:36</h1>
 
             <ul id="finish-list" class="fa-ul" style="zoom: 1.12243;">
+ <script>
+        window.addEventListener('load', function() {
+            // Generate a random number between 60 and 1
+             var randomNumber = Math.floor(Math.random() * 60) + 1;
 
+           
+             var formattedTime = randomNumber;
+        
+
+            // Update the content of the h1 element
+            var liElement = document.getElementById('finished-errors');
+            l1Element.textContent = formattedTime;
+        });
+    </script>
                 <li id="errors"><i class="fa-li fa fa-exclamation-triangle"></i>Fejl: <span id="finished-errors">34</span><a href="https://www.gangetabel.dk/?x1=1&amp;x2=9&amp;y1=1&amp;y2=9&amp;comp=true#error-list" data-transition="flip" id="view-errors" class="align-right ui-link" data-rel="popup" data-position-to="window" aria-haspopup="true" aria-owns="error-list" aria-expanded="false">Hvilke?</a></li>
 
                 <li id="stats"><i id="statZoom" class="fa-li fa fa-bar-chart-o"></i>Vis statistik
