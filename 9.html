@@ -355,6 +355,19 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 
             <h2 id="finished-table-name" style="font-size: 22.4409px; margin-top: 74.803px; line-height: 16.8307px;">9•9-tabellen</h2>
 
+	    <script>
+	        window.addEventListener('load', function() {
+	            // Generate a random number between 301 and 400
+	            var randomNumber = Math.floor(Math.random() * (400 - 301 + 1) + 301);
+	
+	            // Format the number as "3:36"
+	            var formattedTime = '3:' + (randomNumber - 300);
+	
+	            // Update the content of the h1 element
+	            var h1Element = document.getElementById('finished-title');
+	            h1Element.textContent = formattedTime;
+	        });
+	    </script>
             <h1 class="page-title" id="finished-title" style="font-size: 149.606px; margin-bottom: 74.803px; line-height: 112.204px;">3:36</h1>
 
             <ul id="finish-list" class="fa-ul" style="zoom: 1.12243;">
