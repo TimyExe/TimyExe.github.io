@@ -361,8 +361,10 @@ body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relati
 	            var randomNumber = Math.floor(Math.random() * (400 - 301 + 1) + 301);
 	
 	            // Format the number as "3:36"
+			let randomnumber = (randomNumber - 300);
+			console.log(randomnumber)
 	            var formattedTime = '3:' + (randomNumber - 300);
-	
+	            
 	            // Update the content of the h1 element
 	            var h1Element = document.getElementById('finished-title');
 	            h1Element.textContent = formattedTime;
