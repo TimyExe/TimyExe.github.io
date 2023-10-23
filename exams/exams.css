@@ -7,7 +7,7 @@ body {
 }
 
 .top-bar {
-    background-color: #9400d3;
+    background-color: ##1c1c1c;
     padding: 10px;
     display: flex; /* Use flexbox for layout */
     justify-content: space-between; /* Push the back button to the left and the title to the right */
