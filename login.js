@@ -3,7 +3,7 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
 
     let username = document.getElementById('username').value;
     let password = document.getElementById('password').value;
-
+    console.log(username.toLowerCase())
     // Simulated authentication (replace this with actual authentication logic)
     if (username.toLowerCase() === 'tim' && password === 'password1') {
         // Set a session token cookie
