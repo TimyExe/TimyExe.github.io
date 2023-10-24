@@ -3,17 +3,23 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: rgb(28, 26, 28);
-    color: #f7f4f8;
+    color: #bf00ff;
 }
 
 .top-bar {
-    background-color: #9400d3;
+    background-color: #000000;
     padding: 5px 20px; /* Adjust the padding to make it smaller */
     text-align: left; /* Align the text to the left */
     border-radius: 0; /* Remove the border-radius to make it a rectangle */
     text-shadow: none; /* Remove the text-shadow */
     margin-bottom: 20px;
     box-shadow: 0px 0px 15px rgba(148, 0, 211, 0.5);
+    background-size: contain;
+}
+
+#title{
+    color: #ffffff;
+    text-shadow: 0px 0px 15px #000000;
 }
 
 .button-container {
