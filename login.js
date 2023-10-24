@@ -10,13 +10,13 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
         document.cookie = 'sessionToken=user1Token; path=/;';
 
         // Redirect to the success page
-        window.location.href = 'success.html';
+        window.location.href = '/main/main.html';
     } else if (username === 'akki' && password === 'ilovemonkeys') {
         // Set a session token cookie
         document.cookie = 'sessionToken=user2Token; path=/;';
 
         // Redirect to the success page
-        window.location.href = 'success.html';
+        window.location.href = '/main/main.html';
     } else if (username === 'other' && password === 'iliketohavesexwithmonkeys') {
         // Set a session token cookie
         document.cookie = 'sessionToken=user3Token; path=/;';
