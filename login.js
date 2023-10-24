@@ -1,8 +1,8 @@
 document.getElementById('loginForm').addEventListener('submit', function (event) {
     event.preventDefault(); // Prevent the form from submitting
 
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
+    let username = document.getElementById('username').value;
+    let password = document.getElementById('password').value;
 
     // Simulated authentication (replace this with actual authentication logic)
     if (username.toLowerCase() === 'tim' && password === 'password1') {
