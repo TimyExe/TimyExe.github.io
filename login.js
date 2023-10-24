@@ -5,7 +5,7 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
     const password = document.getElementById('password').value;
     
     // Simulated authentication (replace this with actual authentication logic)
-    if (username.toLowerCase == 'tim' && password === 'password1') {
+    if (username.toLowerCase() == 'tim' && password === 'password1') {
         // Set a session token cookie
         document.cookie = 'sessionToken=user1Token; path=/;';
 
