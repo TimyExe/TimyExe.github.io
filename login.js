@@ -17,6 +17,12 @@ document.getElementById('loginForm').addEventListener('submit', function (event)
 
         // Redirect to the success page
         window.location.href = '/main/main.html';
+    }else if (username === 'villads' && password === 'villadsismonkey') {
+        // Set a session token cookie
+        document.cookie = 'sessionToken=user2Token; path=/;';
+
+        // Redirect to the success page
+        window.location.href = '/main/main.html';
     } else if (username === 'other' && password === 'iliketohavesexwithmonkeys') {
         // Set a session token cookie
         document.cookie = 'sessionToken=user3Token; path=/;';
