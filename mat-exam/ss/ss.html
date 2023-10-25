@@ -1,0 +1,1342 @@
+<!DOCTYPE html>
+<!-- saved from url=(0061)file:///C:/Users/timo0308/Downloads/9%E2%80%A29-tabellen.html -->
+<html id="translation" lang="da" class="ui-mobile" style="user-select: none;" data-lt-installed="true">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style class="adjust-screen-brightness" media="screen">
+        html::before {
+            content: " ";
+            z-index: 2147483647;
+            pointer-events: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    </style>
+    <style>
+        body {
+            transition: opacity ease-in 0.2s;
+        }
+
+        body[unresolved] {
+            opacity: 0;
+            display: block;
+            overflow: hidden;
+            position: relative;
+        }
+    </style>
+    <!--<base href="https://www.gangetabel.dk/?x1=1&amp;x2=9&amp;y1=1&amp;y2=9&amp;comp=true">--><!--<base href=".">-->
+    <base href=".">
+
+    <meta name="viewport"
+        content="height=device-height, width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta property="og:image" content="https://gangetabel.dk/img/tabel.png">
+    <meta name="description"
+        content="Byg din egen gangetabel og spil gangespillet som tabelspil direkte i browseren. Se statistik over din udvikling i gangetabellerne og tæsk dine venner.">
+
+    <title>9•9-tabellen</title>
+
+
+    <link href=".././css/jquery.mobile.flatui.min.css" rel="stylesheet" type="text/css">
+    <link href=".././css/style_1.2.css" rel="stylesheet" type="text/css">
+    <link href=".././css/font-awesome.min.css" rel="stylesheet">
+    <link href=".././css/jquery.nouislider.css" rel="stylesheet">
+    <link href=".././css/responsive.css" rel="stylesheet">
+    <script async="" src=".././css/analytics.js.download"></script>
+    <script src="../9•9-tabellen_files/f.txt" id="google_shimpl"></script>
+    <script async="" src="./9•9-tabellen_files/analytics.js(1).download"></script>
+    <script src="./9•9-tabellen_files/jquery-2.1.1.min.js.download" type="text/javascript"></script>
+    <script src=".././css/jquery.mobile-1.4.3.min.js.download" type="text/javascript"></script>
+    <script src=".././https://kit.fontawesome.com/3b6e7a094c.js" crossorigin="anonymous"></script>
+    <script src="../check.js"></script>
+    <style type="text/css" id="notify-bootstrap">
+        .notifyjs-bootstrap-base {
+            font-weight: bold;
+            padding: 8px 15px 8px 14px;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+            background-color: #fcf8e3;
+            border: 1px solid #fbeed5;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            white-space: nowrap;
+            padding-left: 25px;
+            background-repeat: no-repeat;
+            background-position: 3px 7px;
+        }
+
+        .notifyjs-bootstrap-error {
+            color: #B94A48;
+            background-color: #F2DEDE;
+            border-color: #EED3D7;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAtRJREFUeNqkVc1u00AQHq+dOD+0poIQfkIjalW0SEGqRMuRnHos3DjwAH0ArlyQeANOOSMeAA5VjyBxKBQhgSpVUKKQNGloFdw4cWw2jtfMOna6JOUArDTazXi/b3dm55socPqQhFka++aHBsI8GsopRJERNFlY88FCEk9Yiwf8RhgRyaHFQpPHCDmZG5oX2ui2yilkcTT1AcDsbYC1NMAyOi7zTX2Agx7A9luAl88BauiiQ/cJaZQfIpAlngDcvZZMrl8vFPK5+XktrWlx3/ehZ5r9+t6e+WVnp1pxnNIjgBe4/6dAysQc8dsmHwPcW9C0h3fW1hans1ltwJhy0GxK7XZbUlMp5Ww2eyan6+ft/f2FAqXGK4CvQk5HueFz7D6GOZtIrK+srupdx1GRBBqNBtzc2AiMr7nPplRdKhb1q6q6zjFhrklEFOUutoQ50xcX86ZlqaZpQrfbBdu2R6/G19zX6XSgh6RX5ubyHCM8nqSID6ICrGiZjGYYxojEsiw4PDwMSL5VKsC8Yf4VRYFzMzMaxwjlJSlCyAQ9l0CW44PBADzXhe7xMdi9HtTrdYjFYkDQL0cn4Xdq2/EAE+InCnvADTf2eah4Sx9vExQjkqXT6aAERICMewd/UAp/IeYANM2joxt+q5VI+ieq2i0Wg3l6DNzHwTERPgo1ko7XBXj3vdlsT2F+UuhIhYkp7u7CarkcrFOCtR3H5JiwbAIeImjT/YQKKBtGjRFCU5IUgFRe7fF4cCNVIPMYo3VKqxwjyNAXNepuopyqnld602qVsfRpEkkz+GFL1wPj6ySXBpJtWVa5xlhpcyhBNwpZHmtX8AGgfIExo0ZpzkWVTBGiXCSEaHh62/PoR0p/vHaczxXGnj4bSo+G78lELU80h1uogBwWLf5YlsPmgDEd4M236xjm+8nm4IuE/9u+/PH2JXZfbwz4zw1WbO+SQPpXfwG/BBgAhCNZiSb/pOQAAAAASUVORK5CYII=);
+        }
+
+        .notifyjs-bootstrap-success {
+            color: #468847;
+            background-color: #DFF0D8;
+            border-color: #D6E9C6;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAutJREFUeNq0lctPE0Ecx38zu/RFS1EryqtgJFA08YCiMZIAQQ4eRG8eDGdPJiYeTIwHTfwPiAcvXIwXLwoXPaDxkWgQ6islKlJLSQWLUraPLTv7Gme32zoF9KSTfLO7v53vZ3d/M7/fIth+IO6INt2jjoA7bjHCJoAlzCRw59YwHYjBnfMPqAKWQYKjGkfCJqAF0xwZjipQtA3MxeSG87VhOOYegVrUCy7UZM9S6TLIdAamySTclZdYhFhRHloGYg7mgZv1Zzztvgud7V1tbQ2twYA34LJmF4p5dXF1KTufnE+SxeJtuCZNsLDCQU0+RyKTF27Unw101l8e6hns3u0PBalORVVVkcaEKBJDgV3+cGM4tKKmI+ohlIGnygKX00rSBfszz/n2uXv81wd6+rt1orsZCHRdr1Imk2F2Kob3hutSxW8thsd8AXNaln9D7CTfA6O+0UgkMuwVvEFFUbbAcrkcTA8+AtOk8E6KiQiDmMFSDqZItAzEVQviRkdDdaFgPp8HSZKAEAL5Qh7Sq2lIJBJwv2scUqkUnKoZgNhcDKhKg5aH+1IkcouCAdFGAQsuWZYhOjwFHQ96oagWgRoUov1T9kRBEODAwxM2QtEUl+Wp+Ln9VRo6BcMw4ErHRYjH4/B26AlQoQQTRdHWwcd9AH57+UAXddvDD37DmrBBV34WfqiXPl61g+vr6xA9zsGeM9gOdsNXkgpEtTwVvwOklXLKm6+/p5ezwk4B+j6droBs2CsGa/gNs6RIxazl4Tc25mpTgw/apPR1LYlNRFAzgsOxkyXYLIM1V8NMwyAkJSctD1eGVKiq5wWjSPdjmeTkiKvVW4f2YPHWl3GAVq6ymcyCTgovM3FzyRiDe2TaKcEKsLpJvNHjZgPNqEtyi6mZIm4SRFyLMUsONSSdkPeFtY1n0mczoY3BHTLhwPRy9/lzcziCw9ACI+yql0VLzcGAZbYSM5CCSZg1/9oc/nn7+i8N9p/8An4JMADxhH+xHfuiKwAAAABJRU5ErkJggg==);
+        }
+
+        .notifyjs-bootstrap-info {
+            color: #3A87AD;
+            background-color: #D9EDF7;
+            border-color: #BCE8F1;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYFAhkSsdes/QAAA8dJREFUOMvVlGtMW2UYx//POaWHXg6lLaW0ypAtw1UCgbniNOLcVOLmAjHZolOYlxmTGXVZdAnRfXQm+7SoU4mXaOaiZsEpC9FkiQs6Z6bdCnNYruM6KNBw6YWewzl9z+sHImEWv+vz7XmT95f/+3/+7wP814v+efDOV3/SoX3lHAA+6ODeUFfMfjOWMADgdk+eEKz0pF7aQdMAcOKLLjrcVMVX3xdWN29/GhYP7SvnP0cWfS8caSkfHZsPE9Fgnt02JNutQ0QYHB2dDz9/pKX8QjjuO9xUxd/66HdxTeCHZ3rojQObGQBcuNjfplkD3b19Y/6MrimSaKgSMmpGU5WevmE/swa6Oy73tQHA0Rdr2Mmv/6A1n9w9suQ7097Z9lM4FlTgTDrzZTu4StXVfpiI48rVcUDM5cmEksrFnHxfpTtU/3BFQzCQF/2bYVoNbH7zmItbSoMj40JSzmMyX5qDvriA7QdrIIpA+3cdsMpu0nXI8cV0MtKXCPZev+gCEM1S2NHPvWfP/hL+7FSr3+0p5RBEyhEN5JCKYr8XnASMT0xBNyzQGQeI8fjsGD39RMPk7se2bd5ZtTyoFYXftF6y37gx7NeUtJJOTFlAHDZLDuILU3j3+H5oOrD3yWbIztugaAzgnBKJuBLpGfQrS8wO4FZgV+c1IxaLgWVU0tMLEETCos4xMzEIv9cJXQcyagIwigDGwJgOAtHAwAhisQUjy0ORGERiELgG4iakkzo4MYAxcM5hAMi1WWG1yYCJIcMUaBkVRLdGeSU2995TLWzcUAzONJ7J6FBVBYIggMzmFbvdBV44Corg8vjhzC+EJEl8U1kJtgYrhCzgc/vvTwXKSib1paRFVRVORDAJAsw5FuTaJEhWM2SHB3mOAlhkNxwuLzeJsGwqWzf5TFNdKgtY5qHp6ZFf67Y/sAVadCaVY5YACDDb3Oi4NIjLnWMw2QthCBIsVhsUTU9tvXsjeq9+X1d75/KEs4LNOfcdf/+HthMnvwxOD0wmHaXr7ZItn2wuH2SnBzbZAbPJwpPx+VQuzcm7dgRCB57a1uBzUDRL4bfnI0RE0eaXd9W89mpjqHZnUI5Hh2l2dkZZUhOqpi2qSmpOmZ64Tuu9qlz/SEXo6MEHa3wOip46F1n7633eekV8ds8Wxjn37Wl63VVa+ej5oeEZ/82ZBETJjpJ1Rbij2D3Z/1trXUvLsblCK0XfOx0SX2kMsn9dX+d+7Kf6h8o4AIykuffjT8L20LU+w4AZd5VvEPY+XpWqLV327HR7DzXuDnD8r+ovkBehJ8i+y8YAAAAASUVORK5CYII=);
+        }
+
+        .notifyjs-bootstrap-warn {
+            color: #C09853;
+            background-color: #FCF8E3;
+            border-color: #FBEED5;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAABJlBMVEXr6eb/2oD/wi7/xjr/0mP/ykf/tQD/vBj/3o7/uQ//vyL/twebhgD/4pzX1K3z8e349vK6tHCilCWbiQymn0jGworr6dXQza3HxcKkn1vWvV/5uRfk4dXZ1bD18+/52YebiAmyr5S9mhCzrWq5t6ufjRH54aLs0oS+qD751XqPhAybhwXsujG3sm+Zk0PTwG6Shg+PhhObhwOPgQL4zV2nlyrf27uLfgCPhRHu7OmLgAafkyiWkD3l49ibiAfTs0C+lgCniwD4sgDJxqOilzDWowWFfAH08uebig6qpFHBvH/aw26FfQTQzsvy8OyEfz20r3jAvaKbhgG9q0nc2LbZxXanoUu/u5WSggCtp1anpJKdmFz/zlX/1nGJiYmuq5Dx7+sAAADoPUZSAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfdBgUBGhh4aah5AAAAlklEQVQY02NgoBIIE8EUcwn1FkIXM1Tj5dDUQhPU502Mi7XXQxGz5uVIjGOJUUUW81HnYEyMi2HVcUOICQZzMMYmxrEyMylJwgUt5BljWRLjmJm4pI1hYp5SQLGYxDgmLnZOVxuooClIDKgXKMbN5ggV1ACLJcaBxNgcoiGCBiZwdWxOETBDrTyEFey0jYJ4eHjMGWgEAIpRFRCUt08qAAAAAElFTkSuQmCC);
+        }
+    </style>
+    <style type="text/css" id="core-notify">
+        .notifyjs-corner {
+            position: fixed;
+            margin: 5px;
+            z-index: 1050;
+        }
+
+        .notifyjs-corner .notifyjs-wrapper,
+        .notifyjs-corner .notifyjs-container {
+            position: relative;
+            display: block;
+            height: inherit;
+            width: inherit;
+            margin: 3px;
+        }
+
+        .notifyjs-wrapper {
+            z-index: 1;
+            position: absolute;
+            display: inline-block;
+            height: 0;
+            width: 0;
+        }
+
+        .notifyjs-container {
+            display: none;
+            z-index: 1;
+            position: absolute;
+        }
+
+        .notifyjs-hidable {
+            cursor: pointer;
+        }
+
+        [data-notify-text],
+        [data-notify-html] {
+            position: relative;
+        }
+
+        .notifyjs-arrow {
+            position: absolute;
+            z-index: 2;
+            width: 0;
+            height: 0;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="chrome-extension://bbpokcagpggnekcmamgdieebhpkjmljm/css/fonts.css">
+    <link id="appwriter-cloud-style" type="text/css" rel="stylesheet"
+        href="chrome-extension://lokadhdaghfjbmailhhenifjejpokche/css/content.css">
+    <meta http-equiv="origin-trial"
+        content="As0hBNJ8h++fNYlkq8cTye2qDLyom8NddByiVytXGGD0YVE+2CEuTCpqXMDxdhOMILKoaiaYifwEvCRlJ/9GcQ8AAAB8eyJvcmlnaW4iOiJodHRwczovL2RvdWJsZWNsaWNrLm5ldDo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
+    <meta http-equiv="origin-trial"
+        content="AgRYsXo24ypxC89CJanC+JgEmraCCBebKl8ZmG7Tj5oJNx0cmH0NtNRZs3NB5ubhpbX/bIt7l2zJOSyO64NGmwMAAACCeyJvcmlnaW4iOiJodHRwczovL2dvb2dsZXN5bmRpY2F0aW9uLmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViVmlld1hSZXF1ZXN0ZWRXaXRoRGVwcmVjYXRpb24iLCJleHBpcnkiOjE3MTk1MzI3OTksImlzU3ViZG9tYWluIjp0cnVlfQ==">
+    <style type="text/css" id="notify-bootstrap">
+        .notifyjs-bootstrap-base {
+            font-weight: bold;
+            padding: 8px 15px 8px 14px;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+            background-color: #fcf8e3;
+            border: 1px solid #fbeed5;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            white-space: nowrap;
+            padding-left: 25px;
+            background-repeat: no-repeat;
+            background-position: 3px 7px;
+        }
+
+        .notifyjs-bootstrap-error {
+            color: #B94A48;
+            background-color: #F2DEDE;
+            border-color: #EED3D7;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAtRJREFUeNqkVc1u00AQHq+dOD+0poIQfkIjalW0SEGqRMuRnHos3DjwAH0ArlyQeANOOSMeAA5VjyBxKBQhgSpVUKKQNGloFdw4cWw2jtfMOna6JOUArDTazXi/b3dm55socPqQhFka++aHBsI8GsopRJERNFlY88FCEk9Yiwf8RhgRyaHFQpPHCDmZG5oX2ui2yilkcTT1AcDsbYC1NMAyOi7zTX2Agx7A9luAl88BauiiQ/cJaZQfIpAlngDcvZZMrl8vFPK5+XktrWlx3/ehZ5r9+t6e+WVnp1pxnNIjgBe4/6dAysQc8dsmHwPcW9C0h3fW1hans1ltwJhy0GxK7XZbUlMp5Ww2eyan6+ft/f2FAqXGK4CvQk5HueFz7D6GOZtIrK+srupdx1GRBBqNBtzc2AiMr7nPplRdKhb1q6q6zjFhrklEFOUutoQ50xcX86ZlqaZpQrfbBdu2R6/G19zX6XSgh6RX5ubyHCM8nqSID6ICrGiZjGYYxojEsiw4PDwMSL5VKsC8Yf4VRYFzMzMaxwjlJSlCyAQ9l0CW44PBADzXhe7xMdi9HtTrdYjFYkDQL0cn4Xdq2/EAE+InCnvADTf2eah4Sx9vExQjkqXT6aAERICMewd/UAp/IeYANM2joxt+q5VI+ieq2i0Wg3l6DNzHwTERPgo1ko7XBXj3vdlsT2F+UuhIhYkp7u7CarkcrFOCtR3H5JiwbAIeImjT/YQKKBtGjRFCU5IUgFRe7fF4cCNVIPMYo3VKqxwjyNAXNepuopyqnld602qVsfRpEkkz+GFL1wPj6ySXBpJtWVa5xlhpcyhBNwpZHmtX8AGgfIExo0ZpzkWVTBGiXCSEaHh62/PoR0p/vHaczxXGnj4bSo+G78lELU80h1uogBwWLf5YlsPmgDEd4M236xjm+8nm4IuE/9u+/PH2JXZfbwz4zw1WbO+SQPpXfwG/BBgAhCNZiSb/pOQAAAAASUVORK5CYII=);
+        }
+
+        .notifyjs-bootstrap-success {
+            color: #468847;
+            background-color: #DFF0D8;
+            border-color: #D6E9C6;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAutJREFUeNq0lctPE0Ecx38zu/RFS1EryqtgJFA08YCiMZIAQQ4eRG8eDGdPJiYeTIwHTfwPiAcvXIwXLwoXPaDxkWgQ6islKlJLSQWLUraPLTv7Gme32zoF9KSTfLO7v53vZ3d/M7/fIth+IO6INt2jjoA7bjHCJoAlzCRw59YwHYjBnfMPqAKWQYKjGkfCJqAF0xwZjipQtA3MxeSG87VhOOYegVrUCy7UZM9S6TLIdAamySTclZdYhFhRHloGYg7mgZv1Zzztvgud7V1tbQ2twYA34LJmF4p5dXF1KTufnE+SxeJtuCZNsLDCQU0+RyKTF27Unw101l8e6hns3u0PBalORVVVkcaEKBJDgV3+cGM4tKKmI+ohlIGnygKX00rSBfszz/n2uXv81wd6+rt1orsZCHRdr1Imk2F2Kob3hutSxW8thsd8AXNaln9D7CTfA6O+0UgkMuwVvEFFUbbAcrkcTA8+AtOk8E6KiQiDmMFSDqZItAzEVQviRkdDdaFgPp8HSZKAEAL5Qh7Sq2lIJBJwv2scUqkUnKoZgNhcDKhKg5aH+1IkcouCAdFGAQsuWZYhOjwFHQ96oagWgRoUov1T9kRBEODAwxM2QtEUl+Wp+Ln9VRo6BcMw4ErHRYjH4/B26AlQoQQTRdHWwcd9AH57+UAXddvDD37DmrBBV34WfqiXPl61g+vr6xA9zsGeM9gOdsNXkgpEtTwVvwOklXLKm6+/p5ezwk4B+j6droBs2CsGa/gNs6RIxazl4Tc25mpTgw/apPR1LYlNRFAzgsOxkyXYLIM1V8NMwyAkJSctD1eGVKiq5wWjSPdjmeTkiKvVW4f2YPHWl3GAVq6ymcyCTgovM3FzyRiDe2TaKcEKsLpJvNHjZgPNqEtyi6mZIm4SRFyLMUsONSSdkPeFtY1n0mczoY3BHTLhwPRy9/lzcziCw9ACI+yql0VLzcGAZbYSM5CCSZg1/9oc/nn7+i8N9p/8An4JMADxhH+xHfuiKwAAAABJRU5ErkJggg==);
+        }
+
+        .notifyjs-bootstrap-info {
+            color: #3A87AD;
+            background-color: #D9EDF7;
+            border-color: #BCE8F1;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYFAhkSsdes/QAAA8dJREFUOMvVlGtMW2UYx//POaWHXg6lLaW0ypAtw1UCgbniNOLcVOLmAjHZolOYlxmTGXVZdAnRfXQm+7SoU4mXaOaiZsEpC9FkiQs6Z6bdCnNYruM6KNBw6YWewzl9z+sHImEWv+vz7XmT95f/+3/+7wP814v+efDOV3/SoX3lHAA+6ODeUFfMfjOWMADgdk+eEKz0pF7aQdMAcOKLLjrcVMVX3xdWN29/GhYP7SvnP0cWfS8caSkfHZsPE9Fgnt02JNutQ0QYHB2dDz9/pKX8QjjuO9xUxd/66HdxTeCHZ3rojQObGQBcuNjfplkD3b19Y/6MrimSaKgSMmpGU5WevmE/swa6Oy73tQHA0Rdr2Mmv/6A1n9w9suQ7097Z9lM4FlTgTDrzZTu4StXVfpiI48rVcUDM5cmEksrFnHxfpTtU/3BFQzCQF/2bYVoNbH7zmItbSoMj40JSzmMyX5qDvriA7QdrIIpA+3cdsMpu0nXI8cV0MtKXCPZev+gCEM1S2NHPvWfP/hL+7FSr3+0p5RBEyhEN5JCKYr8XnASMT0xBNyzQGQeI8fjsGD39RMPk7se2bd5ZtTyoFYXftF6y37gx7NeUtJJOTFlAHDZLDuILU3j3+H5oOrD3yWbIztugaAzgnBKJuBLpGfQrS8wO4FZgV+c1IxaLgWVU0tMLEETCos4xMzEIv9cJXQcyagIwigDGwJgOAtHAwAhisQUjy0ORGERiELgG4iakkzo4MYAxcM5hAMi1WWG1yYCJIcMUaBkVRLdGeSU2995TLWzcUAzONJ7J6FBVBYIggMzmFbvdBV44Corg8vjhzC+EJEl8U1kJtgYrhCzgc/vvTwXKSib1paRFVRVORDAJAsw5FuTaJEhWM2SHB3mOAlhkNxwuLzeJsGwqWzf5TFNdKgtY5qHp6ZFf67Y/sAVadCaVY5YACDDb3Oi4NIjLnWMw2QthCBIsVhsUTU9tvXsjeq9+X1d75/KEs4LNOfcdf/+HthMnvwxOD0wmHaXr7ZItn2wuH2SnBzbZAbPJwpPx+VQuzcm7dgRCB57a1uBzUDRL4bfnI0RE0eaXd9W89mpjqHZnUI5Hh2l2dkZZUhOqpi2qSmpOmZ64Tuu9qlz/SEXo6MEHa3wOip46F1n7633eekV8ds8Wxjn37Wl63VVa+ej5oeEZ/82ZBETJjpJ1Rbij2D3Z/1trXUvLsblCK0XfOx0SX2kMsn9dX+d+7Kf6h8o4AIykuffjT8L20LU+w4AZd5VvEPY+XpWqLV327HR7DzXuDnD8r+ovkBehJ8i+y8YAAAAASUVORK5CYII=);
+        }
+
+        .notifyjs-bootstrap-warn {
+            color: #C09853;
+            background-color: #FCF8E3;
+            border-color: #FBEED5;
+            background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAMAAAC6V+0/AAABJlBMVEXr6eb/2oD/wi7/xjr/0mP/ykf/tQD/vBj/3o7/uQ//vyL/twebhgD/4pzX1K3z8e349vK6tHCilCWbiQymn0jGworr6dXQza3HxcKkn1vWvV/5uRfk4dXZ1bD18+/52YebiAmyr5S9mhCzrWq5t6ufjRH54aLs0oS+qD751XqPhAybhwXsujG3sm+Zk0PTwG6Shg+PhhObhwOPgQL4zV2nlyrf27uLfgCPhRHu7OmLgAafkyiWkD3l49ibiAfTs0C+lgCniwD4sgDJxqOilzDWowWFfAH08uebig6qpFHBvH/aw26FfQTQzsvy8OyEfz20r3jAvaKbhgG9q0nc2LbZxXanoUu/u5WSggCtp1anpJKdmFz/zlX/1nGJiYmuq5Dx7+sAAADoPUZSAAAAAXRSTlMAQObYZgAAAAFiS0dEAIgFHUgAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfdBgUBGhh4aah5AAAAlklEQVQY02NgoBIIE8EUcwn1FkIXM1Tj5dDUQhPU502Mi7XXQxGz5uVIjGOJUUUW81HnYEyMi2HVcUOICQZzMMYmxrEyMylJwgUt5BljWRLjmJm4pI1hYp5SQLGYxDgmLnZOVxuooClIDKgXKMbN5ggV1ACLJcaBxNgcoiGCBiZwdWxOETBDrTyEFey0jYJ4eHjMGWgEAIpRFRCUt08qAAAAAElFTkSuQmCC);
+        }
+    </style>
+    <style type="text/css" id="core-notify">
+        .notifyjs-corner {
+            position: fixed;
+            margin: 5px;
+            z-index: 1050;
+        }
+
+        .notifyjs-corner .notifyjs-wrapper,
+        .notifyjs-corner .notifyjs-container {
+            position: relative;
+            display: block;
+            height: inherit;
+            width: inherit;
+            margin: 3px;
+        }
+
+        .notifyjs-wrapper {
+            z-index: 1;
+            position: absolute;
+            display: inline-block;
+            height: 0;
+            width: 0;
+        }
+
+        .notifyjs-container {
+            display: none;
+            z-index: 1;
+            position: absolute;
+        }
+
+        .notifyjs-hidable {
+            cursor: pointer;
+        }
+
+        [data-notify-text],
+        [data-notify-html] {
+            position: relative;
+        }
+
+        .notifyjs-arrow {
+            position: absolute;
+            z-index: 2;
+            width: 0;
+            height: 0;
+        }
+    </style>
+</head>
+
+
+<body class="ui-mobile-viewport ui-overlay-a">
+    <!-- Navigation -->
+    <header class="navbar" id="navbar">
+
+        <div class="nav container12">
+
+            <ul>
+
+                <li class="home"><a onclick="openUrl(&#39;https://www.gangetabel.dk&#39;)"
+                        href="https://www.gangetabel.dk/">Start</a></li>
+
+
+                <li class="divider"> <span class="nav-divider"> </span> </li>
+
+                <li class="tutorials"><a class="active"
+                        href="https://www.gangetabel.dk/?x1=1&amp;x2=9&amp;y1=1&amp;y2=9&amp;comp=true#page-make">Opret
+                        tabel</a></li>
+
+                <li class="divider"> <span class="nav-divider"> </span> </li>
+
+
+                <li class="about"><a onclick="openUrl(&#39;https://www.gangetabel.dk/gangetabeller/&#39;)"
+                        href="https://www.gangetabel.dk/gangetabeller/">Gangetabeller</a></li>
+
+                <li class="divider"> <span class="nav-divider"> </span> </li>
+
+
+
+                <li class="about"><a onclick="openUrl(&#39;https://www.gangetabel.dk/matematik-hjaelp/&#39;)"
+                        href="https://www.gangetabel.dk/matematik-hjaelp/">Hjælp til at lære mere?</a></li>
+
+                <li class="divider"> <span class="nav-divider"> </span> </li>
+
+                <li class="about"><a onclick="openUrl(&#39;https://www.gangetabel.dk/gangetabeller-opgaver/&#39;)"
+                        href="https://www.gangetabel.dk/gangetabeller-opgaver/">Opgaver</a></li>
+
+                <li class="divider"> <span class="nav-divider"> </span> </li>
+
+                <li class="about"><a onclick="openUrl(&#39;https://www.legoglektie.dk&#39;)"
+                        href="https://www.legoglektie.dk/">legoglektie</a></li>
+
+                <li class="divider"> <span class="nav-divider"> </span> </li>
+
+                <li class="about"><a onclick="openUrl(&#39;https://www.gangetabel.dk/om&#39;)"
+                        href="https://www.gangetabel.dk/om">Om gangetabel.dk</a></li>
+
+            </ul>
+
+        </div>
+
+    </header>
+
+    <div align="center">
+        <script async="" src="./9•9-tabellen_files/f(1).txt"></script>
+        <!-- fast størrelse -->
+
+        <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </div>
+
+    <!-- Forsiden -->
+
+
+    <!-- "Opret tabel"-siden -->
+    <div data-role="page" id="page-make" data-url="page-make">
+
+        <div data-role="header"> <a href="https://www.gangetabel.dk/?x1=1&amp;x2=9&amp;y1=1&amp;y2=9&amp;comp=true#"
+                class="ui-btn-left page-back rounded-icon"><i class="fa fa-chevron-left fa-fw"></i></a>
+
+            <h1 class="header-title">Lav tabel</h1>
+        </div>
+
+        <div data-role="content">
+
+            <div id="listContainer">
+
+                <div id="table-make"></div>
+
+            </div>
+
+        </div>
+
+        <div data-role="footer" data-position="fixed" id="make-form-container" class="footer1" data-id="foo1">
+
+            <div id="make-form" class="footer-container">
+
+                <div id="colorpicker">
+
+                    <div class="slidercontainer" style="display:table-row;"> <span class="sliderlabel"
+                            style="display:table-cell">X:</span> <span id="valX1" class="slidervalue slide-left"
+                            style="display:table-cell;">1</span>
+
+                        <div class="sliderwrapper" style="display:table-cell;">
+
+                            <div class="sliders noUi-target noUi-ltr noUi-horizontal noUi-background" id="slideX">
+                                <div class="noUi-base">
+                                    <div class="noUi-origin noUi-connect" style="left: 0%;">
+                                        <div class="noUi-handle noUi-handle-lower"></div>
+                                    </div>
+                                    <div class="noUi-origin noUi-background" style="left: 42.1053%;">
+                                        <div class="noUi-handle noUi-handle-upper"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div> <span id="valX2" class="slidervalue slide-right" style="display:table-cell;">9</span>
+                    </div>
+
+                    <div class="slidercontainer" style="display:table-row;"> <span class="sliderlabel"
+                            style="display:table-cell">Y:</span> <span class="slidervalue slide-left" id="valY1"
+                            style="display:table-cell;">1</span>
+
+                        <div class="sliderwrapper" style="display:table-cell;">
+
+                            <div class="sliders noUi-target noUi-ltr noUi-horizontal noUi-background" id="slideY">
+                                <div class="noUi-base">
+                                    <div class="noUi-origin noUi-connect" style="left: 0%;">
+                                        <div class="noUi-handle noUi-handle-lower"></div>
+                                    </div>
+                                    <div class="noUi-origin noUi-background" style="left: 42.1053%;">
+                                        <div class="noUi-handle noUi-handle-upper"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div> <span class="slidervalue slide-right" id="valY2" style="display:table-cell;">9</span>
+                    </div>
+
+                </div>
+
+                <div id="make-buttons">
+
+                    <div class="row">
+
+                        <div class="cell"> <a
+                                href="https://www.gangetabel.dk/?x1=1&amp;x2=9&amp;y1=1&amp;y2=9&amp;comp=true#make-dialog"
+                                id="cogNewTable" aria-expanded="false" data-rel="dialog" data-transition="pop"
+                                class="ui-btn second-button times-btn">Mere</a> </div>
+
+                        <div class="cell"> <a
+                                href="https://www.gangetabel.dk/?x1=1&amp;x2=9&amp;y1=1&amp;y2=9&amp;comp=true#"
+                                id="saveNewTable" class="ui-btn times-btn">Gem</a> </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Pop up hvis tabel allerede eksisterer -->
+        <div data-role="popup" id="exists-already" data-overlay-theme="a" class="ui-content" data-theme="a">
+
+            <p class="list-title">Tabellen eksisterer allerede!</p>
+
+            <div id="exists-info"></div>
+
+        </div>
+
+    </div>
+
+    <!-- Spillesiden -->
+    <div data-role="page" id="page-game" data-url="page-game" tabindex="0" class="ui-page ui-page-theme-a"
+        style="min-height: 625px;">
+
+        <div data-role="header" role="banner" class="ui-header ui-bar-inherit">
+
+            <div id="header-content" class="footer-container">
+
+                <a href="/main/main.html" class="ui-btn-left ui-btn page-back rounded-icon"><i
+                        class="fa fa-chevron-left fa-fw"></i><i class="button-text">Tilbage</i></a>
+
+                <h1 id="game-info" class="home ui-title green" color="green">Tid: <span id="time-display">0:36</span>
+                    Fejl: <span id="error-display">1819</span></h1>
+
+                <div id="control-r"> <a href="https://www.gangetabel.dk/?x1=1&amp;x2=9&amp;y1=1&amp;y2=9&amp;comp=true#"
+                        id="keyboard-shift" class="ui-btn control-right rounded-icon"><i id="keyboard-icon"
+                            class="fa fa-fw fa-mobile"></i></a> <a
+                        href="https://www.gangetabel.dk/?x1=1&amp;x2=9&amp;y1=1&amp;y2=9&amp;comp=true#" id="reset-game"
+                        class="ui-btn control-right rounded-icon"><i class="fa fa-refresh fa-fw"></i></a> </div>
+
+            </div>
+
+        </div>
+
+        <div data-role="content" id="content-container" class="ui-content" role="main">
+
+            <div id="table" style="margin-top: 50px; margin-bottom: 10px; font-size: 24.75px;"></div>
+
+        </div>
+
+        <div data-role="content" id="keyboard-container" class="ui-content" role="main"></div>
+
+    </div>
+
+    <!-- Endt spil-siden -->
+    <div data-role="page" id="page-finished" data-url="page-finished" tabindex="0"
+        class="ui-page ui-page-theme-a ui-page-footer-fixed ui-page-active"
+        style="padding-bottom: 56px; min-height: 593px;">
+
+        <div data-role="header" role="banner" class="ui-header ui-bar-inherit"> <a
+                href="/main/main.html"
+                class="ui-btn-left page-back rounded-icon ui-link ui-btn ui-shadow ui-corner-all" data-role="button"
+                role="button"><i class="fa fa-chevron-left fa-fw"></i></a>
+
+            <h1 id="page-title" class="ui-title" role="heading" aria-level="1">9•9-tabellen</h1>
+        </div>
+
+        <div data-role="content" id="content-container" class="ui-content" role="main">
+
+            <div id="highscore-image"
+                style="width: 100%; background-repeat: no-repeat; background-image: url(&quot;graphics/highscore.png&quot;); background-position: center center; display: none; height: 95px; background-size: 95px 95px; margin-bottom: -11.25px;">
+            </div>
+
+            <h2 id="finished-table-name"
+                style="font-size: 22.4409px; margin-top: 74.803px; margin-bottom: 15px; line-height: 16.8307px;">
+                9•9-tabellen</h2>
+
+            <script>
+                window.addEventListener('load', function () {
+                    // Generate a random number between 301 and 400
+                    var randomNumber = Math.floor(Math.random() * 60) + 1;
+
+                    // Check if the random number is less than 10
+                    if (randomNumber < 10) {
+                        // Format the number as "3:01" with a leading '0'
+                        var formattedTime = '4:0' + randomNumber;
+                    } else {
+                        // Format the number as "3:36"
+                        var formattedTime = '3:' + randomNumber;
+                    }
+
+                    // Update the content of the h1 element
+                    var h1Element = document.getElementById('finished-title');
+                    h1Element.textContent = formattedTime;
+                });
+            </script>
+            <h1 class="page-title" id="finished-title"
+                style="font-size: 149.606px; margin-bottom: 59.803px; line-height: 112.204px;">3:36</h1>
+
+            <ul id="finish-list" class="fa-ul" style="zoom: 1.12243;">
+                <script>
+                    window.addEventListener('load', function () {
+                        // Generate a random number between 60 and 1
+                        var randomNumber = Math.floor(Math.random() * 60) + 1;
+
+
+                        var formattedTime = randomNumber;
+
+
+                        // Update the content of the h1 element
+                        var liElement = document.getElementById('finished-errors');
+                        liElement.textContent = formattedTime;
+                    });
+                </script>
+                <li id="errors"><i class="fa-li fa fa-exclamation-triangle"></i>Fejl: <span
+                        id="finished-errors">34</span><a
+                        href="https://www.gangetabel.dk/?x1=1&amp;x2=9&amp;y1=1&amp;y2=9&amp;comp=true#error-list"
+                        data-transition="flip" id="view-errors" class="align-right ui-link" data-rel="popup"
+                        data-position-to="window" aria-haspopup="true" aria-owns="error-list"
+                        aria-expanded="false">Hvilke?</a></li>
+
+                <li id="stats"><i id="statZoom" class="fa-li fa fa-bar-chart-o"></i>Vis statistik
+
+                    <div class="align-right"><i class="fa fa-chevron-right"></i></div>
+
+                </li>
+
+            </ul>
+
+            <div style="display: none;" id="error-list-placeholder"><!-- placeholder for error-list --></div>
+
+            <div data-role="footer" data-position="fixed" role="contentinfo"
+                class="ui-footer ui-footer-fixed slideup ui-bar-inherit">
+
+                <div>
+
+                    <div class="footer-container">
+
+                        <div id="finish-footer">
+
+                            <div class="row">
+
+                                <div class="cell">
+
+                                    <button class="finish-button page-back menu green ui-btn ui-shadow ui-corner-all"
+                                        color="green">Hjem</button>
+
+                                </div>
+
+                                <div class="cell">
+
+                                    <button id="play-again" color="green"
+                                        class="finish-button reset-game green ui-btn ui-shadow ui-corner-all">Spil
+                                        igen</button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="ui-screen-hidden ui-popup-screen ui-overlay-a" id="error-list-screen"></div>
+        <div class="ui-popup-container ui-popup-hidden ui-popup-truncate" id="error-list-popup">
+            <div data-role="popup" id="error-list" data-history="false" data-overlay-theme="a"
+                class="ui-content ui-popup ui-body-a ui-overlay-shadow ui-corner-all" data-theme="a">
+
+                <p class="list-title">My errors</p>
+
+                <div id="error-dom">
+                    <div id="error-list-container">
+                        <p><span class="equation-error">2•9</span> (136 times)</p>
+                        <p><span class="equation-error">4•8</span> (132 times)</p>
+                        <p><span class="equation-error">2•8</span> (100 times)</p>
+                        <p><span class="equation-error">6•8</span> (97 times)</p>
+                        <p><span class="equation-error">3•6</span> (96 times)</p>
+                        <p><span class="equation-error">3•5</span> (95 times)</p>
+                        <p><span class="equation-error">2•5</span> (86 times)</p>
+                        <p><span class="equation-error">2•7</span> (84 times)</p>
+                        <p><span class="equation-error">3•4</span> (77 times)</p>
+                        <p><span class="equation-error">5•7</span> (69 times)</p>
+                        <p><span class="equation-error">7•8</span> (68 times)</p>
+                        <p><span class="equation-error">4•9</span> (60 times)</p>
+                        <p><span class="equation-error">4•4</span> (54 times)</p>
+                        <p><span class="equation-error">5•6</span> (51 times)</p>
+                        <p><span class="equation-error">7•9</span> (50 times)</p>
+                        <p><span class="equation-error">4•5</span> (46 times)</p>
+                        <p><span class="equation-error">2•6</span> (45 times)</p>
+                        <p><span class="equation-error">3•7</span> (40 times)</p>
+                        <p><span class="equation-error">4•6</span> (40 times)</p>
+                        <p><span class="equation-error">1•9</span> (35 times)</p>
+                        <p><span class="equation-error">5•8</span> (35 times)</p>
+                        <p><span class="equation-error">5•9</span> (34 times)</p>
+                        <p><span class="equation-error">1•7</span> (29 times)</p>
+                        <p><span class="equation-error">6•9</span> (27 times)</p>
+                        <p><span class="equation-error">1•6</span> (24 times)</p>
+                        <p><span class="equation-error">3•8</span> (24 times)</p>
+                        <p><span class="equation-error">3•9</span> (24 times)</p>
+                        <p><span class="equation-error">6•7</span> (23 times)</p>
+                        <p><span class="equation-error">1•5</span> (19 times)</p>
+                        <p><span class="equation-error">2•4</span> (18 times)</p>
+                        <p><span class="equation-error">4•7</span> (17 times)</p>
+                        <p><span class="equation-error">1•8</span> (16 times)</p>
+                        <p><span class="equation-error">2•3</span> (13 times)</p>
+                        <p><span class="equation-error">1•4</span> (10 times)</p>
+                        <p><span class="equation-error">8•9</span> (9 times)</p>
+                        <p><span class="equation-error">1•2</span> (8 times)</p>
+                        <p><span class="equation-error">9•9</span> (8 times)</p>
+                        <p><span class="equation-error">1•3</span> (6 times)</p>
+                        <p><span class="equation-error">6•6</span> (6 times)</p>
+                        <p><span class="equation-error">8•8</span> (5 times)</p>
+                        <p><span class="equation-error">2•2</span> (1 time)</p>
+                        <p><span class="equation-error">3•3</span> (1 time)</p>
+                        <p><span class="equation-error">7•7</span> (1 time)</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Om gangetabel.dk -->
+    <div data-role="page" id="page-om-gangetabel" data-url="page-om-gangetabel">
+
+        <div style="margin-left:1em">
+
+            <h1 id="logo"><strong>Om gangetabel.dk</strong></h1>
+
+            <section class="uk-grid">
+
+                <div class="uk-width-medium-1-1 uk-margin-large-bottom">
+
+                    <div class="uk-panel">
+
+                        <div class="tm-container-medium">
+
+                            <div class="uk-grid">
+
+                                <div class="uk-width-medium-1-3"><img src="./9•9-tabellen_files/tabel.png" width="365"
+                                        height="250"></div>
+
+                                <div class="uk-width-medium-2-3">
+
+                                    <h2 class="uk-heading-large frontpagelist">Gangespillet</h2>
+
+                                    <p class="uk-text-muted frontpagelist">Gangetabel.dk er det klassiske gangespil,
+                                        hvor man får stillet gangetabellens regnestykker i tilfældig rækkefølge. Først
+                                        når man har svaret rigtigt på det givne gangestykke, får man stillet det næste.
+                                        Under spillet er der tids- og fejl-tagning, og efter endt spil, er det også
+                                        muligt se hvilke fejl man har begået.</p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="uk-width-medium-1-1 uk-margin-large-bottom">
+
+                    <div class="uk-panel">
+
+                        <div class="tm-container-medium">
+
+                            <div class="uk-grid">
+
+                                <div class="uk-width-medium-1-3"><img src="./9•9-tabellen_files/lav_selv.png"
+                                        width="365" height="250"></div>
+
+                                <div class="uk-width-medium-2-3">
+
+                                    <h2 class="uk-heading-large frontpagelist">Lav din egen gangetabel</h2>
+
+                                    <p class="uk-text-muted frontpagelist">Man kan nemt lave sin egen gangetabel blandt
+                                        multiplikatorerne 1-20. Der er desuden mulighed for ikke at medtage
+                                        komplementære regnestykker – f.eks. er 3 • 2 komplementært til 2 • 3.
+
+                                        <br> <a class="uk-button uk-margin-top"
+                                            href="https://www.gangetabel.dk/?x1=1&amp;x2=9&amp;y1=1&amp;y2=9&amp;comp=true#page-make"
+                                            alt="start gangetabel" id="start"><i class="uk-icon-wrench"></i> Lav en
+                                            gangetabel</a>
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="uk-width-medium-1-1 uk-margin-large-bottom">
+
+                    <div class="uk-panel">
+
+                        <div class="tm-container-medium">
+
+                            <div class="uk-grid">
+
+                                <div class="uk-width-medium-1-3"><img src="./9•9-tabellen_files/statistik.png"
+                                        width="365" height="244"></div>
+
+                                <div class="uk-width-medium-2-3">
+
+                                    <h2 class="uk-heading-large frontpagelist">Gem dine resultater</h2>
+
+                                    <p class="uk-text-muted frontpagelist"> Dine resultater gemmes automatisk i en graf,
+                                        så du kan følge din egen udvikling. Gangetabeller man selv har lavet, vil også
+                                        gemmes så man altid kan spille dem igen.
+
+                                        <br>
+                                    </p>
+
+                                    <div class="uk-margin-top">
+
+                                        <p></p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="uk-width-medium-1-1">
+
+                        <div class="uk-panel"> </div>
+
+                    </div>
+
+                </div> <a href="https://www.gangetabel.dk/?x1=1&amp;x2=9&amp;y1=1&amp;y2=9&amp;comp=true#contact-dialog"
+                    id="contact">Kontakt <i class="fa fa-envelope-o  fa-fw"></i> </a>
+            </section>
+
+        </div>
+
+        <div data-role="content" id="content-container">
+
+            <div id="table"> </div>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- matematik-hjaelp-->
+    <div data-role="page" id="matematik-hjaelp" data-url="matematik-hjaelp">
+
+        <div style="margin-left:1em">
+
+            <h1 id="logo"><strong>Hjælp til at lære mere?</strong></h1>
+
+            <section class="uk-grid">
+
+                <div class="uk-width-medium-1-1 uk-margin-large-bottom">
+
+                    <div class="uk-panel">
+
+                        <div class="tm-container-medium">
+
+                            <div class="uk-grid">
+
+                                <div class="uk-width-medium-1-3"><img src="./9•9-tabellen_files/gangetabel_blyant.png"
+                                        width="365" height="250"></div>
+
+                                <div class="uk-width-medium-2-3">
+
+                                    <h2 class="uk-heading-large frontpagelist">Lær gangetabeller gennem blyantspil</h2>
+
+                                    <p class="uk-text-muted frontpagelist"><a
+                                            href="https://www.legoglektie.dk/2020/06/15/gangetabeller-med-blyanter">Her
+                                            finder mange gratis materialer til lære gangetabellerne gennem leg</a>. Her
+                                        er det et fysiske spil der er udvalgt fra hjemmesiden. Alle spillene og til
+                                        matematik og gangetabeller er henvendt børn i børnehave, førskole eller 0.
+                                        klasse til 1. klasse.</p>
+
+                                    <div><a href="https://www.legoglektie.dk/tag/gangetabel">Her finder du en samlet
+                                            oversigt over læringsmaterialer til matematik og gangetabeller.</a></div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="uk-width-medium-1-1 uk-margin-large-bottom">
+
+                    <div class="uk-panel">
+
+                        <div class="tm-container-medium">
+
+                            <div class="uk-grid">
+
+                                <div class="uk-width-medium-1-3"><img
+                                        src="./9•9-tabellen_files/noeglering_gangetabeller.png" width="365"
+                                        height="250"></div>
+
+                                <div class="uk-width-medium-2-3">
+
+                                    <h2 class="uk-heading-large frontpagelist">Print gratis læringscikler med
+                                        gangetabeller</h2>
+
+                                    <p class="uk-text-muted frontpagelist"><a
+                                            href="https://www.legoglektie.dk/2019/03/27/noeglering-med-gangetabeller-cirkler/">Hent
+                                            og print gratis læringscirkler til gangetabeller.</a></p>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+                <div class="uk-width-medium-1-1 uk-margin-large-bottom">
+
+                    <div class="uk-panel">
+
+                        <div class="tm-container-medium">
+
+                            <div class="uk-grid">
+
+                                <div class="uk-width-medium-1-3"><img
+                                        src="./9•9-tabellen_files/laeringscirkler_gangetabeller.png" width="365"
+                                        height="250"></div>
+
+                                <div class="uk-width-medium-2-3">
+
+                                    <h2 class="uk-heading-large frontpagelist">Køb færdigtrykte læringscikler med
+                                        gangetabeller</h2>
+
+                                    <p class="uk-text-muted frontpagelist"><a
+                                            href="https://butik.legoglektie.dk/vare/laeringscirkler-0-10-klasse-faerdigtrykte-kopier">Køb
+                                            færdigtrykte læringscirkler med gangetabeller</a></p>
+
+
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <a href="https://www.gangetabel.dk/?x1=1&amp;x2=9&amp;y1=1&amp;y2=9&amp;comp=true#contact-dialog"
+                    id="contact">Kontakt <i class="fa fa-envelope-o  fa-fw"></i> </a>
+
+            </section>
+        </div>
+    </div>
+
+    <!-- Slet tabel pop up -->
+    <div data-role="page" data-dialog="true" id="delete-dialog" data-close-btn="none" data-url="delete-dialog">
+
+        <div data-role="header">
+
+            <h2>Slet tabel?</h2> <a href="https://www.gangetabel.dk/?x1=1&amp;x2=9&amp;y1=1&amp;y2=9&amp;comp=true#"
+                class="ui-btn-right rounded-icon page-back"><i class="fa fa-times fa-fw"></i></a>
+        </div>
+
+        <div data-role="content" class="dialog-content">
+
+            <p>Slet <strong id="deleteTableName">[name]</strong>?</p>
+
+            <div class="dialog-buttons">
+
+                <div class="row">
+
+                    <div class="cell">
+
+                        <button class="finish-button page-back second-button times-btn">Annuller</button>
+
+                    </div>
+
+                    <div class="cell">
+
+                        <button id="delete-table" class="finish-button times-btn">Slet</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Lav tabel siden -->
+    <div data-role="page" data-dialog="true" id="make-dialog" data-close-btn="none" data-url="make-dialog">
+
+        <div data-role="header">
+
+            <h2>Tabel indstillinger</h2> <a
+                href="https://www.gangetabel.dk/?x1=1&amp;x2=9&amp;y1=1&amp;y2=9&amp;comp=true#"
+                class="ui-btn-right rounded-icon close-dialog" dialog="make-dialog"><i
+                    class="fa fa-times fa-fw"></i></a>
+        </div>
+
+        <div data-role="content" class="dialog-content">
+
+            <form id="make-settings-form">
+
+                <div class="ui-field-contain">
+
+                    <label for="select-color">Tabel farve:</label>
+
+                    <select name="select-color" id="select-color"> </select>
+
+                </div>
+
+                <div class="ui-field-contain">
+
+                    <label for="complementary">Skjul komplementære:</label>
+
+                    <div id="complementary" class="noUi-target noUi-ltr noUi-horizontal noUi-background">
+                        <div class="noUi-base">
+                            <div class="noUi-origin" style="left: 0%;">
+                                <div class="noUi-handle noUi-handle-lower"></div>
+                            </div>
+                        </div>
+                    </div> <a href="https://www.gangetabel.dk/?x1=1&amp;x2=9&amp;y1=1&amp;y2=9&amp;comp=true#compop"
+                        data-rel="popup" class="ui-btn rounded-icon" id="comp-info"><i class="fa fa-info fa-fw"></i></a>
+                </div>
+
+                <div data-role="popup" id="compop">
+
+                    <p>Du kan vælge at skjule de komplementære regnestykker i din tabel (eg. 2•3 er komplementær til
+                        3•2).</p>
+
+                </div>
+
+            </form>
+
+            <div id="dialog-buttons">
+
+                <div>
+
+                    <div>
+
+                        <button class="close-dialog second-button" dialog="make-dialog">Luk</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Færdig spil siden -->
+    <div data-role="page" id="page-finished-message" data-url="page-finished-message" tabindex="0"
+        class="ui-page ui-page-theme-a" style="min-height: 625px;">
+
+        <div data-role="content" class="no-padding ui-content" role="main">
+
+            <div id="message-container" class="background green" color="green">
+
+                <div id="message">
+
+                    <p id="message-text">Færdig!</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Stratistik-siden -->
+    <div data-role="page" id="page-stats" data-url="page-stats">
+
+        <div data-role="header" role="banner" class="ui-header ui-bar-inherit"> <a
+                href="https://www.gangetabel.dk/?x1=1&amp;x2=9&amp;y1=1&amp;y2=9&amp;comp=true#"
+                class="ui-btn-left page-back rounded-icon"><i class="fa fa-chevron-left fa-fw"></i></a>
+
+            <h1>Statistics</h1>
+        </div>
+
+        <div data-role="content">
+
+            <h1 class="page-title" id="stats-title">Statistik</h1>
+
+            <div>
+
+                <div id="canvascontainer" style="margin-left:5px;"> </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Ikke spillet nok for statistik pop up -->
+    <div data-role="page" data-dialog="true" data-dom-cache="true" id="stat-dialog" data-close-btn="none"
+        data-url="stat-dialog">
+
+        <div data-role="header">
+
+            <h2>Hovsa...</h2> <a href="https://www.gangetabel.dk/?x1=1&amp;x2=9&amp;y1=1&amp;y2=9&amp;comp=true#"
+                class="ui-btn-right rounded-icon page-back"><i class="fa fa-times fa-fw"></i></a>
+        </div>
+
+        <div data-role="content" class="dialog-content">
+
+            <p>Spil tabellen mindst 2 gange for at vise statistik.</p>
+
+            <div class="dialog-buttons">
+
+                <div class="row">
+
+                    <div class="cell">
+
+                        <button class="finish-button times-btn page-back second-button">Tilbage</button>
+
+                    </div>
+
+                    <div class="cell">
+
+                        <button id="stat-play" class="finish-button times-btn">Spil!</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Kontakt pop-up -->
+    <div data-role="page" data-dialog="true" id="contact-dialog" data-close-btn="none" data-url="contact-dialog">
+
+        <div data-role="header">
+
+            <h2>Kontakt</h2> <a href="https://www.gangetabel.dk/?x1=1&amp;x2=9&amp;y1=1&amp;y2=9&amp;comp=true#"
+                class="ui-btn-right rounded-icon page-back"><i class="fa fa-times fa-fw"></i></a>
+        </div>
+
+        <div data-role="content" class="dialog-content">
+
+
+            <p></p>
+
+            <div id="contact-button">
+
+                <button onclick="window.location.href = &#39;mailto:&#39;">Send mail</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div data-role="page" data-dialog="true" id="version-dialog" data-close-btn="none" data-url="version-dialog">
+
+        <div data-role="header">
+
+            <h2>Nyt - gangetabel.dk</h2> <a
+                href="https://www.gangetabel.dk/?x1=1&amp;x2=9&amp;y1=1&amp;y2=9&amp;comp=true#"
+                class="ui-btn-right rounded-icon page-back"><i class="fa fa-times fa-fw"></i></a>
+        </div>
+
+        <div data-role="content" class="dialog-content">
+
+            <p>Gangetabel.dk understøtter nu også touch-enheder; tablets og telefoner. Touch-enheder får vist et
+                skærm-tastatur. Man kan også skifte manuelt under gange-spillet, ved klik på tastatur-ikonet øver til
+                højre.</p>
+
+
+            <div id="contact-button">
+
+                <button onclick="window.location.href = &#39;mailto:mail@gangetabel.dk.com&#39;">Send mail</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o)
+                , m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-118337612-5', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <!-- Library -->
+    <script src="./9•9-tabellen_files/jquery.actual.min.js.download"></script>
+    <script src="./9•9-tabellen_files/jquery.nouislider.min.js.download"></script>
+    <script src="./9•9-tabellen_files/chart.js.download"></script>
+    <script src="./9•9-tabellen_files/notify.min.js.download"></script>
+    <script src="./9•9-tabellen_files/url-parameters.js.download"></script>
+
+    <!-- Håndterer local storage -->
+    <script src="./9•9-tabellen_files/parse-1.js.download"></script>
+
+    <!-- Håndterer navigation mellem sider -->
+    <script src="./9•9-tabellen_files/navigation-1.js.download"></script>
+
+    <!-- Generer tabeller etc. -->
+    <script src="./9•9-tabellen_files/engine-1.js.download"></script>
+
+    <!-- Skærmtastatur til mobiler -->
+    <script src="./9•9-tabellen_files/keyboard-1.js.download"></script>
+
+    <!-- Genererer forsiden -->
+    <script src="./9•9-tabellen_files/frontpage-1.js.download"></script>
+
+    <!-- Genererer "Opret tabel"-siden -->
+    <script src="./9•9-tabellen_files/make-1.js.download"></script>
+
+    <!-- Genererer statistik-siden -->
+    <script src="./9•9-tabellen_files/stat-1.js.download"></script>
+
+    <!-- Genererer spillet -->
+    <script src="./9•9-tabellen_files/game-1.js.download"></script>
+
+
+
+
+
+    <div class="ui-loader ui-corner-all ui-body-a ui-loader-default"><span class="ui-icon-loading"></span>
+        <h1>loading</h1>
+    </div><iframe style="display: none;"
+        src="./9•9-tabellen_files/saved_resource(2).html"></iframe><hv-copy-modal></hv-copy-modal>
+    <div id="appwriter-loading" style="display: none;"></div>
+    <div id="appwriter-predictions-wrapper" style="" dir="ltr">
+        <div id="appwriter-predictions-arrow-top"></div>
+        <div id="appwriter-predictions-border">
+            <div id="appwriter-predictions-pin">
+                <button class="appwriter-predictions-button" i18n-title="mute_reading_predictions"
+                    id="appwriter-predictions-mute-btn" title="Mute / Unmute">
+                    <i class="appwriter-predictions-btn-icon appwriter-predictions-speaker"></i>
+                </button>
+                <button class="" id="appwriter-predictions-pin-btn">
+                    <i class="appwriter-predictions-btn-icon" id="appwriter-predictions-pin-btn-icon"></i>
+                </button>
+            </div>
+            <div id="appwriter-predictions">
+                <div id="appwriter-prediction-numbers">
+                    <div class="prediction-number" title="">1</div>
+                    <div class="prediction-number" title="">2</div>
+                    <div class="prediction-number" title="">3</div>
+                    <div class="prediction-number" title="">4</div>
+                    <div class="prediction-number" title="">5</div>
+                    <div class="prediction-number" title="">6</div>
+                    <div class="prediction-number" title="">7</div>
+                    <div class="prediction-number" title="">8</div>
+                    <div class="prediction-number" title="">9</div>
+                    <div class="prediction-number" title="">0</div>
+                </div>
+                <div id="appwriter-speech-model-predictions">
+                    <div class="prediction" title="" data-type="speechModel" data-index="0" data-prediction=""> <span
+                            class="prediction-text" translate="no"><strong> </strong> </span>
+                        <div class="prediction-play"></div>
+                    </div>
+                    <div class="prediction" title="" data-type="speechModel" data-index="1" data-prediction=""> <span
+                            class="prediction-text" translate="no"><strong> </strong> </span>
+                        <div class="prediction-play"></div>
+                    </div>
+                    <div class="prediction" title="" data-type="speechModel" data-index="2" data-prediction=""> <span
+                            class="prediction-text" translate="no"><strong> </strong> </span>
+                        <div class="prediction-play"></div>
+                    </div>
+                    <div class="prediction" title="" data-type="speechModel" data-index="3" data-prediction=""> <span
+                            class="prediction-text" translate="no"><strong> </strong> </span>
+                        <div class="prediction-play"></div>
+                    </div>
+                    <div class="prediction" title="" data-type="speechModel" data-index="4" data-prediction=""> <span
+                            class="prediction-text" translate="no"><strong> </strong> </span>
+                        <div class="prediction-play"></div>
+                    </div>
+                    <div class="prediction" title="" data-type="speechModel" data-index="5" data-prediction=""> <span
+                            class="prediction-text" translate="no"><strong> </strong> </span>
+                        <div class="prediction-play"></div>
+                    </div>
+                    <div class="prediction" title="" data-type="speechModel" data-index="6" data-prediction=""> <span
+                            class="prediction-text" translate="no"><strong> </strong> </span>
+                        <div class="prediction-play"></div>
+                    </div>
+                    <div class="prediction" title="" data-type="speechModel" data-index="7" data-prediction=""> <span
+                            class="prediction-text" translate="no"><strong> </strong> </span>
+                        <div class="prediction-play"></div>
+                    </div>
+                    <div class="prediction" title="" data-type="speechModel" data-index="8" data-prediction=""> <span
+                            class="prediction-text" translate="no"><strong> </strong> </span>
+                        <div class="prediction-play"></div>
+                    </div>
+                    <div class="prediction" title="" data-type="speechModel" data-index="9" data-prediction=""> <span
+                            class="prediction-text" translate="no"><strong> </strong> </span>
+                        <div class="prediction-play"></div>
+                    </div>
+                </div>
+                <div id="appwriter-glossary-predictions">
+                    <div class="prediction user-word" title="" data-type="glossary" data-index="0" data-prediction="">
+                        <span class="prediction-text" translate="no"><strong> </strong> </span>
+                        <div class="prediction-play"></div>
+                    </div>
+                    <div class="prediction user-word" title="" data-type="glossary" data-index="1" data-prediction="">
+                        <span class="prediction-text" translate="no"><strong> </strong> </span>
+                        <div class="prediction-play"></div>
+                    </div>
+                    <div class="prediction user-word" title="" data-type="glossary" data-index="2" data-prediction="">
+                        <span class="prediction-text" translate="no"><strong> </strong> </span>
+                        <div class="prediction-play"></div>
+                    </div>
+                    <div class="prediction user-word" title="" data-type="glossary" data-index="3" data-prediction="">
+                        <span class="prediction-text" translate="no"><strong> </strong> </span>
+                        <div class="prediction-play"></div>
+                    </div>
+                    <div class="prediction user-word" title="" data-type="glossary" data-index="4" data-prediction="">
+                        <span class="prediction-text" translate="no"><strong> </strong> </span>
+                        <div class="prediction-play"></div>
+                    </div>
+                    <div class="prediction user-word" title="" data-type="glossary" data-index="5" data-prediction="">
+                        <span class="prediction-text" translate="no"><strong> </strong> </span>
+                        <div class="prediction-play"></div>
+                    </div>
+                    <div class="prediction user-word" title="" data-type="glossary" data-index="6" data-prediction="">
+                        <span class="prediction-text" translate="no"><strong> </strong> </span>
+                        <div class="prediction-play"></div>
+                    </div>
+                    <div class="prediction user-word" title="" data-type="glossary" data-index="7" data-prediction="">
+                        <span class="prediction-text" translate="no"><strong> </strong> </span>
+                        <div class="prediction-play"></div>
+                    </div>
+                    <div class="prediction user-word" title="" data-type="glossary" data-index="8" data-prediction="">
+                        <span class="prediction-text" translate="no"><strong> </strong> </span>
+                        <div class="prediction-play"></div>
+                    </div>
+                    <div class="prediction user-word" title="" data-type="glossary" data-index="9" data-prediction="">
+                        <span class="prediction-text" translate="no"><strong> </strong> </span>
+                        <div class="prediction-play"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="appwriter-predictions-pagers">
+                <div id="appwriter-speech-model-predictions-pager">
+                    <div id="appwriter-speech-model-predictions-pager-left-arrow">
+                        <div></div>
+                    </div>
+                    <div id="appwriter-speech-model-predictions-pager-text">-</div>
+                    <div id="appwriter-speech-model-predictions-pager-right-arrow">
+                        <div></div>
+                    </div>
+                </div>
+                <div id="appwriter-glossary-predictions-pager">
+                    <div id="appwriter-glossary-predictions-pager-left-arrow">
+                        <div></div>
+                    </div>
+                    <div id="appwriter-glossary-predictions-pager-text">-</div>
+                    <div id="appwriter-glossary-predictions-pager-right-arrow">
+                        <div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="appwriter-predictions-arrow-bottom"></div>
+        <div id="appwriter-predictions-flyout-btn">
+            <div id="appwriter-predictions-flyout-arrow"></div>
+        </div>
+    </div>
+    <div id="appwriter-menu" class="appwriter-menu appwriter-disabled" style="">
+        <div class="appwriter-menu-disable-overlay appwriter-dom" i18n-title="menuLoginToUse"
+            title="Log in to use AppWriter Cloud." dir="ltr"></div>
+        <div class="appwriter-menu-button appwriter-dom appwriter-menu-button--disabled" data-appwriter-action="play"
+            i18n-data-tooltip="playTooltip" data-tooltip="Play/stop" title="F8 / Alt+Shift+P" dir="ltr">
+            <div class="appwriter-icon__play"></div>
+        </div>
+        <div class="appwriter-popup appwriter-dom appwriter-popup--disabled" data-appwriter-action="profile-menu"
+            i18n-data-tooltip="readingSettingsTooltip" data-tooltip="Reading settings" dir="ltr">
+            <div class="appwriter-popup__content">
+                <div class="appwriter-icon__listen"></div>
+            </div>
+
+        </div>
+        <div class="appwriter-popup appwriter-popup--writing-settings appwriter-dom appwriter-popup--disabled"
+            data-appwriter-action="profile-menu" i18n-data-tooltip="writingSettingsTooltip"
+            data-tooltip="Writing settings" dir="ltr">
+            <div class="appwriter-popup__content">
+                <div class="appwriter-icon__prediction"></div>
+            </div>
+
+        </div>
+        <div class="appwriter-menu-button appwriter-dom appwriter-hidden-element" data-appwriter-action="speechToText"
+            i18n-data-tooltip="popup_menu_speech_text" data-tooltip="Speech to text" dir="ltr">
+            <div class="appwriter-icon__stt"></div>
+        </div>
+        <div class="appwriter-menu-button appwriter-dom appwriter-hidden-element"
+            data-appwriter-action="dictionaryLookup" i18n-data-tooltip="dictionaryLookupTooltip"
+            data-tooltip="Lookup selected word" dir="ltr">
+            <div class="appwriter-icon__page"></div>
+        </div>
+        <div class="appwriter-popup appwriter-popup--profile-select appwriter-dom"
+            i18n-data-tooltip="languageSelectionTooltip" data-tooltip="Language selector" dir="ltr">
+            <div class="appwriter-popup__content">
+                <div class="appwriter-popup__content-icon appwriter-popup__content-icon--hidden"></div>
+            </div>
+
+        </div>
+    </div>
+    <div class="ui-loader ui-corner-all ui-body-a ui-loader-default"><span class="ui-icon-loading"></span>
+        <h1>loading</h1>
+    </div><ins class="adsbygoogle adsbygoogle-noablate" data-adsbygoogle-status="done"
+        style="display: none !important;">
+        <div id="aswift_1_host"
+            style="border: none; height: 0px; width: 0px; margin: 0px; padding: 0px; position: relative; visibility: visible; background-color: transparent; display: inline-block;">
+        </div>
+    </ins>
+</body><iframe id="google_esf" name="google_esf" src="./9•9-tabellen_files/zrt_lookup.html"
+    style="display: none;"></iframe>
+
+</html>

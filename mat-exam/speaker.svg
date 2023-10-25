@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="13px" viewBox="0 0 13 13" version="1.1"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Speaker icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Speaker-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="speaker-filled-audio-tool-copy" transform="translate(2.000000, 1.000000)" fill="#484848" fill-rule="nonzero">
+            <path d="M7.58236659,10.9324976 C7.4838876,10.978003 7.37836212,11 7.2735241,11 C7.10750193,11 6.94302655,10.9442518 6.81017444,10.8366173 L2.84042279,7.6226973 L0.726132165,7.6226973 C0.325169717,7.62303313 0,7.30516737 0,6.91341839 L0,4.0868815 C0,3.69496461 0.325169717,3.37726677 0.726132165,3.37726677 L2.84059465,3.37726677 L6.81034631,0.163346727 C7.0272407,-0.0122938353 7.3280055,-0.0497391941 7.58253845,0.0678022911 C7.83707141,0.184504194 8,0.434699641 8,0.709746717 L7.99982813,10.2905532 C7.99982813,10.5657682 7.83707141,10.8157957 7.58236659,10.9324976 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>

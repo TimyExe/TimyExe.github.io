@@ -19,34 +19,45 @@ body {
 
 #title{
     color: #ffffff;
-    text-shadow: 0px 0px 15px #000000;
+    text-shadow: 0px 0px 15px #ffffff;
+    font-family: 'Special Elite', cursive;
 }
 
 .button-container {
-    display: flex;
-    justify-content: space-around;
+    text-align: center; /* Center the buttons horizontally */
     padding: 20px;
+    white-space: nowrap; /* Prevent wrapping the entire button container */
 }
 
 .card-button {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 300px; /* Set the width to match the card width */
-    height: 420px; /* Set the height to match the card height */
-    padding: 20px;
+    display: inline-block;
+    width: 300; /* Set the desired width for each button */
+    height: 420; /* Set the desired height for each button */
+    margin: 10px;
+    padding: 10px 20px;
     background-color: #9400d3;
     color: #fff;
     text-align: center;
+    line-height: 420px;
     text-decoration: none;
-    font-size: 40px;
     border-radius: 10px;
+    font-size: 40px;
+    font-weight: bold;
     box-shadow: 0px 0px 5px rgba(148, 0, 211, 0.5);
     transition: background-color 0.3s;
 }
+
+.card-button:hover {
+    background-color: #6a0080;
+    box-shadow: 0px 0px 25px rgba(148, 0, 211, 0.692);
+}
+
+
+
 #card1 {
     color: #fff; /* Change text color */
+    width: 300; /* Set the desired width for each button */
+    height: 420; 
     text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.719);
     background: rgba(59, 59, 59, 0.692) url('books.png') center/cover no-repeat; 
 }
@@ -56,6 +67,7 @@ body {
     background: rgba(59, 59, 59, 0.692) url('exams.png') center/cover no-repeat; 
     text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.719);
     color: #fff; /* Change text color */
+    text-align: center;
 }
 
 

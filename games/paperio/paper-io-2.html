@@ -318,47 +318,18 @@
 <body class="relative text-black bg-gray-50">
     <!-- tracking code manager body scripts --><!-- end tracking code manager body scripts -->
     <div class="relative z-10">
-        <header class="z-10 bg-gray-800 h-[50px]" x-data="{points: 0, showPopover: false}">
+      
 
     <div class="relative flex items-center h-full px-4 gap-x-12 sm:px-6 lg:px-8">
-        <div class="flex items-center">
-            <a class="" href="/"><img class="h-10" src="/logo.svg" alt="Ruslan Rocks Unblocked Games"></a>
-        </div>
-
+        
         <nav>
             <ul class="flex items-center space-x-6 text-sm font-bold text-center fortnite-font md:text-base">
                 <li>
-                    <a class="block tracking-wide text-white hover:text-indigo-800" href="/unblocked">Unblocked
-                        Games
-                    </a>
-                </li>
-                <li class="hidden md:block">
-                    <a class="tracking-wide text-white hover:text-indigo-800" href="/posts">
-                        Blog</a>
-                </li>
             </ul>
         </nav>
-        <button
-            @points.window="(e)=>{console.log(e); points = Number(localStorage.getItem('points')) + Number(e.detail); localStorage.setItem('points', points)}"
-            x-init="localStorage.getItem('points') ? points = localStorage.getItem('points') : points = 0;"
-            @click="points++; localStorage.setItem('points', points)"
-            class="hidden px-4 py-1 text-white bg-black select-none hover:bg-gray-700 rounded-xl fortnite-font md:block">Points:
-            <span class="text-white" x-text="points"></span>
-        </button>
-
-        <div @click="showPopover=!showPopover"
-            class="relative hidden px-2 py-1 text-sm bg-blue-900 rounded-full cursor-pointer md:block text-blue-50">
-            how to earn points?
-            <div @click.away="showPopover = false" x-cloak
-                class="rounded-lg text-lg z-10 ring-1 ring-gray-100 right-0 text-white shadow absolute top-[105%] w-[250px] p-10 bg-gray-800"
-                x-show="showPopover">
-                Simply visit pages on this website, find the hidden points and click on them.
-                <img class="w-full mt-2 rounded-lg" src="/secret.png" alt="Secret button">
-            </div>
-        </div>
+        
 
     </div>
-</header>
         <div class="relative flex">
 
   
@@ -371,7 +342,8 @@
 
 
   <main class="w-full">
-    <div class="flex mx-auto mt-0 space-x-2 2xl:max-w-none max-w-7xl">
+    <div class="flex mx-auto mt-0 space-x-2 2xl:max-w-none max-w-7xl" style="margin-top: 50px; align-items: center;
+    ">
 
       <div x-intersect="loaded = true" class="hidden 2xl:flex w-[178px] flex-col items-center relative"
         x-data="{loaded:false}">
@@ -477,315 +449,7 @@
         </template>
       </div>
 
-      <div class="flex flex-1 p-4 px-2 mx-2 bg-gray-100 rounded-lg">
-        <div class="flex flex-col flex-1 space-y-2">
-          <div class="flex max-w-2xl">
-            <div class="mb-2">
-              <nav class="flex" aria-label="Breadcrumb">
-  <ol role="list" class="pl-0 flex items-center space-x-4 list-none">
-    <li>
-      <div>
-        <a href="/" class="text-gray-500 hover:text-gray-600">
-          <svg class="h-5 w-5 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-            <path fill-rule="evenodd" d="M9.293 2.293a1 1 0 011.414 0l7 7A1 1 0 0117 11h-1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-3a1 1 0 00-1-1H9a1 1 0 00-1 1v3a1 1 0 01-1 1H5a1 1 0 01-1-1v-6H3a1 1 0 01-.707-1.707l7-7z" clip-rule="evenodd" />
-          </svg>
-          <span class="sr-only">Home</span>
-        </a>
-      </div>
-    </li>
-
-    <li>
-      <div class="flex items-center">
-        <svg class="h-5 w-5 flex-shrink-0 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-          <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
-        </svg>
-        <a href="/unblocked" class="ml-4 text-md font-medium text-gray-600 hover:text-gray-700">Unblocked Games</a>
-      </div>
-    </li>
-
-    <li>
-      <div class="flex items-center">
-        <!-- Heroicon name: mini/chevron-right -->
-        <svg class="h-5 w-5 flex-shrink-0 text-gray-500" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-          <path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clip-rule="evenodd" />
-        </svg>
-        <span class="ml-4 text-md font-medium text-gray-600 hover:text-gray-700" aria-current="page">Paper io 2</span>
-      </div>
-    </li>
-  </ol>
-</nav>
-
-            </div>
-          </div>
-
-
-          <section class="max-w-3xl py-4">
-
-            <h1 class="max-w-xl mb-4 text-3xl font-bold lg:text-4xl">Play Paper.io 2 Unblocked Game Online</h1>
-
-            <p class="mt-8 mb-8 text-base">
-              <b>Play Paper.io 2 Unblocked Game Online</b> is browser-based game and perfect for teenagers. It's entertaining, with no
-              downloads needed.
-              It won't block other programs, making it ideal for any computers. It's easy to play and it's
-              free.
-            </p>
-
-            <div class="flex space-x-4">
-              <figure class="w-32 h-32 rounded aspect-video">
-                
-                <img class="object-cover w-full rounded" src="/assets/paperio2.png" alt="Play Paper.io 2 Unblocked Game Online">
-                <figcaption class="mt-2 text-xs leading-tight text-center text-gray-500">Play Paper.io 2 Unblocked Game Online</figcaption>
-                
-              </figure>
-              <div class="space-y-2">
-
-                
-                <span class="font-semibold text-gray-500">Categories</span>
-                <div class="mt-1">
-                  
-  <div class="flex flex-wrap">
-    
-
-    <a class="mr-1 mb-1 px-1.5 py-.5 text-blue-800 text-md no-underline bg-blue-100 border border-blue-500 rounded hover:underline whitespace-nowrap" href="/unblocked_games/categories/2-player-games">2 Player Games</a>
-
-    
-
-    <a class="mr-1 mb-1 px-1.5 py-.5 text-blue-800 text-md no-underline bg-blue-100 border border-blue-500 rounded hover:underline whitespace-nowrap" href="/unblocked_games/categories/multiplayer-games">Multiplayer Games</a>
-
-    
-
-    <a class="mr-1 mb-1 px-1.5 py-.5 text-blue-800 text-md no-underline bg-blue-100 border border-blue-500 rounded hover:underline whitespace-nowrap" href="/unblocked_games/categories/arcade-games">Arcade Games</a>
-
-    
-
-    <a class="mr-1 mb-1 px-1.5 py-.5 text-blue-800 text-md no-underline bg-blue-100 border border-blue-500 rounded hover:underline whitespace-nowrap" href="/unblocked_games/categories/fun-unblocked-games">Fun Unblocked Games</a>
-
-    
-
-    <a class="mr-1 mb-1 px-1.5 py-.5 text-blue-800 text-md no-underline bg-blue-100 border border-blue-500 rounded hover:underline whitespace-nowrap" href="/unblocked_games/categories/strategy-games">Strategy Games</a>
-
-    
-  </div>
-
-
-                </div>
-                
-
-                <p class="mb-2">
-                  <span class="font-semibold text-gray-500">Credit</span>
-                  <span>paper.io</span>
-                </p>
-
-                <div>
-                  <span class="font-semibold text-gray-500">Disclaimer</span>
-                  <p class="text-md !leading-4 text-gray-400">
-                    The game on this webpage is solely for illustrative purposes and should not be considered a
-                    commercial product. We do not sell, resell or distribute this game, and it’s not intended for
-                    commercial use. A third party developed the game. Any resemblance to actual games is purely
-                    coincidental. The information provided on this webpage is for general informational purposes only
-                    and is not intended to be relied upon as legal, financial, or any other professional advice. Please
-                    refer to our <a class="text-blue-800 underline" href="/terms">Terms</a> and contact us with any
-                    concerns about this game.
-                  </p>
-                </div>
-
-
-              </div>
-            </div>
-          </section>
-        </div>
-      </div>
-
-      <div x-intersect="loaded = true" class="hidden xl:block w-[364px] 2xl:w-[372px] px-2" x-data="{loaded:false}">
-        <template x-if="loaded">
-          <div class="w-full h-full">
-            <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3723218062742398"
-     crossorigin="anonymous"></script>
-<!-- Sidebar 300x600 -->
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-3723218062742398" data-ad-slot="7184151914"
-     data-ad-format="auto"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-          </div>
-        </template>
-      </div>
-
-    </div>
-    <section class="flex py-6 mx-auto mt-8 space-x-2 2xl:max-w-none max-w-7xl">
-      <div class="hidden 2xl:block w-[178px] pl-4 pr-2">
-
-      </div>
-
-
-      <div
-        class="flex-1 px-4 py-6 prose prose-xl bg-gray-100 rounded-lg max-w-none prose-p:leading-8 prose-table:border prose-td:p-4 prose-td:border prose-tr:h-8 prose-h1:text-3xl lg:prose-h1:text-4xl prose-h2:text-2xl prose-h3:text-xl prose-a:text-blue-800">
-        <p>Are you a fan of <a href="https://ruslan.rocks/unblocked-games/categories/multiplayer-games">unblocked online multiplayer games</a>? If so, then you might have already heard about <strong>Paper.io 2 Unblocked game online</strong> and its prequel, Paper.io.</p>
-<p>This browser-based <a href="https://ruslan.rocks/unblocked-games/categories/arcade-games">unblocked arcade game</a> has been around for quite some time, but it is only now that it is gaining immense popularity among gamers. One of the reasons for its fame is its unblocked version, which means you can play it even in a blocked environment.</p>
-<p>In this article, we are going to talk about everything you need to know about Paper.io 2 unblocked game online and why it is worth playing.</p>
-<h2>What is Paper.io?</h2>
-<p><strong>Paper.io 2</strong> and its prequel, Paper.io, is a multiplayer game that is accessible through <a href="https://ruslan.rocks/unblocked-games">unblocked game websites</a>.</p>
-<p>The objective of the game is quite simple - you have to cover as much territory as possible in the game arena, capturing new territories while also trying to protect your own. The more territories you capture, the higher the chances of you taking over the Paper.io world.</p>
-<h3>The concept of the game</h3>
-<p>In Paper.io and Paper.io 2, you play as a paper block that moves on a square map. As you move around, you leave a trail behind you, which is your &quot;tail&quot;. When your tail meets your territory, it becomes a solid block, and that territory becomes a player-controlled area.</p>
-<p>The game ends when you or other players crash into your tail or each other's tails. The player with the most territory at the end of the round wins.</p>
-<h2>Why Play Paper.io?</h2>
-<h3>Fun gameplay</h3>
-<p><strong>Paper io 2</strong> as well as <strong>Paper io</strong> are incredibly <a href="https://ruslan.rocks/unblocked-games/categories/fun-unblocked-games">fun unblocked games</a> to play. Despite its simple concept, the game can be quite challenging when there are numerous players vying for territorial control. Each game is also short, lasting only for a few minutes, making it perfect for quick play sessions during short breaks.</p>
-<h3>Popular among gamers</h3>
-<p>One of the reasons why Paper.io 2 is becoming so popular is the fact that it has a massive online community of players that you can compete against. Joining the group of players will give you the chance to show off your skills and become a Paper.io champion.</p>
-<h3>Multiplayer experience</h3>
-<p>The game's multiplayer experience is what sets Paper io and Paper io 2 apart from other games. You get to play alongside various other gamers and can challenge your friends to a match by sharing a link to the game. The multiplayer setting ensures that every round is unique, and it never gets too repetitive.</p>
-<h2>How to Play Paper.io 2 Unblocked Game on Server?</h2>
-<h3>Accessing unblocked game version</h3>
-<p>To play the Paper.io 2 unblocked game, go to <a href="https://ruslan.rocks/">RUSLAN.ROCKS</a> to access the game. To play the game online, you need to ensure that the server you have chosen does not block your access.</p>
-<h3>Selecting region for better server performance</h3>
-<p>Once you have found a server, you can select a region that will provide you with the best server performance. Remember, the quality of your game will depend on the quality of the server, so make sure you choose the right one.</p>
-<h3>Customizing control buttons according to gameplay needs</h3>
-<p>Before playing the game, you will need to customize your control buttons according to your gameplay needs. You can either use your keyboard or your mouse to control your paper block, and it is essential to find the control settings that work best for you.</p>
-<h2>Game Strategy &amp; Tips: Territory capturing tactics</h2>
-<p>One of the essential strategies in Paper.io 2 is to capture as much territory as possible. You should start from the edges of the game map and work your way inwards. It is also vital to protect your land from other players trying to take over your territory.</p>
-<h2>Skin selection for better game visuals</h2>
-<p>Paper.io 2 offers various skins that you can use to customize your paper block. Choosing a skin can enhance your visuals and game experience.</p>
-<h2>The importance of controlling the arena map</h2>
-<p>Controlling the arena map is crucial in Paper.io 2, as it can give you a better perspective of where other players are on the board. This, in turn, can help you avoid collisions with tails and other players, allowing you to capture more territories and increase your chances of winning.</p>
-<h2>In conclusion</h2>
-<p>Paper.io 2 unblocked is a multiplayer game that offers a fun and engaging gameplay experience. You can utilize your paper block's unique capabilities to capture new territories while avoiding other players' tails.</p>
-<p>With the right strategy and tips, you can improve your gameplay experience and capture as much territory as possible to become the Paper.io champion. So go ahead and give this popular <a href="https://ruslan.rocks/unblocked-games/categories/strategy-games">free strategy game</a> a try, and you might find yourself addicted to its simple yet challenging gameplay!</p>
-
-
-        <div class="mt-8">
-          
-<div class=" w-full prose max-w-none">
-  <h2 class="text-2xl font-bold">FAQs</h2>
-  
-    <div class="relative p-4 mb-2 bg-white border border-gray-300 rounded">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="absolute mr-2 top-3 left-3" viewBox="0 0 24 24"><path fill="#4b5a86" d="M5 21q-.825 0-1.413-.588T3 19V5q0-.825.588-1.413T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.588 1.413T19 21H5Zm7-3q.525 0 .888-.363t.362-.887q0-.525-.363-.888T12 15.5q-.525 0-.888.363t-.362.887q0 .525.363.888T12 18Zm1-4.7q.075-.4.263-.7t.737-.85q.925-.925 1.25-1.5t.325-1.3q0-1.275-.938-2.112T12.275 6q-1.075 0-1.913.438T9.076 7.6q-.225.35-.125.738t.45.537q.35.15.688.013t.537-.463q.25-.35.675-.537t.875-.188q.7 0 1.125.375t.425.95q0 .475-.287.95t-.888 1q-.65.575-1 1.175t-.35 1.125q0 .35.263.6t.637.25q.35 0 .588-.237T13 13.3Z"/></svg>
-
-      <h3 class="mt-0 ml-10 text-xl font-bold">
-        What is Paper.io 2?
-      </h3>
-
-      <p class="text-xl"><p>Paper.io 2 is a real-time, online multiplayer game that is played in a browser. It allows players to utilize their paper block to capture new territories and defeat other players.</p>
-</p>
-    </div>
-  
-    <div class="relative p-4 mb-2 bg-white border border-gray-300 rounded">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="absolute mr-2 top-3 left-3" viewBox="0 0 24 24"><path fill="#4b5a86" d="M5 21q-.825 0-1.413-.588T3 19V5q0-.825.588-1.413T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.588 1.413T19 21H5Zm7-3q.525 0 .888-.363t.362-.887q0-.525-.363-.888T12 15.5q-.525 0-.888.363t-.362.887q0 .525.363.888T12 18Zm1-4.7q.075-.4.263-.7t.737-.85q.925-.925 1.25-1.5t.325-1.3q0-1.275-.938-2.112T12.275 6q-1.075 0-1.913.438T9.076 7.6q-.225.35-.125.738t.45.537q.35.15.688.013t.537-.463q.25-.35.675-.537t.875-.188q.7 0 1.125.375t.425.95q0 .475-.287.95t-.888 1q-.65.575-1 1.175t-.35 1.125q0 .35.263.6t.637.25q.35 0 .588-.237T13 13.3Z"/></svg>
-
-      <h3 class="mt-0 ml-10 text-xl font-bold">
-        How do I play Paper.io 2?
-      </h3>
-
-      <p class="text-xl"><p>Paper.io 2 is played using your mouse or touch screen to move your paper block around the arena. The objective of the game is to cover as much space as possible with your color to take over territories and defeat enemy players. Be careful not to cross your own line, or you will be defeated.</p>
-</p>
-    </div>
-  
-    <div class="relative p-4 mb-2 bg-white border border-gray-300 rounded">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="absolute mr-2 top-3 left-3" viewBox="0 0 24 24"><path fill="#4b5a86" d="M5 21q-.825 0-1.413-.588T3 19V5q0-.825.588-1.413T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.588 1.413T19 21H5Zm7-3q.525 0 .888-.363t.362-.887q0-.525-.363-.888T12 15.5q-.525 0-.888.363t-.362.887q0 .525.363.888T12 18Zm1-4.7q.075-.4.263-.7t.737-.85q.925-.925 1.25-1.5t.325-1.3q0-1.275-.938-2.112T12.275 6q-1.075 0-1.913.438T9.076 7.6q-.225.35-.125.738t.45.537q.35.15.688.013t.537-.463q.25-.35.675-.537t.875-.188q.7 0 1.125.375t.425.95q0 .475-.287.95t-.888 1q-.65.575-1 1.175t-.35 1.125q0 .35.263.6t.637.25q.35 0 .588-.237T13 13.3Z"/></svg>
-
-      <h3 class="mt-0 ml-10 text-xl font-bold">
-        Can I play Paper.io 2 in an unblocked version?
-      </h3>
-
-      <p class="text-xl"><p>Yes, there is a Paper.io 2 unblocked game that can be played online. This version of the game can be accessed through RUSLAN.ROCKS.</p>
-</p>
-    </div>
-  
-    <div class="relative p-4 mb-2 bg-white border border-gray-300 rounded">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="absolute mr-2 top-3 left-3" viewBox="0 0 24 24"><path fill="#4b5a86" d="M5 21q-.825 0-1.413-.588T3 19V5q0-.825.588-1.413T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.588 1.413T19 21H5Zm7-3q.525 0 .888-.363t.362-.887q0-.525-.363-.888T12 15.5q-.525 0-.888.363t-.362.887q0 .525.363.888T12 18Zm1-4.7q.075-.4.263-.7t.737-.85q.925-.925 1.25-1.5t.325-1.3q0-1.275-.938-2.112T12.275 6q-1.075 0-1.913.438T9.076 7.6q-.225.35-.125.738t.45.537q.35.15.688.013t.537-.463q.25-.35.675-.537t.875-.188q.7 0 1.125.375t.425.95q0 .475-.287.95t-.888 1q-.65.575-1 1.175t-.35 1.125q0 .35.263.6t.637.25q.35 0 .588-.237T13 13.3Z"/></svg>
-
-      <h3 class="mt-0 ml-10 text-xl font-bold">
-        Are there any special rules in Paper.io 2?
-      </h3>
-
-      <p class="text-xl"><p>Yes, there are some rules that players must follow in order to be successful in the game. Firstly, you must be careful not to cross your own line, or else you will be defeated. Additionally, you should try to capture as many new territories as possible to increase your ranking on the leaderboard.</p>
-</p>
-    </div>
-  
-    <div class="relative p-4 mb-2 bg-white border border-gray-300 rounded">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="absolute mr-2 top-3 left-3" viewBox="0 0 24 24"><path fill="#4b5a86" d="M5 21q-.825 0-1.413-.588T3 19V5q0-.825.588-1.413T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.588 1.413T19 21H5Zm7-3q.525 0 .888-.363t.362-.887q0-.525-.363-.888T12 15.5q-.525 0-.888.363t-.362.887q0 .525.363.888T12 18Zm1-4.7q.075-.4.263-.7t.737-.85q.925-.925 1.25-1.5t.325-1.3q0-1.275-.938-2.112T12.275 6q-1.075 0-1.913.438T9.076 7.6q-.225.35-.125.738t.45.537q.35.15.688.013t.537-.463q.25-.35.675-.537t.875-.188q.7 0 1.125.375t.425.95q0 .475-.287.95t-.888 1q-.65.575-1 1.175t-.35 1.125q0 .35.263.6t.637.25q.35 0 .588-.237T13 13.3Z"/></svg>
-
-      <h3 class="mt-0 ml-10 text-xl font-bold">
-        How do I defeat other players in Paper.io 2?
-      </h3>
-
-      <p class="text-xl"><p>To defeat other players in Paper.io 2, you must capture their territory and force them to crash into your line. Be careful and strategic in your movements, as other players will be vying to claim your space and defeat you as well.</p>
-</p>
-    </div>
-  
-    <div class="relative p-4 mb-2 bg-white border border-gray-300 rounded">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="absolute mr-2 top-3 left-3" viewBox="0 0 24 24"><path fill="#4b5a86" d="M5 21q-.825 0-1.413-.588T3 19V5q0-.825.588-1.413T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.588 1.413T19 21H5Zm7-3q.525 0 .888-.363t.362-.887q0-.525-.363-.888T12 15.5q-.525 0-.888.363t-.362.887q0 .525.363.888T12 18Zm1-4.7q.075-.4.263-.7t.737-.85q.925-.925 1.25-1.5t.325-1.3q0-1.275-.938-2.112T12.275 6q-1.075 0-1.913.438T9.076 7.6q-.225.35-.125.738t.45.537q.35.15.688.013t.537-.463q.25-.35.675-.537t.875-.188q.7 0 1.125.375t.425.95q0 .475-.287.95t-.888 1q-.65.575-1 1.175t-.35 1.125q0 .35.263.6t.637.25q.35 0 .588-.237T13 13.3Z"/></svg>
-
-      <h3 class="mt-0 ml-10 text-xl font-bold">
-        What is the objective of Paper.io 2?
-      </h3>
-
-      <p class="text-xl"><p>The objective of the game is to cover as much space as possible with your color and defeat other players to increase your ranking on the leaderboard.</p>
-</p>
-    </div>
-  
-    <div class="relative p-4 mb-2 bg-white border border-gray-300 rounded">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="absolute mr-2 top-3 left-3" viewBox="0 0 24 24"><path fill="#4b5a86" d="M5 21q-.825 0-1.413-.588T3 19V5q0-.825.588-1.413T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.588 1.413T19 21H5Zm7-3q.525 0 .888-.363t.362-.887q0-.525-.363-.888T12 15.5q-.525 0-.888.363t-.362.887q0 .525.363.888T12 18Zm1-4.7q.075-.4.263-.7t.737-.85q.925-.925 1.25-1.5t.325-1.3q0-1.275-.938-2.112T12.275 6q-1.075 0-1.913.438T9.076 7.6q-.225.35-.125.738t.45.537q.35.15.688.013t.537-.463q.25-.35.675-.537t.875-.188q.7 0 1.125.375t.425.95q0 .475-.287.95t-.888 1q-.65.575-1 1.175t-.35 1.125q0 .35.263.6t.637.25q.35 0 .588-.237T13 13.3Z"/></svg>
-
-      <h3 class="mt-0 ml-10 text-xl font-bold">
-        Is Paper io unblocked game 2 addictive?
-      </h3>
-
-      <p class="text-xl"><p>Yes, Paper.io 2 is an addictive game that can keep players entertained for hours. The fast-paced gameplay and competitive nature of the game make it very engaging and enjoyable.</p>
-</p>
-    </div>
-  
-    <div class="relative p-4 mb-2 bg-white border border-gray-300 rounded">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="absolute mr-2 top-3 left-3" viewBox="0 0 24 24"><path fill="#4b5a86" d="M5 21q-.825 0-1.413-.588T3 19V5q0-.825.588-1.413T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.588 1.413T19 21H5Zm7-3q.525 0 .888-.363t.362-.887q0-.525-.363-.888T12 15.5q-.525 0-.888.363t-.362.887q0 .525.363.888T12 18Zm1-4.7q.075-.4.263-.7t.737-.85q.925-.925 1.25-1.5t.325-1.3q0-1.275-.938-2.112T12.275 6q-1.075 0-1.913.438T9.076 7.6q-.225.35-.125.738t.45.537q.35.15.688.013t.537-.463q.25-.35.675-.537t.875-.188q.7 0 1.125.375t.425.95q0 .475-.287.95t-.888 1q-.65.575-1 1.175t-.35 1.125q0 .35.263.6t.637.25q.35 0 .588-.237T13 13.3Z"/></svg>
-
-      <h3 class="mt-0 ml-10 text-xl font-bold">
-        Can I play Paper.io 2 with my friends?
-      </h3>
-
-      <p class="text-xl"><p>Yes, you can play Paper.io 2 with your friends in multiplayer mode. Simply invite them to join your game, or join a game they are already playing, and compete against each other to see who can capture the most territory.</p>
-</p>
-    </div>
-  
-    <div class="relative p-4 mb-2 bg-white border border-gray-300 rounded">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="absolute mr-2 top-3 left-3" viewBox="0 0 24 24"><path fill="#4b5a86" d="M5 21q-.825 0-1.413-.588T3 19V5q0-.825.588-1.413T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.588 1.413T19 21H5Zm7-3q.525 0 .888-.363t.362-.887q0-.525-.363-.888T12 15.5q-.525 0-.888.363t-.362.887q0 .525.363.888T12 18Zm1-4.7q.075-.4.263-.7t.737-.85q.925-.925 1.25-1.5t.325-1.3q0-1.275-.938-2.112T12.275 6q-1.075 0-1.913.438T9.076 7.6q-.225.35-.125.738t.45.537q.35.15.688.013t.537-.463q.25-.35.675-.537t.875-.188q.7 0 1.125.375t.425.95q0 .475-.287.95t-.888 1q-.65.575-1 1.175t-.35 1.125q0 .35.263.6t.637.25q.35 0 .588-.237T13 13.3Z"/></svg>
-
-      <h3 class="mt-0 ml-10 text-xl font-bold">
-        What is the difference between Paper io and Paper.io 2?
-      </h3>
-
-      <p class="text-xl"><p>Paper.io 2 is the next generation of the popular Paper.io game, with improved graphics, gameplay, and features. It is an online multiplayer game that allows you to compete against various other players in real-time, whereas Paper.io is a single player game that can be played offline.</p>
-</p>
-    </div>
-  
-    <div class="relative p-4 mb-2 bg-white border border-gray-300 rounded">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="absolute mr-2 top-3 left-3" viewBox="0 0 24 24"><path fill="#4b5a86" d="M5 21q-.825 0-1.413-.588T3 19V5q0-.825.588-1.413T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.588 1.413T19 21H5Zm7-3q.525 0 .888-.363t.362-.887q0-.525-.363-.888T12 15.5q-.525 0-.888.363t-.362.887q0 .525.363.888T12 18Zm1-4.7q.075-.4.263-.7t.737-.85q.925-.925 1.25-1.5t.325-1.3q0-1.275-.938-2.112T12.275 6q-1.075 0-1.913.438T9.076 7.6q-.225.35-.125.738t.45.537q.35.15.688.013t.537-.463q.25-.35.675-.537t.875-.188q.7 0 1.125.375t.425.95q0 .475-.287.95t-.888 1q-.65.575-1 1.175t-.35 1.125q0 .35.263.6t.637.25q.35 0 .588-.237T13 13.3Z"/></svg>
-
-      <h3 class="mt-0 ml-10 text-xl font-bold">
-        What are some tips for winning at Paper.io 2?
-      </h3>
-
-      <p class="text-xl"><p>Some tips for winning at paper io game 2 include being strategic with your movements, capturing as many new territories as possible, and trying to take over other players' territories without crossing your own line. Additionally, be aware of other players' movements and try to predict their movements to avoid being defeated.</p>
-</p>
-    </div>
-  
-    <div class="relative p-4 mb-2 bg-white border border-gray-300 rounded">
-      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" class="absolute mr-2 top-3 left-3" viewBox="0 0 24 24"><path fill="#4b5a86" d="M5 21q-.825 0-1.413-.588T3 19V5q0-.825.588-1.413T5 3h14q.825 0 1.413.588T21 5v14q0 .825-.588 1.413T19 21H5Zm7-3q.525 0 .888-.363t.362-.887q0-.525-.363-.888T12 15.5q-.525 0-.888.363t-.362.887q0 .525.363.888T12 18Zm1-4.7q.075-.4.263-.7t.737-.85q.925-.925 1.25-1.5t.325-1.3q0-1.275-.938-2.112T12.275 6q-1.075 0-1.913.438T9.076 7.6q-.225.35-.125.738t.45.537q.35.15.688.013t.537-.463q.25-.35.675-.537t.875-.188q.7 0 1.125.375t.425.95q0 .475-.287.95t-.888 1q-.65.575-1 1.175t-.35 1.125q0 .35.263.6t.637.25q.35 0 .588-.237T13 13.3Z"/></svg>
-
-      <h3 class="mt-0 ml-10 text-xl font-bold">
-        What is Paper Snake? Paper Snake and its relation to Paper.io game
-      </h3>
-
-      <p class="text-xl"><p>Paper Snake is related to Paper.io since both games are from the same developers at Voodoo. In Paper Snake, you have to control a snake-like creature that moves around a square arena, collecting food and avoiding walls and obstacles.</p>
-</p>
-    </div>
-  
-</div>
-
-
-        </div>
-      </div>
-
+      
       <div x-intersect="loaded = true" class="hidden xl:block w-[364px] 2xl:w-[372px] px-2" x-data="{loaded:false}">
         <template x-if="loaded">
           <div class="w-full h-full">
@@ -814,46 +478,7 @@
     <!-- tracking code manager footer scripts --><!-- end tracking code manager footer scripts -->
     
 
-    <button x-data="secretButton()" x-init="init" @click="click()" x-show="show" x-text="text"
-        :style="{ position: 'absolute', top: `${top}px`, left: `${left}px` }"
-        class="fortnite-btn z-[100] fortnite-font fortnite-btn-inner"></button>
-
-
-    <script>
-        function secretButton() {
-            return {
-                show: false,
-                text: 'secret',
-                top: 0,
-                left: 0,
-                init() {
-                    this.show = true;
-                    this.setPosition();
-                },
-                click() {
-                    this.text = 'clicked';
-                    let points = localStorage.getItem('points')
-                    this.show = false;
-                    // emit an event
-                    const add = Math.floor(Math.random() * 100) + 10;
-                    console.log(add);
-                    this.$dispatch('points', add);
-                    // scroll to the top of the page
-                    window.scrollTo(0, 0);
-                },
-                setPosition() {
-                    const viewportHeight = window.innerHeight;
-                    const bodyHeight = document.body.scrollHeight;
-                    const maxTopPosition = bodyHeight - viewportHeight;
-                    this.top = Math.random() * (maxTopPosition - viewportHeight) + viewportHeight;
-
-                    const bodyWidth = document.body.scrollWidth;
-                    this.left = Math.random() * bodyWidth;
-                }
-            }
-        }
-    </script>
-<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v84a3a4012de94ce1a686ba8c167c359c1696973893317" integrity="sha512-euoFGowhlaLqXsPWQ48qSkBSCFs3DPRyiwVu3FjR96cMPx+Fr+gpWRhIafcHwqwCqWS42RZhIudOvEI+Ckf6MA==" data-cf-beacon='{"rayId":"81b03834ee511d96","r":1,"version":"2023.10.0","token":"4f0cf82f85404253b545f5d0e8993438"}' crossorigin="anonymous"></script>
+    
 </body>
 
 </html>

@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: rgb(28,26,28);
+    color: #f7f4f8;
+
+}
+
+.top-bar {
+    background-color: #1c1c1c;
+    padding: 10px;
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Push the back button to the left and the title to the right */
+    align-items: center; /* Center the title vertically */
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 0px 20px rgb(255, 255, 255);
+    text-shadow: 0px 0px 20px rgb(255, 255, 255);
+}
+
+#back-button{
+    text-align: left;
+    align-items: left;
+}
+
+#bar-title{
+    text-align: center;
+    flex: 1;
+    align-items: center;
+}
+/* ... existing styles ... */
+
+/* Card grid styling */
+.cards-container {
+    display: flex;
+    justify-content: center; /* Center align cards horizontally */
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    gap: 150px;
+    padding: 20px;
+}
+
+.card {
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 30px;
+    /* Maintain a fixed aspect ratio for the cards */
+    box-shadow: 0px 0px 5px rgba(148, 0, 211, 0.5);
+    width: 300px;
+    height: 420px; /* Adjust card height */
+}
+
+.card img {
+    width: 100%;
+    height: 100%; /* Adjust image height */
+    object-fit: cover;
+}
+
+.card p {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* ... rest of the styles ... */
+
+
+.pdf-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.pdf-container.active {
+    display: flex;
+}
+
+#pdfIframe {
+    width: 80%;
+    height: 80%;
+    border: none;
+    box-shadow: 0px 0px 20px rgba(138, 43, 226, 0.8);
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #9400d3;
+    padding: 5px 10px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 3;
+    box-shadow: 0px 0px 10px rgba(148, 0, 211, 0.5);
+}
+
+.back-button:hover {
+    background-color: #6a0080;
+    box-shadow: 0px 0px 15px rgba(148, 0, 211, 0.5);
+
+
+}
+
+/* Optional glow effect for card hover */
+.card:hover {
+    box-shadow: 0px 0px 30px rgba(148, 0, 211, 0.8);
+}
