@@ -42,7 +42,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 300px; /* Set the width to match the card width */
-    height: 100px; /* Set the height to match the card height */
+    height: 420px; /* Set the height to match the card height */
     padding: 20px;
     background-color: #9400d3;
     color: #fff;
@@ -158,4 +158,41 @@ body {
 
 /* Style the PDF list container */
 .pdf-list {
-    background-color: #444; /*
+    background-color: #444; /* Darker background for the PDF list */
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the search input */
+#search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #666; /* Slightly lighter border */
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #555; /* Slightly lighter background */
+    color: #fff; /* Light text color */
+}
+
+/* Style the PDF list items */
+ul#pdf-files {
+    list-style: none;
+}
+
+ul#pdf-files li {
+    margin: 5px 0;
+}
+
+ul#pdf-files li a {
+    text-decoration: none;
+    color: #ccc; /* Lighter text color */
+    font-size: 16px;
+}
+
+/* Style the PDF list items on hover */
+ul#pdf-files li a:hover {
+    color: #0074D9; /* Highlight color */
+}
