@@ -42,7 +42,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 300px; /* Set the width to match the card width */
-    height: 420px; /* Set the height to match the card height */
+    height: 100px; /* Set the height to match the card height */
     padding: 20px;
     background-color: #9400d3;
     color: #fff;
