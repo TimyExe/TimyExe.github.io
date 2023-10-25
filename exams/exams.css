@@ -128,13 +128,14 @@ body, h1, ul, li {
 
 /* Set a background color and text color for the page */
 body {
-    background-color: #f2f2f2;
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
     font-family: Arial, sans-serif;
 }
 
 /* Style the top bar containing the back button and title */
 .top-bar {
-    background-color: #0074D9;
+    background-color: #000; /* Black top bar */
     color: #fff;
     display: flex;
     align-items: center;
@@ -157,39 +158,4 @@ body {
 
 /* Style the PDF list container */
 .pdf-list {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    margin: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Style the search input */
-#search {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-/* Style the PDF list items */
-ul#pdf-files {
-    list-style: none;
-}
-
-ul#pdf-files li {
-    margin: 5px 0;
-}
-
-ul#pdf-files li a {
-    text-decoration: none;
-    color: #333;
-    font-size: 16px;
-}
-
-/* Style the PDF list items on hover */
-ul#pdf-files li a:hover {
-    color: #0074D9;
-}
+    background-color: #444; /*
