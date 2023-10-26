@@ -19,18 +19,7 @@ body{
     background-color: #0000;
     
 }
-@font-face {
-    font-family: 'cloist'; /* Specify the font family name you want to use */
-    src: url('gg.ttf') format('truetype'); /* Replace with the path to your TTF file */
-    /* You can set other properties like font-weight and font-style if needed */
-    font-weight: normal;
-    font-style: normal;
-  }
 
-#tit {
-    font-family: 'cloist', gg.ttf;
-
-}
 
 /* Create a container for the card */
 .card {
@@ -83,13 +72,16 @@ body{
     right: 10px;
     padding: 10px 20px;
     background-color: #212529;
-    color: #000000;
+    color: #b1aeae;
     text-decoration: none;
     border-radius: 4px;
     z-index: 1;
     /* Ensures it's on top of the card content */
 }
-
+.login-button:hover{
+    background-color: #343a41;
+    color: #9c9999;
+}
 /* Style the card content */
 .card-content {
     padding: 20px;
@@ -176,6 +168,7 @@ position: absolute;
 .main-title-box h1{
     color: #cac6c6;
     font-size: 2.6rem;
+    font-family: url(CloisterBlack.ttf);
     text-decoration: solid;
     text-transform: uppercase;
 }
