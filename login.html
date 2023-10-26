@@ -24,6 +24,20 @@
 
         const app = initializeApp(firebaseConfig);
         const auth = getAuth(app);
+
+            signInWithEmailAndPassword(auth, email, password)
+        .then(() => {
+            // User signed in successfully
+            document.getElementById("success-message").textContent = "User signed in successfully.";
+            // Redirect to the success page hosted on Firebase Hosting
+            window.location.href = "/success.html";
+        })
+        .catch((error) => {
+            // Handle sign-in error
+            console.error(error);
+            document.getElementById("error-message").textContent = error.message;
+        });
+
     </script>
 </head>
 <body>
