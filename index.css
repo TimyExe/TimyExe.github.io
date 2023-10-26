@@ -39,7 +39,7 @@ body{
     width: 100%;
     height: 100vh;
     margin: 20px auto;
-    background-image: url('gang\ agng.png');
+    background-color: #0000;
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
