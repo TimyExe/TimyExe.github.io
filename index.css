@@ -19,6 +19,11 @@ body{
     background-color: #0000;
 }
 
+h1 {
+    font-family: url(CloisterBlack.ttf);
+
+}
+
 /* Create a container for the card */
 .card {
     display: grid;
