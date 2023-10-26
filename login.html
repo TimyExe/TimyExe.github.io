@@ -30,13 +30,18 @@
             // User signed in successfully
             document.getElementById("success-message").textContent = "User signed in successfully.";
             // Redirect to the success page hosted on Firebase Hosting
-            window.location.href = "/success.html";
+            window.location.href = "success/success.html";
         })
         .catch((error) => {
             // Handle sign-in error
             console.error(error);
             document.getElementById("error-message").textContent = error.message;
+        })
+        .catch((error) => {
+            console.error(error);
+            document.getElementById("error-message").textContent = "Sign-in failed. Please check your email and password.";
         });
+
 
     </script>
 </head>
