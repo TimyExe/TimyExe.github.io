@@ -18,9 +18,16 @@ html {
 body{
     background-color: #0000;
 }
+@font-face {
+    font-family: 'cloist'; /* Specify the font family name you want to use */
+    src: url('gg.ttf') format('truetype'); /* Replace with the path to your TTF file */
+    /* You can set other properties like font-weight and font-style if needed */
+    font-weight: normal;
+    font-style: normal;
+  }
 
-h1 {
-    font-family: url(CloisterBlack.ttf);
+#tit {
+    font-family: 'cloist', gg.ttf;
 
 }
 
