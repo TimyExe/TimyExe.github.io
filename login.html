@@ -21,7 +21,6 @@
             </div>
             <div class="button-container">
             <button function='submitLogin'>login</button>
-            <button onclick=showAuth0Lock()>auth</button>
             <p>anything you do with the content is not our problem.
                 discord:
                 "flikzy.",
@@ -30,18 +29,6 @@
         </form>
     </div>
     <script src="login.js"></script>
-    <script src="https://cdn.auth0.com/js/lock/11.32/lock.min.js"></script>
-    <script>
-        // JavaScript function to show the Auth0 Lock widget
-        function showAuth0Lock() {
-            var lock = new Auth0Lock('Q1B35Xld6Oot4XjbU3GQmhbpjd7X6Jha', 'dev-jhcz2082hh7saog5.eu.auth0.com', {
-                auth: {
-                    redirectUrl: 'https://timyexe.github.io/main/main.html', // Your GitHub Pages callback URL
-                }
-            });
-            lock.show();
-        }
-    </script>
 
 </body>
 </html>
