@@ -3,11 +3,11 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #000;
-    background-image: url("mothh.jpg");
-    background-size: cover; /* Make the background image cover the entire screen */
+    background-image: url("https://i.pinimg.com/originals/f0/32/ab/f032abcba732ffa2871b1582372905f2.gif");
+    background-size: fill; /* Make the background image cover the entire screen */
     background-repeat: no-repeat; /* Prevent the background image from repeating */
     background-position: center; /* Center the background image */
-    color: #deadff;
+    color: #ffffff;
 }
 .login-container {
     display: flex;
@@ -17,18 +17,18 @@ body {
     width: 300px;
     height: 300px; /* Adjust height for better centering */
     margin: 150px auto;
-    background-color: #1f1f1fb6;
+    background-color: #1f1f1f00;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
     position: relative;
-    box-shadow: 0px 0px 20px rgba(138, 43, 226, 0.8); /* Purple glow */
+     /* Purple glow */
 }
 
 .login-container h1 {
     color: rgba(138, 43, 226,);
     margin-top: 0; /* Reset default margin */
-    text-shadow: 0px 0px 20px rgba(138, 43, 226, 0.8); /* Purple glow */
+    text-shadow: 0px 0px 20px rgb(255 255 255 / 80%); /* Purple glow */
     font-family: 'Special Elite', cursive;
 }
 
@@ -51,10 +51,10 @@ body {
     border: none;
     border-radius: 5px;
     background-color: #202020;
-    color: #b861ff;
+    color: #ffffff;
     margin: 2px 0; /* Adjust margin */
     text-align: center;
-    box-shadow: 0px 0px 7px rgb(155, 33, 255);
+    box-shadow: 0px 0px 7px rgb(255 255 255);
 }
 
 /* ... your existing styles ... */
@@ -66,19 +66,19 @@ body {
 
 .button-container button {
     padding: 10px 20px;
-    background-color: #9400d3;
-    color: #fff;
+    background-color: #ffffff;
+    color: #000;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
-    box-shadow: 0px 0px 5px rgba(148, 0, 211, 0.5); /* Shadow */
+    box-shadow: 0px 0px 5px rgb(255 255 255 / 50%); /* Shadow */
 }
 
 .button-container button:hover {
-    background-color: #6a0080;
+    background-color: #ffffff;
     transition: background-color 0.3s;
-    box-shadow: 0px 0px 10px rgba(148, 0, 211, 0.8); /* Hover shadow */
+    box-shadow: 0px 0px 10px rgb(255 255 255 / 80%); /* Hover shadow */
 }
 
 .button-container p {
