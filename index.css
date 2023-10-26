@@ -17,6 +17,7 @@ html {
 }
 body{
     background-color: #0000;
+    height: 1000px;
 }
 
 h1 {
@@ -28,7 +29,7 @@ h1 {
 .card {
     display: grid;
     width: 100%;
-    height: 2000px;
+    height: 100vh;
     margin: 20px auto;
     background-image: url('gang\ agng.png');
     background-size: cover;
