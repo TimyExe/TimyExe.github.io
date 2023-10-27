@@ -11,7 +11,11 @@ img {
     font-family: 'Special Elite', cursive;
     
 }
-
+@font-face {
+    font-family: CloisterBlack;
+    src: url(CloisterBlack.ttf) format('truetype');
+    /* You can include additional font formats like woff, woff2, etc. if available. */
+  }
 body{
     background-color: #0000;
     
@@ -177,9 +181,10 @@ position: absolute;
 .main-title-box h1{
     color: #cac6c6;
     font-size: 2.6rem;
-    font-family: url(CloisterBlack.ttf);
+    font-family:'CloisterBlack' ;
     text-decoration: solid;
     text-transform: uppercase;
 }
+
 /* grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
 grid-template-rows: [row1-start] 25% [row1-end] 25% [third-line] 30% [fourth-line] 20% [last-line]; */
