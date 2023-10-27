@@ -180,8 +180,9 @@ position: absolute;
 }
 .main-title-box h1{
     color: #cac6c6;
-    font-size: 2.6rem;
+    font-size: 100px;
     font-family:'CloisterBlack' ;
+    text-align: center;
     text-decoration: solid;
 }
 
