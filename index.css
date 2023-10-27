@@ -180,7 +180,7 @@ position: absolute;
 .main-title-box h1{
     color: #cac6c6;
     font-size: 2.6rem;
-    font-family: url(CloisterBlack.ttf);
+    font-family: url(CloisterBlack.ttf) !important;
     text-decoration: solid;
     text-transform: uppercase;
 }
