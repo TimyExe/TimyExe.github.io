@@ -55,7 +55,10 @@ body {
 
 .card-heading{
     opacity: 100%;
-    text-shadow: #000000;
+    color: #121212;
+
+text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
+    0px -4px 10px rgba(255,255,255,0.3);
 }
 #card2 {
     background: rgba(59, 59, 59, 0.692) url('../what-is-a-vpn.jpg') center/cover no-repeat; 
