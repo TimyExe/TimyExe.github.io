@@ -3,6 +3,26 @@
 <head>
     <meta charset="utf-8">
     <title>Login + Firebase Database</title>
+    <!-- Include the Firebase SDK script -->
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js"></script>
+
+    <!-- Firebase configuration -->
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyDkIw-MiE9VB9VaJ2EMNYV6ukM8gvw0UWY",
+            authDomain: "hookey-2beee.firebaseapp.com",
+            databaseURL: "https://hookey-2beee-default-rtdb.europe-west1.firebasedatabase.app",
+            projectId: "hookey-2beee",
+            storageBucket: "hookey-2beee.appspot.com",
+            messagingSenderId: "873667938609",
+            appId: "1:873667938609:web:3f7cf35ad219ea8d018810"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
     <!-- Cool Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -25,7 +45,7 @@
                 <input type="email" id="email" placeholder="Email">
                 <input type="password" id="password" placeholder="New Password">
 
-                <input type="text" id "favourite_song" placeholder="The Best Song Ever">
+                <input type="text" id="favourite_song" placeholder="The Best Song Ever">
                 <input type="text" id="milk_before_cereal" placeholder="Milk Before Cereal? ( Yes | No )">
 
                 <div id="button_container">
@@ -36,15 +56,8 @@
         </div>
     </div>
 </div>
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js"></script>
 
-<!-- Initialize Firebase Authentication and Database -->
-<script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js"></script>
-<script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-databasejs"></script>
-
-<!-- Our script must be loaded after firebase references -->
+<!-- Your JavaScript code (login.js) should be loaded here -->
 <script src="login.js"></script>
-
 </body>
 </html>
