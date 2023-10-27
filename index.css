@@ -125,7 +125,7 @@ body{
     position: absolute; 
     top: 85vh;
     padding: 0.5rem;
-    right:2.5rem;
+    right:3rem;
     display: flex;
     flex-wrap: wrap;
    
@@ -175,7 +175,7 @@ body{
 .main-title-box{
 position: absolute;
     top: 50vh;
-    left: 40vw;
+    left: 45vw;
    
 }
 .main-title-box h1{
@@ -183,6 +183,7 @@ position: absolute;
     font-size: 2.8rem;
     font-family:'CloisterBlack' ;
     text-decoration: solid;
+    text-transform: uppercase;
 }
 
 /* grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
