@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- saved from url=(0021)http://71.19.146.161/ -->
+<html lang="en" data-lt-installed="true"><style class="adjust-screen-brightness" media="screen">html::before {
+  content: " ";
+  z-index: 2147483647;
+  pointer-events: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.1);
+}</style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>body {transition: opacity ease-in 0.2s; } 
+body[unresolved] {opacity: 0; display: block; overflow: hidden; position: relative; } 
+</style>
+      <title>Play flappy plane, September edition!</title>
+      
+      <meta name="author" content="Anonymous troll">
+      <meta name="description" content="Play flappy plane, September edition. Rated 11/9 by most Americans!">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+      <!-- Open Graph tags -->
+      <meta property="og:title" content="Flappy Plane, September edition">
+      <meta property="og:description" content="Play flappy plane, September edition. Rated 11/9 by most Americans!">
+      <meta property="og:type" content="website">
+      <meta property="og:image" content="https://terrorist.group/assets/thumb.png">
+      <meta property="og:url" content="https://terrorist.group">
+      <meta property="og:site_name" content="Flappy plane, September edition!">
+      <!-- Style sheets -->
+      <link href="reset.css" rel="stylesheet">
+      <link href="main.css" rel="stylesheet">
+      <script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript">stLight.options({publisher: "2ae97540-b48e-49c1-9d0f-e9e34df112fe", doNotHash: true, doNotCopy: true, hashAddressBar: false});</script>
+ <link rel="stylesheet" type="text/css" href="chrome-extension://bbpokcagpggnekcmamgdieebhpkjmljm/css/fonts.css"><link id="appwriter-cloud-style" type="text/css" rel="stylesheet" href="chrome-extension://lokadhdaghfjbmailhhenifjejpokche/css/content.css"></head>
+   <body>
+
+      <div id="gamecontainer">
+	<style type="text/css">
+	#legpad {display: none}
+	#smallpad {display: none}
+	#ip4ad {display: none}
+	#hdad { display: none }
+	#leftad {display: none; float: left; padding-left: 50px; padding-top:75px}
+	#rightad {display: none; float: right; padding-right: 50px; padding-top:75px}
+	.largetab { display: none }
+	@media (orientation: portrait) and (min-width: 319px) and (max-width: 459px) {#ip4ad {display: block} }
+	@media (orientation: portrait) and (min-width: 299px) and (max-width: 318px) {#smallpad {display: block} }
+	@media (orientation: portrait) and (min-width: 200px) and (max-width: 298px) {#legpad {display: block} }
+	@media (orientation: landscape) and (min-height: 600px) and (min-width: 1270px) { #leftad {display: block;} #rightad {display: block;} #hdad { display: block; } }
+	@media (orientation: portrait) and (min-width: 760px) { .largetab { display: inline-block } }
+	@media (orientation: portrait) and (min-width: 460px) and (max-width: 759px) { #hdad {display: block} }
+	</style>
+	
+
+         <div id="gamescreen">
+            <div id="sky" class="animated" style="animation-play-state: paused;">
+               <div id="flyarea">
+                  <div id="ceiling" class="animated" style="animation-play-state: paused;"></div>
+                  <!-- This is the flying and pipe area container -->
+                  <div id="player" class="bird animated" style="transform: translate(0px, 0px) rotate(90deg); top: 372.15px; animation-play-state: paused;"></div>
+                  
+                  <div id="bigscore"></div>
+                  
+                  <div id="splash" style="opacity: 0;"></div>
+                  
+                  <div id="scoreboard" style="display: block; transform: translate(0px, 0px); opacity: 1;">
+                     <div id="medal"></div>
+                     <div id="currentscore"><img src="http://71.19.146.161/assets/font_small_0.png" alt="0"></div>
+                     <div id="highscore"><img src="http://71.19.146.161/assets/font_small_2.png" alt="2"><img src="font_small_3.png" alt="3"></div>
+                     <div id="replay" style="transform: translate(0px, 0px); opacity: 1;"><img src="replay.png" alt="replay"></div>
+                  </div>
+                  
+                  <!-- Pipes go here! -->
+               <div class="pipe animated" style="animation-play-state: paused;"><div class="pipe_upper" style="height: 121px;"></div><div class="pipe_lower" style="height: 199px;"></div></div><div class="pipe animated" style="animation-play-state: paused;"><div class="pipe_upper" style="height: 182px;"></div><div class="pipe_lower" style="height: 138px;"></div></div><div id="explosion" style="top: 345.0584716796875px; left:60px;"></div></div>
+            </div>
+            <div id="land" class="animated" style="animation-play-state: paused;"><div id="debug"></div></div>
+         </div>
+      </div>
+      <div id="footer">
+	
+      </div>
+      <div class="boundingbox" id="playerbox"></div>
+      <div class="boundingbox" id="pipebox"></div>
+      
+      <script src="jquery.min.js"></script>
+      <script src="jquery.transit.min.js"></script>
+      <script src="buzz.min.js"></script>
+      <script src="main.min.js"></script>
+    
+	
+   
+
+<iframe style="display: none;" src="saved_resource.html"></iframe><hv-copy-modal></hv-copy-modal><div id="appwriter-loading" style="display: none;"></div><div id="appwriter-predictions-wrapper" style="" dir="ltr">
+<div id="appwriter-predictions-arrow-top"></div>
+<div id="appwriter-predictions-border">
+  <div id="appwriter-predictions-pin">
+    <button class="appwriter-predictions-button" i18n-title="mute_reading_predictions" id="appwriter-predictions-mute-btn" title="Mute / Unmute">
+      <i class="appwriter-predictions-btn-icon appwriter-predictions-speaker"></i>
+    </button>
+    <button class="" id="appwriter-predictions-pin-btn">
+      <i class="appwriter-predictions-btn-icon" id="appwriter-predictions-pin-btn-icon"></i>
+    </button>
+  </div>
+  <div id="appwriter-predictions">
+    <div id="appwriter-prediction-numbers">
+      <div class="prediction-number" title="">1</div><div class="prediction-number" title="">2</div><div class="prediction-number" title="">3</div><div class="prediction-number" title="">4</div><div class="prediction-number" title="">5</div><div class="prediction-number" title="">6</div><div class="prediction-number" title="">7</div><div class="prediction-number" title="">8</div><div class="prediction-number" title="">9</div>
+      <div class="prediction-number" title="">0</div>
+    </div>
+    <div id="appwriter-speech-model-predictions">
+                <div class="prediction" title="" data-type="speechModel" data-index="0" data-prediction="">              <span class="prediction-text" translate="no"><strong> </strong> </span>              <div class="prediction-play"></div>          </div>          <div class="prediction" title="" data-type="speechModel" data-index="1" data-prediction="">              <span class="prediction-text" translate="no"><strong> </strong> </span>              <div class="prediction-play"></div>          </div>          <div class="prediction" title="" data-type="speechModel" data-index="2" data-prediction="">              <span class="prediction-text" translate="no"><strong> </strong> </span>              <div class="prediction-play"></div>          </div>          <div class="prediction" title="" data-type="speechModel" data-index="3" data-prediction="">              <span class="prediction-text" translate="no"><strong> </strong> </span>              <div class="prediction-play"></div>          </div>          <div class="prediction" title="" data-type="speechModel" data-index="4" data-prediction="">              <span class="prediction-text" translate="no"><strong> </strong> </span>              <div class="prediction-play"></div>          </div>          <div class="prediction" title="" data-type="speechModel" data-index="5" data-prediction="">              <span class="prediction-text" translate="no"><strong> </strong> </span>              <div class="prediction-play"></div>          </div>          <div class="prediction" title="" data-type="speechModel" data-index="6" data-prediction="">              <span class="prediction-text" translate="no"><strong> </strong> </span>              <div class="prediction-play"></div>          </div>          <div class="prediction" title="" data-type="speechModel" data-index="7" data-prediction="">              <span class="prediction-text" translate="no"><strong> </strong> </span>              <div class="prediction-play"></div>          </div>          <div class="prediction" title="" data-type="speechModel" data-index="8" data-prediction="">              <span class="prediction-text" translate="no"><strong> </strong> </span>              <div class="prediction-play"></div>          </div>          <div class="prediction" title="" data-type="speechModel" data-index="9" data-prediction="">              <span class="prediction-text" translate="no"><strong> </strong> </span>              <div class="prediction-play"></div>          </div>
+    </div>
+    <div id="appwriter-glossary-predictions">
+            <div class="prediction user-word" title="" data-type="glossary" data-index="0" data-prediction="">              <span class="prediction-text" translate="no"><strong> </strong> </span>              <div class="prediction-play"></div>          </div>      <div class="prediction user-word" title="" data-type="glossary" data-index="1" data-prediction="">              <span class="prediction-text" translate="no"><strong> </strong> </span>              <div class="prediction-play"></div>          </div>      <div class="prediction user-word" title="" data-type="glossary" data-index="2" data-prediction="">              <span class="prediction-text" translate="no"><strong> </strong> </span>              <div class="prediction-play"></div>          </div>      <div class="prediction user-word" title="" data-type="glossary" data-index="3" data-prediction="">              <span class="prediction-text" translate="no"><strong> </strong> </span>              <div class="prediction-play"></div>          </div>      <div class="prediction user-word" title="" data-type="glossary" data-index="4" data-prediction="">              <span class="prediction-text" translate="no"><strong> </strong> </span>              <div class="prediction-play"></div>          </div>      <div class="prediction user-word" title="" data-type="glossary" data-index="5" data-prediction="">              <span class="prediction-text" translate="no"><strong> </strong> </span>              <div class="prediction-play"></div>          </div>      <div class="prediction user-word" title="" data-type="glossary" data-index="6" data-prediction="">              <span class="prediction-text" translate="no"><strong> </strong> </span>              <div class="prediction-play"></div>          </div>      <div class="prediction user-word" title="" data-type="glossary" data-index="7" data-prediction="">              <span class="prediction-text" translate="no"><strong> </strong> </span>              <div class="prediction-play"></div>          </div>      <div class="prediction user-word" title="" data-type="glossary" data-index="8" data-prediction="">              <span class="prediction-text" translate="no"><strong> </strong> </span>              <div class="prediction-play"></div>          </div>      <div class="prediction user-word" title="" data-type="glossary" data-index="9" data-prediction="">              <span class="prediction-text" translate="no"><strong> </strong> </span>              <div class="prediction-play"></div>          </div>
+    </div>
+  </div>
+  <div id="appwriter-predictions-pagers">
+    <div id="appwriter-speech-model-predictions-pager">
+      <div id="appwriter-speech-model-predictions-pager-left-arrow">
+        <div></div>
+      </div>
+      <div id="appwriter-speech-model-predictions-pager-text">-</div>
+      <div id="appwriter-speech-model-predictions-pager-right-arrow">
+        <div></div>
+      </div>
+    </div>
+    <div id="appwriter-glossary-predictions-pager">
+      <div id="appwriter-glossary-predictions-pager-left-arrow">
+        <div></div>
+      </div>
+      <div id="appwriter-glossary-predictions-pager-text">-</div>
+      <div id="appwriter-glossary-predictions-pager-right-arrow">
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="appwriter-predictions-arrow-bottom"></div>
+<div id="appwriter-predictions-flyout-btn">
+  <div id="appwriter-predictions-flyout-arrow"></div>
+</div>
+</div><div id="appwriter-menu" class="appwriter-menu appwriter-disabled" style=""><div class="appwriter-menu-disable-overlay appwriter-dom" i18n-title="menuLoginToUse" title="Log in to use AppWriter Cloud." dir="ltr"></div>
+<div class="appwriter-menu-button appwriter-dom appwriter-menu-button--disabled" data-appwriter-action="play" i18n-data-tooltip="playTooltip" data-tooltip="Play/stop" title="F8 / Alt+Shift+P" dir="ltr">
+  <div class="appwriter-icon__play"></div>
+</div>
+<div class="appwriter-popup appwriter-dom appwriter-popup--disabled" data-appwriter-action="profile-menu" i18n-data-tooltip="readingSettingsTooltip" data-tooltip="Reading settings" dir="ltr">
+  <div class="appwriter-popup__content">
+    <div class="appwriter-icon__listen"></div>
+  </div>
+  
+</div>
+<div class="appwriter-popup appwriter-popup--writing-settings appwriter-dom appwriter-popup--disabled" data-appwriter-action="profile-menu" i18n-data-tooltip="writingSettingsTooltip" data-tooltip="Writing settings" dir="ltr">
+  <div class="appwriter-popup__content">
+    <div class="appwriter-icon__prediction"></div>
+  </div>
+  
+</div>
+<div class="appwriter-menu-button appwriter-dom appwriter-hidden-element" data-appwriter-action="speechToText" i18n-data-tooltip="popup_menu_speech_text" data-tooltip="Speech to text" dir="ltr">
+  <div class="appwriter-icon__stt"></div>
+</div>
+<div class="appwriter-menu-button appwriter-dom appwriter-hidden-element" data-appwriter-action="dictionaryLookup" i18n-data-tooltip="dictionaryLookupTooltip" data-tooltip="Lookup selected word" dir="ltr">
+  <div class="appwriter-icon__page"></div>
+</div>
+<div class="appwriter-popup appwriter-popup--profile-select appwriter-dom" i18n-data-tooltip="languageSelectionTooltip" data-tooltip="Language selector" dir="ltr">
+  <div class="appwriter-popup__content">
+    <div class="appwriter-popup__content-icon appwriter-popup__content-icon--hidden"></div>
+  </div>
+  
+</div>
+</div></body></html>
