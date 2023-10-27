@@ -1,84 +1,52 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Login Page</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="icon" type="image/png" href="moth.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-    
-    <!-- Include Firebase scripts here -->
-    
-   
-</head>
-<body>
-    <div class="login-container">
-        <h1>Login</h1>
-        <form id="loginForm">
-            <div class="input-container">
-                <label for="email">Email:</label>
-                <input type="text" id="email" name="email" required>
+    <head>
+        <meta charset="utf-8">
+        <title>Login + Firebase Database</title>
+         <!-- Cool Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+        <!-- Our stylesheet -->
+        <link rel="stylesheet" type="text/css" href="login.css">
+    </head>
+    <body>
+        <div id="content_container">
+            <div id="form_container">
+                <div id="form_header_container">
+                    <h2 id="form_header"> Login + Firebase Database </h2>
+                </div>
+
+                <div id="form_content_container">
+                    <div id="form_content_inner_container">
+                        <input type="text" id="full_name" placeholder="Full name">
+                        <input type="email" id="email" placeholder="Email">
+                        <input type="password" id="password" placeholder="New Password">
+
+                        <input type="text" id="favourite_song" placeholder="The Best Song Ever">
+                        <input type="text" id="milk_before_cereal" placeholder="Milk Before Cereal? ( Yes | No )">
+
+                        <div id="button_container">
+                            <button onclick="login()">Login</button>
+                            <button onclick="register()">Register</button>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="input-container">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
-            </div>
-            <div class="button-container">
-                <button onclick="signIn()">Login</button>
-            </div>
-        </form>
-    </div>
-    
-    <!-- Your HTML structure for the sign-up and success pages can be added here -->
-</body>
-<script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-app.js";
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js";
-    import { getAuth, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.5.0/firebase-auth.js";
+        </div>
+    </body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js"></script>
 
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.5.2/firebase-databasejs"></script>
 
-    // Sign in an existing user
-    function signIn() {
-        const email = document.getElementById("email").value;
-        const password = document.getElementById("password").value;
+    <!-- Our script must be loaded after firebase references -->
+    <script src="login.js"></script>
 
-        signInWithEmailAndPassword(auth, email, password)
-            .then(() => {
-                // User signed in successfully
-                document.getElementById("error-message").textContent = "";
-                document.getElementById("success-message").textContent = "User signed in successfully.";
-                // Redirect to the success page hosted on Firebase Hosting
-                window.location.href = "success/success.html";
-            })
-            .catch((error) => {
-                // Handle sign-in error
-                console.error(error);
-                document.getElementById("error-message").textContent = error.message;
-            });
-    }
-</script>
-<script type="module">
-    // Initialize Firebase, config, and auth variables here (as you did before)
-
-    // Define the signIn function in the global scope
-    window.signIn = function () {
-        const email = document.getElementById("email").value;
-        const password = document.getElementById("password").value;
-
-        signInWithEmailAndPassword(auth, email, password)
-            .then(() => {
-                // User signed in successfully
-                document.getElementById("error-message").textContent = "";
-                document.getElementById("success-message").textContent = "User signed in successfully.";
-                // Redirect to the success page hosted on Firebase Hosting
-                window.location.href = "success/success.html";
-            })
-            .catch((error) => {
-                // Handle sign-in error
-                console.error(error);
-                document.getElementById("error-message").textContent = error.message;
-            });
-    };
-</script>
-<script src="login.js"></script>
 </html>
