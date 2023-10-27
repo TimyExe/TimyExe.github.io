@@ -49,14 +49,16 @@ body {
 #card1 {
     color: #fff; /* Change text color */
     text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.719);
-    opacity: 35%;
+    opacity: 50%;
     background: rgba(59, 59, 59, 0.692) url('../pensum.jpg') center/cover no-repeat; 
 }
 
-
+.card-heading{
+    opacity: 100%;
+}
 #card2 {
     background: rgba(59, 59, 59, 0.692) url('../what-is-a-vpn.jpg') center/cover no-repeat; 
-    opacity: 35%;
+    opacity: 50%;
     text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.719);
     color: #fff; /* Change text color */
 }
@@ -65,7 +67,7 @@ body {
 #card3 {
     background: rgba(59, 59, 59, 0.692) url('../style.jpg') center/cover no-repeat; 
     text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.719);
-    opacity: 35%;
+    opacity: 50%;
     color: #fff; /* Change text color */
 }
 
