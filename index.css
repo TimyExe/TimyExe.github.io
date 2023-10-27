@@ -1,188 +1,136 @@
-/* Reset default margin and padding for the entire page */
-
-body,
-h1,
-p,
-a,
-img {
-    margin: 0;
-    padding: 0;
-    
-    font-family: 'Special Elite', cursive;
-    
-}
-html {
-    background:linear-gradient(90deg, rgba(0,5,36,1) 0%, rgba(45,45,48,1) 46%, rgba(10,12,13,1) 92%);
-    
-}
-body{
-    background-color: #0000;
-    
-}
-
-#background-video {
-    height: 100vh;
-    width: 100vw;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-  }
-
-
-/* Create a container for the card */
-.card {
-    display: grid;
-    width: 100%;
-    height: 100vh;
-    margin: 20px auto;
-    background-color: #0000;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    
-    position: relative;
-    grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
-    grid-template-rows: [row1-start] 25% [row1-end] 25% [third-line] 30% [fourth-line] 20% [last-line];
-}
-
-.card::before {
-
-    position: fixed;
-    top: 0;
-    left: 0;
+html, body {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    /* Adjust the last value (0.3) to control darkness (0 is transparent, 1 is solid black) */
-    z-index: -1;
-    /* Puts it below the content */
-}
+    background: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF);
 
-.footer {
-    margin: rem 0;
-    text-align: center;
-}
-
-/* Style the card image */
-.card img {
-
-    width: 100px;
-    height: 100px;
-}
-
-/* Style the login button at the top right corner */
-.login-button {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    padding: 10px 20px;
-    background-color: #212529;
-    color: #dfdada;
-    text-decoration: none;
-    border-radius: 4px;
-    z-index: 1;
-    /* Ensures it's on top of the card content */
-}
-.login-button:hover{
-    background-color: #343a41;
-    color: #bdbaba;
-}
-/* Style the card content */
-.card-content {
-    padding: 20px;
-
-}
-
-/* Style the card title */
-.card-title {
-    text-align: center;
-    display: grid;
-    background: rgba(0, 0, 0, 0.616);
-    border-radius: 7px;
-    grid-column-start: line2;
-    grid-column-end: five;
-    grid-row-start: fourth-line;
-    grid-row-end:fourth-line; 
- 
-    
-    font-size: 20px;
-    color: #aaa7a7;
-    margin-top: 50px;
-    padding: 20px;
-}
-.list {
-   list-style: none;
-    width: 19rem;
-    margin-top: 1.3rem;
-    position: absolute; 
-    top: 85vh;
-    padding: 0.5rem;
-    right:3rem;
     display: flex;
-    flex-wrap: wrap;
-   
+    justify-content: center;
+    align-items: center;
 }
 
-.tinybtn {
-
-    display: inline-block;
-    text-decoration: none;
-    color: #aaa7a7;
-    padding: 2px; 
-    margin: .7rem; 
-   
-   
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
 }
-.tinybtn:hover {
-    text-decoration: underline;
-    display: inline-block;
-
-    color: #8d8a8a;
-    padding: 2px; 
-    margin: .7rem; 
-   
-   
+#content_container {
+    width: 30%;
+    height: 70%;
 }
-/* Style the card text */
-.card-text {
-    display: grid;
-    margin-top: 5rem;
+
+#form_container {
+    width: 100%;
+    height: 100%;
+
+    background-color: #370617;
+    box-shadow: 0 0 50px -20px #000;
+    border-radius: 2%;
+
+    overflow: hidden;
+}
+
+#form_header_container {
+    width: 100%;
+    height: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+
     padding: 20px;
-    text-align: center;
-    grid-column-start: line2;
-    grid-column-end: five;
-    grid-row-start: fourth-line;
-    grid-row-end:fourth-line; 
-   
-    font-size: 16px;
-    color: #aaa7a7;
-    margin-bottom: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    border-bottom: 1px solid transparent;
+    border-image: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF) 20;
+    background: #000;
 }
 
-.icon {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-.main-title-box{
-position: absolute;
-    top: 50vh;
-    left: 40vw;
-   
-}
-.main-title-box h1{
-    color: #cac6c6;
-    font-size: 2.6rem;
-    font-family: url(CloisterBlack.ttf);
-    text-decoration: solid;
+#form_header {
+    display: inline-block;
+    font-size: 15px;
+    font-family: Bowlby One SC;
+    font-weight: 900;
     text-transform: uppercase;
+    letter-spacing: 1px;
+
+
+    background: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
 }
-/* grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
-grid-template-rows: [row1-start] 25% [row1-end] 25% [third-line] 30% [fourth-line] 20% [last-line]; */
+
+#form_content_container {
+    width: 100%;
+    height: 90%;
+
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 30px;
+}
+
+#form_content_inner_container {
+    width: 75%;
+    height: 100%;
+
+    float: left;
+
+}
+
+input {
+    width: 100%;
+    height: 40px;
+
+    padding-left: 10px;
+    margin-bottom: 20px;
+
+    background: #000;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: #fff;
+    font-size: 12px;
+
+    border-bottom: 2px solid transparent;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    border-image: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF) 1;
+}
+
+#button_container {
+    width: 100%;
+    height: 10%;
+
+    background-image: linear-gradient(80deg, #FFBE0B, #FB5607 50%, #FF006E 50%, #8338EC);
+    color: #fff;
+
+    float: left;
+
+    margin-top: 5px;
+}
+
+#button_container button {
+    width: 50%;
+    height: 100%;
+    float: left;
+
+    background: transparent;
+    color: inherit;
+
+    font-family: Montserrat;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: 12px;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

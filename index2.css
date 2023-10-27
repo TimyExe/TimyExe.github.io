@@ -1,0 +1,188 @@
+/* Reset default margin and padding for the entire page */
+
+body,
+h1,
+p,
+a,
+img {
+    margin: 0;
+    padding: 0;
+    
+    font-family: 'Special Elite', cursive;
+    
+}
+html {
+    background:linear-gradient(90deg, rgba(0,5,36,1) 0%, rgba(45,45,48,1) 46%, rgba(10,12,13,1) 92%);
+    
+}
+body{
+    background-color: #0000;
+    
+}
+
+#background-video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+
+/* Create a container for the card */
+.card {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    margin: 20px auto;
+    background-color: #0000;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    
+    position: relative;
+    grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+    grid-template-rows: [row1-start] 25% [row1-end] 25% [third-line] 30% [fourth-line] 20% [last-line];
+}
+
+.card::before {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    /* Adjust the last value (0.3) to control darkness (0 is transparent, 1 is solid black) */
+    z-index: -1;
+    /* Puts it below the content */
+}
+
+.footer {
+    margin: rem 0;
+    text-align: center;
+}
+
+/* Style the card image */
+.card img {
+
+    width: 100px;
+    height: 100px;
+}
+
+/* Style the login button at the top right corner */
+.login-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #212529;
+    color: #dfdada;
+    text-decoration: none;
+    border-radius: 4px;
+    z-index: 1;
+    /* Ensures it's on top of the card content */
+}
+.login-button:hover{
+    background-color: #343a41;
+    color: #bdbaba;
+}
+/* Style the card content */
+.card-content {
+    padding: 20px;
+
+}
+
+/* Style the card title */
+.card-title {
+    text-align: center;
+    display: grid;
+    background: rgba(0, 0, 0, 0.616);
+    border-radius: 7px;
+    grid-column-start: line2;
+    grid-column-end: five;
+    grid-row-start: fourth-line;
+    grid-row-end:fourth-line; 
+ 
+    
+    font-size: 20px;
+    color: #aaa7a7;
+    margin-top: 50px;
+    padding: 20px;
+}
+.list {
+   list-style: none;
+    width: 19rem;
+    margin-top: 1.3rem;
+    position: absolute; 
+    top: 85vh;
+    padding: 0.5rem;
+    right:3rem;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+.tinybtn {
+
+    display: inline-block;
+    text-decoration: none;
+    color: #aaa7a7;
+    padding: 2px; 
+    margin: .7rem; 
+   
+   
+}
+.tinybtn:hover {
+    text-decoration: underline;
+    display: inline-block;
+
+    color: #8d8a8a;
+    padding: 2px; 
+    margin: .7rem; 
+   
+   
+}
+/* Style the card text */
+.card-text {
+    display: grid;
+    margin-top: 5rem;
+    padding: 20px;
+    text-align: center;
+    grid-column-start: line2;
+    grid-column-end: five;
+    grid-row-start: fourth-line;
+    grid-row-end:fourth-line; 
+   
+    font-size: 16px;
+    color: #aaa7a7;
+    margin-bottom: 20px;
+}
+
+.icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.main-title-box{
+position: absolute;
+    top: 50vh;
+    left: 40vw;
+   
+}
+.main-title-box h1{
+    color: #cac6c6;
+    font-size: 2.6rem;
+    font-family: url(CloisterBlack.ttf);
+    text-decoration: solid;
+    text-transform: uppercase;
+}
+/* grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+grid-template-rows: [row1-start] 25% [row1-end] 25% [third-line] 30% [fourth-line] 20% [last-line]; */
