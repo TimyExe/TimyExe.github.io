@@ -183,7 +183,6 @@ position: absolute;
     font-size: 2.6rem;
     font-family:'CloisterBlack' ;
     text-decoration: solid;
-    text-transform: uppercase;
 }
 
 /* grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
