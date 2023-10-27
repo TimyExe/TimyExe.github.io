@@ -1,35 +1,12 @@
-document.getElementById('loginForm').addEventListener('submit', function (event) {
-    event.preventDefault(); // Prevent the form from submitting
+const firebaseConfig = {
+    apiKey: "AIzaSyDkIw-MiE9VB9VaJ2EMNYV6ukM8gvw0UWY",
+    authDomain: "hookey-2beee.firebaseapp.com",
+    databaseURL: "https://hookey-2beee-default-rtdb.europe-west1.firebasedatabase.app",
+    projectId: "hookey-2beee",
+    storageBucket: "hookey-2beee.appspot.com",
+    messagingSenderId: "873667938609",
+    appId: "1:873667938609:web:3f7cf35ad219ea8d018810"
+    };
 
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-    
-    // Simulated authentication (replace this with actual authentication logic)
-    if (username.toLowerCase() == 'tim' && password === 'password1') {
-        // Set a session token cookie
-        document.cookie = 'sessionToken=user1Token; path=/;';
-
-        // Redirect to the success page
-        window.location.href = '/main/main.html';
-    } else if (username.toLowerCase() == 'akki' && password === 'ilovemonkeys') {
-        // Set a session token cookie
-        document.cookie = 'sessionToken=user2Token; path=/;';
-
-        // Redirect to the success page
-        window.location.href = '/main/main.html';
-    }else if (username.toLowerCase() == 'villads' && password === 'villadsismonkey') {
-        // Set a session token cookie
-        document.cookie = 'sessionToken=user2Token; path=/;';
-
-        // Redirect to the success page
-        window.location.href = '/main/main.html';
-    } else if (username.toLowerCase() == 'other' && password === 'iliketohavesexwithmonkeys') {
-        // Set a session token cookie
-        document.cookie = 'sessionToken=user3Token; path=/;';
-
-        // Redirect to the success page
-        window.location.href = '/main/main.html';
-    } else {
-        alert('Invalid username or password');
-    }
-});
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
