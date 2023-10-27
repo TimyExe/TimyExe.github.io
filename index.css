@@ -180,10 +180,11 @@ position: absolute;
 }
 .main-title-box h1{
     color: #cac6c6;
-    font-size: 100px;
+    font-size: 2.8rem;
     font-family:'CloisterBlack' ;
     text-align: center;
     text-decoration: solid;
+    text-transform: uppercase;
 }
 
 /* grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
