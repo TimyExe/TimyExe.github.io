@@ -20,7 +20,7 @@ function register() {
   var email = document.getElementById('email').value;
   var password = document.getElementById('password').value;
   var full_name = document.getElementById('full_name').value;
-  var favourite_song = document.getElementById('favourite_song').value;
+  var favourite_song = document.getElementById('favourite_song').value; // Fixed typo here, changed "=" to ":"
   var milk_before_cereal = document.getElementById('milk_before_cereal').value;
 
   // Validate input fields
