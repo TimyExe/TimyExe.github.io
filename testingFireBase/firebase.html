@@ -1,321 +1,189 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Authentication is Fun</title>
-    <style>
-      body {
-        text-align: center;
-        background-color: lightseagreen;
-        color: black;
-      }
-    </style>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="icon" type="image/png" href="moth.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Include Firebase scripts here -->
   </head>
   <body>
-    <div id="authForm">
-      <h2>Sign Up or Sign In</h2>
-      <input type="email" placeholder="email" id="userEmail" />
-      <input type="text" placeholder="Name" id="name" />
-      <input type="password" placeholder="password" id="userPassword" />
-      <br /><br />
-      <button id="signUpButton">Sign Up</button>
-      <button id="signInButton">Sign In</button>
+    <div class="login-container">
+      <h1>Sign in, Sign UP</h1>
+      <form id="loginForm">
+        <div class="input-container">
+          <label for="email">Email:</label>
+          <input type="text" id="email" name="email" required />
+        </div>
+        <div class="input-container">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+        </div>
+
+        <div class="button-container">
+          <button id="sign-in">Login</button>
+        </div>
+        <div class="button-container">
+          <button id="sign-up">Sign Up</button>
+        </div>
+      </form>
     </div>
 
-    <div id="secretContent">
-      <h3>This is top secret information that you can only see if</h3>
-      <h1>AUTHENTICATED</h1>
-      <button id="signOutButton">Sign Out</button>
-    </div>
+    <!-- Your HTML structure for the sign-up and success pages can be added here -->
+  </body>
 
-    <script type="module">
+  <!-- aaaaaaaaaaaaaaaaaaaaaaaaaa -->
+  <script type="module">
+    //Update the below URL with the appropriate version if necessary.
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
+    import {
+      getDatabase,
+      ref,
+      get,
+      set,
+      child,
+      update,
+      remove,
+    } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js";
+
+    import {
+      getAuth,
+      createUserWithEmailAndPassword,
+      signInWithEmailAndPassword,
+      onAuthStateChanged,
+      signOut,
       //Update the below URL with the appropriate version if necessary.
-      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-app.js";
-      import {
-        getDatabase,
-        ref,
-        get,
-        set,
-        child,
-        update,
-        remove,
-      } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-database.js";
-      
-      import {
-        getAuth,
-        createUserWithEmailAndPassword,
-        signInWithEmailAndPassword,
-        onAuthStateChanged,
-        signOut,
-        //Update the below URL with the appropriate version if necessary.
-      } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js";
+    } from "https://www.gstatic.com/firebasejs/10.5.2/firebase-auth.js";
 
-      // INSERT YOUR FIREBASE CONFIG OBJECT HERE
-      const firebaseConfig = {
-        apiKey: "AIzaSyCB7hQiPxx9vu_Hn8rrjP6zNsoFoqjJQVs",
-        authDomain: "tojiiii.firebaseapp.com",
-        projectId: "tojiiii",
-        databaseURL:"https://tojiiii-default-rtdb.europe-west1.firebasedatabase.app.firebaseio.com",
-        storageBucket: "tojiiii.appspot.com",
-        messagingSenderId: "394667194340",
-        appId: "1:394667194340:web:e24aa2583dbacd0b3ab9f1",
-        measurementId: "G-8X9LKER2XZ",
-      };
+    // INSERT YOUR FIREBASE CONFIG OBJECT HERE
 
-      const app = initializeApp(firebaseConfig);
-      const auth = getAuth(app);
+    const firebaseConfig = {
+      apiKey: "AIzaSyAaZ0EFchWAQB0OFQ0lYGSW9ENXlfgDAC4",
+      authDomain: "thclassdb-3abc7.firebaseapp.com",
+      databaseURL:
+        "https://thclassdb-3abc7-default-rtdb.europe-west1.firebasedatabase.app",
+      projectId: "thclassdb-3abc7",
+      storageBucket: "thclassdb-3abc7.appspot.com",
+      messagingSenderId: "97406099162",
+      appId: "1:97406099162:web:a9111221d517f256b7cfe3",
+    };
 
-      const userEmail = document.querySelector("#userEmail");
-      const name = document.querySelector("#name");
-      const userPassword = document.querySelector("#userPassword");
-      const authForm = document.querySelector("#authForm");
-      const secretContent = document.querySelector("#secretContent");
-      const signUpButton = document.querySelector("#signUpButton");
-      const signInButton = document.querySelector("#signInButton");
-      const signOutButton = document.querySelector("#signOutButton");
-      const database = getDatabase(app);
-console.log(database)
-      secretContent.style.display = "none";
-      const db = getDatabase();
+    const app = initializeApp(firebaseConfig);
+    const auth = getAuth(app);
+    const db = getDatabase(app);
+    const userEmail = document.querySelector("#email");
 
+    const userPassword = document.querySelector("#password");
+    // const authForm = document.querySelector("#authForm");
 
-      let enterID = Date.now()*(Math.floor(Math.random() * 100));
+    const signUpButton = document.querySelector("#sign-up");
+    const signInButton = document.querySelector("#sign-in");
+    const signOutButton = document.querySelector("#signOutButton");
 
-const userSignUp =  () => {
-  const signUpEmail = userEmail.value;
-  const signUpPassword = userPassword.value;
-  createUserWithEmailAndPassword(auth, signUpEmail, signUpPassword)
-    .then((userCredential) => {
-      const user = userCredential.user;
-      const userforDb = auth.currentUser;
-      // Use the 'db' variable for the database reference, not 'database'
-     
-      console.log(enterID)
-      var userdata = {
-        email: signUpEmail, 
-        name: name.value, 
-        role: "demoUser",
-        lastLogin: Date.now(), 
-        Id:enterID,
-      };
-    // Reference to the specific node in your database
+    let enterID = Date.now() * Math.floor(Math.random() * 100);
 
+    const userSignUp = (e) => {
+      e.preventDefault();
+      const signUpEmail = userEmail.value;
+      const signUpPassword = userPassword.value;
+      createUserWithEmailAndPassword(auth, signUpEmail, signUpPassword)
+        .then((userCredential) => {
+          const user = userCredential.user;
+          const userforDb = auth.currentUser;
+          // Use the 'db' variable for the database reference, not 'database'
+          window.location.href = "success/success.html";
+          console.log(user.uid);
+          console.log(enterID);
 
-  
-
-      set(ref(database, "People/" + enterID), userdata)
-        .then(() => {
-           
-          alert("Data added successfully");
+          // Reference to the specific node in your database
+          console.log(enterID, "ajajaj");
+          set(ref(db, "user/" + enterID), {
+            email: signUpEmail,
+            role: "demoUser",
+            lastLogin: Date.now(),
+            Id: enterID,
+          })
+            .then(() => {
+              alert("Data added successfully");
+            })
+            .catch((error) => {
+              alert(error);
+            });
+          console.log(user);
+          alert("Your account has been created!");
         })
         .catch((error) => {
-          alert(error);
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          console.log(errorCode, errorMessage);
         });
-      console.log(user);
-      alert("Your account has been created!");
-    })
-    .catch((error) => {
-      const errorCode = error.code;
-      const errorMessage = error.message;
-      console.log(errorCode, errorMessage);
-    });
-};
-GetData()
-function GetData(){
-    const dataRef = ref(database, "People/" + enterID);
+    };
 
+    function GetData(email) {
+      const dataRef = ref(db, "user");
 
-get(dataRef)
-  .then((snapshot) => {
-    if (snapshot.exists()) {
-      const data = snapshot.val();
-      console.log('Retrieved Data:', data);
+      return get(dataRef)
+        .then((snapshot) => {
+          if (snapshot.exists()) {
+            const data = snapshot.val();
+             console.log(data);
     } else {
-      console.log('Data does not exist at this path.');
-    }
-  })
-  .catch((error) => {
-    console.error('Error getting data:', error);
-  });
-}
-
-    //   const userSignUp = async () => {
-    //     const signUpEmail = userEmail.value;
-    //     const signUpPassword = userPassword.value;
-    //     createUserWithEmailAndPassword(auth, signUpEmail, signUpPassword)
-    //       .then((userCredential) => {
-    //         const user = userCredential.user;
-    //         const userforDb = auth.currentUser;
-    //         var databaseref = database.ref();
-    //         var userdata = {
-    //           email: userEmail,
-    //           name: name,
-    //           role: "demoUser",
-    //           lastLogin: Date.Now(),
-    //         };
-    //         set(ref(db, "People/" + enterID.value), userdata)
-    //           .then(() => {
-    //             alert("Data added successfully");
-    //           })
-    //           .catch((error) => {
-    //             alert(error);
-    //           });
-    //         console.log(user);
-    //         alert("Your account has been created!");
-    //       })
-    //       .catch((error) => {
-    //         const errorCode = error.code;
-    //         const errorMessage = error.message;
-    //         console.log(errorCode + errorMessage);
-    //       });
-    //   };
-
-   
-      const userSignIn = async () => {
-        const signInEmail = userEmail.value;
-        const signInPassword = userPassword.value;
-        signInWithEmailAndPassword(auth, signInEmail, signInPassword)
-          .then((userCredential) => {
-            const user = userCredential.user;
-            alert("You have signed in successfully!");
-          })
-          .catch((error) => {
-            const errorCode = error.code;
-            const errorMessage = error.message;
-            console.log(errorCode + errorMessage);
-          });
-      };
-
-      const checkAuthState = async () => {
-        onAuthStateChanged(auth, (user) => {
-          if (user) {
-            authForm.style.display = "none";
-            secretContent.style.display = "block";
-          } else {
-            authForm.style.display = "block";
-            secretContent.style.display = "none";
+            console.log("Data does not exist at this path.");
+            return null; // Return null if data doesn't exist
           }
+        })
+        .catch((error) => {
+          console.error("Error getting data:", error);
+          return null; // Return null in case of an error
         });
-      };
+    }
 
-      const userSignOut = async () => {
-        await signOut(auth);
-      };
+    const userSignIn = async (e) => {
+      e.preventDefault();
+      const signInEmail = userEmail.value;
+      const signInPassword = userPassword.value;
+      signInWithEmailAndPassword(auth, signInEmail, signInPassword)
+        .then((userCredential) => {
+          const user = userCredential.user;
+          alert("You have signed in successfully!");
+          //    window.location.href = "success/success.html";
+          GetData(signInEmail)
+        })
+        .catch((error) => {
+          const errorCode = error.code;
+          const errorMessage = error.message;
+          console.log(errorCode + errorMessage);
+        });
+       
+    
+    };
 
-      checkAuthState();
+    const checkAuthState = async () => {
+      onAuthStateChanged(auth, (user) => {
+        if (user) {
+          //   authForm.style.display = "none";
+        } else {
+          //   authForm.style.display = "block";
+        }
+      });
+    };
 
-      signUpButton.addEventListener("click", userSignUp);
-      signInButton.addEventListener("click", userSignIn);
-      signOutButton.addEventListener("click", userSignOut);
-    </script>
-  </body>
+    const userSignOut = async () => {
+      console.log("signout");
+      await signOut(auth);
+    };
+
+    checkAuthState();
+
+    signUpButton.addEventListener("click", userSignUp);
+    signInButton.addEventListener("click", userSignIn);
+    // signOutButton.addEventListener("click", userSignOut);
+  </script>
+  <script src="login.js"></script>
 </html>
-
-<!-- <!DOCTYPE html>  MY CODEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <title>Login Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f2f2f2;
-        }
-
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-        }
-
-        .login-box {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            width: 300px;
-        }
-
-        .input-box {
-            margin: 10px 0;
-        }
-
-        .input-box input {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-
-        .login-button {
-            width: 100%;
-            background-color: #007bff;
-            color: #fff;
-            border: none;
-            padding: 10px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
-</head>
-<script type="module" src="auth.js"></script> -->
-
-<!-- <body>
-    <div class="container">
-        <div class="login-box">
-            <h2>Login</h2>
-            <div class="input-box">
-                <input type="email" id="email" placeholder="Email">
-            </div>
-            <div class="input-box">
-                <input type="password" id="password" placeholder="Password">
-            </div>
-            <button class="login-button" onclick="login()">Login</button>
-            <button class="register-button"  id="register">Register</button>
-
-        </div>
-    </div>
-
-    <script type="text/javascript" src="firebase.js"></script>
-   
-
-    
-</body>
-
-</html> -->
-
-<!-- 
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Authentication is Fun</title>
-    <style>
-        body {text-align: center; background-color: lightseagreen; color: black;}
-    </style>
-</head>
-<body>
-    <div id="authForm">
-        <h2>Sign Up or Sign In</h2>
-        <input type="email" placeholder="email" id="userEmail">
-        <input type="password" placeholder="password" id="userPassword">  <br><br>
-        <button id="signUpButton">Sign Up</button>
-        <button id="signInButton">Sign In</button>
-    </div>
-
-    <div id="secretContent">
-        <h3>This is top secret information that you can only see if</h3>
-        <h1>AUTHENTICATED</h1>
-        <button id="signOutButton">Sign Out</button>
-    </div>
-
-    
-</body>
-</html> -->
