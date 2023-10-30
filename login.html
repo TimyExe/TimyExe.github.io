@@ -13,6 +13,33 @@
     <!-- Include Firebase scripts here -->
   </head>
   <body>
+    <div class="overlay" id="overlay">
+      <div class="overlay-content">
+          <h2>Terms of Service</h2>
+          <p>we do not take any responsibility for what you do with the information and tools on this site 
+            proceed at your own risk.</p>
+          <button id="agree">Agree</button>
+          <button href="example.com" id="decline">Decline</button>
+      </div>
+  </div>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const overlay = document.getElementById("overlay");
+    const agreeButton = document.getElementById("agree");
+    const decline = document.getElementById("decline");
+    
+    // Show the overlay when the page loads
+    overlay.style.display = "flex";
+
+    // Hide the overlay when "Agree" is clicked
+    agreeButton.addEventListener("click", function() {
+        overlay.style.display = "none";
+    });
+    decline.addEventListener("click", function() {
+        window.location.href = "https://timyexe.github.io";
+    });
+});
+</script>  
     <div class="login-container">
       <h1>Login</h1>
       <form id="loginForm">
