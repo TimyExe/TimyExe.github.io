@@ -168,7 +168,7 @@ GetData(userEmail.value);
 
  signUpButton.addEventListener("click", userSignUp);
  signInButton.addEventListener("click", userSignIn);
- if(signInButton){
+ if(signOutButton){
   signOutButton.addEventListener("click", userSignOut);
  }
   
