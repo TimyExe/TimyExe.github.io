@@ -154,7 +154,8 @@ GetData(userEmail.value);
    });
  };
 
- const userSignOut = async () => {
+ const userSignOut = async (e) => {
+  e.preventDefault()
    console.log("signout");
    const data1 = {
     role: "notloggedIn",
