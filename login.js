@@ -44,6 +44,8 @@
  const signUpButton = document.querySelector("#sign-up");
  const signInButton = document.querySelector("#sign-in");
  const signOutButton = document.querySelector("#signOutButton");
+ const errorMessageDiv = document.getElementById("error-message");
+
  let currentUser;
  let enterID = Date.now() * Math.floor(Math.random() * 100);
 
@@ -56,7 +58,7 @@
        const user = userCredential.user;
        const userforDb = auth.currentUser;
        // Use the 'db' variable for the database reference, not 'database'
-       
+       errorMessageDiv.innerHTML = "";
        console.log(user.uid);
        console.log(enterID);
 
@@ -81,9 +83,11 @@
       
      })
      .catch((error) => {
-       const errorCode = error.code;
-       const errorMessage = error.message;
-       console.log(errorCode, errorMessage);
+      const errorCode = error.code;
+      const errorMessage = error.message;
+
+      // Display the error message
+      errorMessageDiv.innerHTML = errorMessage;
      });
  };
 
@@ -121,14 +125,18 @@
    const signInPassword = userPassword.value;
    signInWithEmailAndPassword(auth, signInEmail, signInPassword)
      .then((userCredential) => {
+      errorMessageDiv.innerHTML = "";
+
        const user = userCredential.user;
        alert("You have signed in successfully!");
        window.location.href = "main/main.html";
      })
      .catch((error) => {
-       const errorCode = error.code;
-       const errorMessage = error.message;
-       console.log(errorCode + errorMessage);
+      const errorCode = error.code;
+      const errorMessage = error.message;
+
+      // Display the error message
+      errorMessageDiv.innerHTML = errorMessage;
      });
 
 GetData(userEmail.value);
