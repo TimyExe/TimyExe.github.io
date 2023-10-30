@@ -16,9 +16,14 @@ img {
     src: url(CloisterBlack.ttf) format('truetype');
     /* You can include additional font formats like woff, woff2, etc. if available. */
   }
+  element.style {
+    right: 0px;
+    width: 2046px;
+}
 body{
     background-color: #0000;
     background-image: url("https://i.pinimg.com/originals/a0/66/78/a0667815bb982ae0507a79977940e8c0.gif");
+    width: 2046px;
 }
 
 
@@ -27,7 +32,7 @@ body{
     display: grid;
     width: 100%;
     height: 100vh;
-    margin: 20px auto;
+    margin: 7px auto;
     background-color: #0000;
     background-size: cover;
     background-repeat: no-repeat;
@@ -68,12 +73,19 @@ body{
 
 /* Style the login button at the top right corner */
 .login-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
     position: absolute;
     top: 10px;
+    height: 2.5rem;
+    width: 5rem;
     right: 10px;
     padding: 10px 20px;
     background-color: #212529;
     color: #dfdada;
+    text-align: center;
     text-decoration: none;
     border-radius: 4px;
     z-index: 1;
@@ -166,14 +178,13 @@ position: absolute;
     left: 40vw;
    
 }
-.main-title-box h1{
+.main-title-box h1 {
+    font-style: italic;
     color: #cac6c6;
-    font-size: 2.8rem;
-    font-family:'CloisterBlack' ;
+    font-size: 5rem;
     text-align: center;
     text-decoration: solid;
-    text-transform: uppercase;
+    align-items: center;
 }
-
 /* grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
 grid-template-rows: [row1-start] 25% [row1-end] 25% [third-line] 30% [fourth-line] 20% [last-line]; */
