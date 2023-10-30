@@ -89,22 +89,22 @@ body {
 
 
 #sign-up{
-
+    background-color: #000000b2;
     color: #ffffff;
     text-shadow: 0px 0px 5px #ffffff;
     background-color: #00000000;
     width: 100px;
-    box-shadow: 0px 0px 5px #ffffff;
+    box-shadow: 0px 0px 5px #ffffff, inset 0px 0px 5px #ffffff;
     outline: 1px #fff;
 }
 
 #sign-in{
-
+    background-color: #000000b4;
     color: #ffffff;
     text-shadow: 0px 0px 5px #ffffff;
     width: 100px;
     background-color: #00000000;
-    box-shadow: 0px 0px 5px #ffffff;
+    box-shadow: 0px 0px 5px #ffffff, inset 0px 0px 5px #ffffff;
     outline: 1px #fff;
 }
 
@@ -121,26 +121,29 @@ body {
     background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
     z-index: 999; /* Ensure it's on top of other content */
     display: none; /* Initially hidden */
+    
 }
 
 .overlay-content {
     
-    background: #303030;
+    background: #000000c4;
     border-radius: 10px;
     padding: 20px;
     height: 20rem;
     width: 40rem;
 
     text-align: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow:  0px 0px 20px  rgba(255, 255, 255, 0.788), inset 0px 0px 20px  rgba(255, 255, 255, 0.753)
+
 }
 
 .overlay h2 {
     margin-top: 3rem;
     font-size: 3rem;
-    
+    font-family: 'Special Elite', cursive;
     margin-bottom: 0.5rem;
     color: #ffffff;
+    text-shadow: 0px 0px 5px #fff;
 }
 
 .overlay p {
@@ -152,6 +155,7 @@ body {
 }
 
 .overlay button {
+    font-family: 'Special Elite', cursive;
     border: none;
     border-radius: 5px;
     padding: 10px 20px;
