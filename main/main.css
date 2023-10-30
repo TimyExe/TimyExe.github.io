@@ -23,7 +23,26 @@ body {
     text-shadow: 0px 0px 15px #ffffff;
     font-family: 'Special Elite', cursive;
 }
+.logout-button {
+    position: absolute;
+    top: 10px; /* Adjust the top value to position it properly */
+    right: 10px; /* Adjust the right value to position it properly */
+    padding: 10px 20px;
+    background-color: #9400d3;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px; /* Adjust the font size as per your design */
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0px 0px 5px rgba(148, 0, 211, 0.5);
+    transition: background-color 0.3s;
+}
 
+.logout-button:hover {
+    background-color: #6a0080;
+    box-shadow: 0px 0px 25px rgba(148, 0, 211, 0.692);
+}
 .button-container {
     text-align: center; /* Center the buttons horizontally */
     padding: 20px;

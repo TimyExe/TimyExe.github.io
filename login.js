@@ -43,7 +43,7 @@
 
  const signUpButton = document.querySelector("#sign-up");
  const signInButton = document.querySelector("#sign-in");
- const signOutButton = document.querySelector("#signOutButton");
+ const signOutButton = document.querySelector("#sign-out-button");
  const errorMessageDiv = document.getElementById("error-message");
 
  let currentUser;
@@ -156,6 +156,10 @@ GetData(userEmail.value);
 
  const userSignOut = async () => {
    console.log("signout");
+   const data1 = {
+    role: "notloggedIn",
+  };
+  localStorage.setItem("currentUser", JSON.stringify(data1));
    await signOut(auth);
  };
 
@@ -163,4 +167,7 @@ GetData(userEmail.value);
 
  signUpButton.addEventListener("click", userSignUp);
  signInButton.addEventListener("click", userSignIn);
- // signOutButton.addEventListener("click", userSignOut);
+ if(signInButton){
+  signOutButton.addEventListener("click", userSignOut);
+ }
+  
