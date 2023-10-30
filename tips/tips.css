@@ -46,25 +46,25 @@ body {
     box-shadow: 0px 0px 5px rgba(148, 0, 211, 0.5);
     transition: background-color 0.3s;
 }
-#card1 {
-    color: #fff; /* Change text color */
-    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.719);
-    opacity: 25%;
-    background: rgba(59, 59, 59, 0.692) url('images/pensum.jpg') center/cover no-repeat; 
-}
-
 .card-heading{
     opacity: 100%;
     color: #000000;
-
-text-shadow: 2px 7px 5px rgba(0,0,0,0.3), 
-    0px -4px 10px rgba(255,255,255,0.3);
+    font-weight: bold;
+    text-shadow: 0px 0px 5px rgb(255, 255, 255);
 }
+
+#card1 {
+    color: #000000; /* Change text color */
+    text-shadow: 0px 0px 20px rgba(255, 255, 255);
+    opacity: 100%;
+    background: url('images/pensum.jpg') center/cover no-repeat; 
+}
+
 #card2 {
     background: rgba(59, 59, 59, 0.692) url('images/what-is-a-vpn.jpg') center/cover no-repeat; 
-    opacity: 25%;
-    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.719);
-    color: #fff; /* Change text color */
+    opacity: 100%;
+    text-shadow: 0px 0px 20px rgba(255, 255, 255);
+    color: #000000; /* Change text color */
 }
 
  .goback-btn{
@@ -88,17 +88,17 @@ text-shadow: 2px 7px 5px rgba(0,0,0,0.3),
 }
 #card3 {
     background: rgba(59, 59, 59, 0.692) url('images/style.jpg') center/cover no-repeat; 
-    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.719);
-    opacity: 25%;
-    color: #fff; /* Change text color */
+    text-shadow: 0px 0px 20px rgb(255, 255, 255);
+    opacity: 100%;
+    color: #000000; /* Change text color */
 }
 
 
 #card4 {
     background: rgba(59, 59, 59, 0.692) url('spil.png') center/cover no-repeat; 
-    text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.719);
-    opacity: 25%;
-    color: #fff; /* Change text color */
+    text-shadow: 0px 0px 20px rgba(255, 255, 255);
+    opacity: 100%;
+    color: #000000; /* Change text color */
 }
 
 
