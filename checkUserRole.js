@@ -12,7 +12,7 @@ if (!curenUserIFAny) {
 console.log(curenUserIFAny);
 
 if (currentRole === "demoUser") {
-  window.location.href = "/demo.html";
+  window.location.href = "/demo/demo.html";
 } else if (currentRole === "user") {
   console.log("nice ");
 } else if (currentRole === "admin") {

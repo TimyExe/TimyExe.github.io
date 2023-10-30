@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="demo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Prata&family=Special+Elite&family=Suranna&family=Tilt+Warp&display=swap" rel="stylesheet">
+    
+    <title>Scrolling Cards Website</title>
+</head>
+<style>
+    /* width */
+    ::-webkit-scrollbar {
+      width: 15px;
+      background-color: black;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      box-shadow: inset 0 0 5px grey; 
+      border-radius: 10px;
+    }
+     
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: rgb(255, 255, 255); 
+      border-radius: 10px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #ebebeb; 
+    }
+    </style>
+<body>
+    <div class="main-content">
+        <h1>Demo page</h1>
+        <p>Youve created a demo account heres the things you can buy.</p>
+    </div>
+
+    <div class="card-container">
+        <!-- Card 1 -->
+        <div class="card">
+            <h2>Mat Bøger</h2>
+            <p>Alle mat bøger fra 7-9 klasse.</p>
+            <div id="image1" class="image-box"></div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card">
+            <h2>9 Klasse mat examer</h2>
+            <p>More details about the second card.</p>
+            <div id="image2" class="image-box"></div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card">
+            <h2>Tips og hjælp</h2>
+            <p>Hjælp og tips til at bruge apps skolen har blokeret og hjælp til at forbedre karakter og info om pensum.</p>
+            <div id="image3" class="image-box"></div>
+        </div>
+
+         <!-- Card 4 -->
+        <div class="card">
+            <h2>Pris:</h2>
+            <p id="pp">50.DKK</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,134 @@
+/* CSS for the body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://i.pinimg.com/originals/a0/66/78/a0667815bb982ae0507a79977940e8c0.gif");
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+/* CSS for the main content */
+.main-content {
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+    text-shadow: 0px 0px 15px #fff;
+    margin-top: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   
+}
+
+.main-content h1{
+
+    font-size: 150px;
+    font-family: 'Special Elite', cursive;
+}
+
+/* CSS for the scrolling cards container */
+.card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 25rem;
+    align-items: center;
+}
+
+/* CSS for individual cards */
+.card {
+    background-color: #303030;
+    background-image: url("https://i.pinimg.com/564x/aa/f6/8e/aaf68e11812d6b8c01b46dcb7c0721ea.jpg");
+    background-size: cover;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 5px;
+    padding: 20px;
+    width: 75rem;
+    max-width: 75rem;
+    height: 30rem;
+    max-height: 30rem;
+    align-items: center;
+    text-align:justify;
+}
+
+.card h2 {
+    color: #fff;
+    text-shadow: 0px 0px 5px #fff;
+    
+    font-size: 50px;
+    margin: 0;
+    
+    bottom: 1rem;
+    font-family: 'Special Elite', cursive;
+}
+
+.card p {
+    color: #fff;
+    text-shadow: 0px 0px 5px #fff;
+    margin: 0;
+}
+
+.image-box {
+    width: 300px;
+    height: 400px;
+    background-color: #ccc; /* You can set the background color or add an image */
+    margin-left: auto; /* Push it to the right side */
+}
+
+
+#image1{
+
+    background-image: url(../main/books.png);
+    max-width: 300px;
+    max-height: 400px; 
+    background-size: cover;   
+    background-position: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ffffff;
+}
+
+#image2{
+
+    background-image: url(../main/exams.png);
+    max-width: 300px;
+    max-height: 400px; 
+    background-size: cover;   
+    background-position: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ffffff;
+    
+}
+
+#image3{
+
+    background-image: url(../main/spil.png);
+    max-width: 300px;
+    max-height: 400px; 
+    background-size: cover;   
+    background-position: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #ffffff;   
+}
+
+#pp{    
+
+
+    background-size: cover;   
+    background-position: center;
+    border-radius: 5px;
+    text-align: 0px 0px 10px #ffffff;   
+    font-family: 'Special Elite', cursive;
+    font-size: 50px;
+    margin-top: 10rem;
+    margin-right: 2rem;
+    text-decoration: underline;  
+    text-align: right;
+}
