@@ -70,7 +70,7 @@
          lastLogin: Date.now(),
          Id: enterID,
        }).then(() => {
-           alert("Data added successfully");
+         
            GetData(userEmail.value)
            window.location.href = "main/main.html";
          })
