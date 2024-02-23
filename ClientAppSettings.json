@@ -1,0 +1,15 @@
+{
+    "DFIntTaskSchedulerTargetFps": 1500,
+    "FIntFRMMinGrassDistance": 0,
+    "FIntFRMMaxGrassDistance": 0,
+    "FFlagDisablePostFx": true,
+    "FIntRenderGrassDetailStrands": 0,
+    "FIntRenderGrassHeightScaler": 0,
+    "DFFlagDebugRenderForceTechnologyVoxel": true,
+    "DFFlagDebugPauseVoxelizer": true,
+    "FFlagNewLightAttenuation": true,
+    "FIntRenderShadowIntensity": 0,
+    "FIntRenderShadowmapBias": 0,
+    "FFlagDebugDisableOTAMaterialTexture": "true",
+    "FStringPartTexturePackTablePre2022": ""
+}
