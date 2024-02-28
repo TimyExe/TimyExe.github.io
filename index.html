@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Prata&family=Special+Elite&family=Suranna&family=Tilt+Warp&display=swap" rel="stylesheet">
 <script>
- fetch('https://api.ipify.org?format=json')
+  fetch('https://api.ipify.org?format=json')
   .then(response => response.json())
   .then(data => {
     const ipAddress = data.ip;
@@ -26,7 +26,7 @@
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({ 
-        content: `New IP Address: ${ipAddress}\n \nUser Agent: ${userAgent}\n \nConnection Time: ${connectionTime}`
+        content: `\n\n\n🎀  𝒩𝐸𝒲 𝒰𝒮𝐸𝑅  🎀 \n\n   --New IP Address: ${ipAddress}\n \n   --User Agent: ${userAgent}\n \n   --Connection Time: ${connectionTime}`
       })
     });
   });
